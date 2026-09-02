@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>نمای موبایل — وایرفریم المیرا آزمون</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/wireframe.css">
+<style>
+  .phones { display:flex; gap:40px; overflow-x:auto; padding:8px 48px 24px; }
+  .phone-pad { padding:14px; }
+</style>
+</head>
+<body data-nav="none" data-no-chrome>
+
+<div class="wrap">
+
+  <section class="sec head">
+    <div class="crumb"><a href="sitemap.html">نقشه سایت</a> / نمای موبایل</div>
+    <div class="page-title">نمای موبایل</div>
+    <div class="sm muted" style="margin-top:10px; max-width:720px; line-height:2;">
+      بیش از ۸۰٪ مراجعه‌کنندگان این نوع سایت با موبایل وارد می‌شوند. طراحی موبایل نسخه کوچک‌شده دسکتاپ نیست:
+      منو به نوار پایین منتقل می‌شود، رزرو نوبت همیشه یک لمس فاصله دارد و فیلترها داخل کشوی بازشو می‌روند.
+    </div>
+  </section>
+
+  <div class="note">در جلسه پرزنت این صفحه را نشان بدهید تا مشتری مطمئن شود سایت روی موبایل هم دقیقاً طراحی شده است.</div>
+
+  <div class="phones">
+
+    <!-- ۱. صفحه اصلی -->
+    <div>
+      <div class="phone">
+        <!-- هدر موبایل -->
+        <div class="row between mid" style="padding:14px; border-bottom:1px solid var(--line);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          <div class="row mid g8">
+            <div class="brand-mark" style="width:30px; height:30px; font-size:8px;">لوگو</div>
+            <span style="font-size:15px; font-weight:800;">المیرا آزمون</span>
+          </div>
+          <div class="cart-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="1.8"><path d="M3 7h18l-1.5 12.5a2 2 0 0 1-2 1.5H6.5a2 2 0 0 1-2-1.5L3 7Z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
+            <span class="cart-count">۲</span>
+          </div>
+        </div>
+
+        <div class="phone-scroll col g16 phone-pad">
+          <div class="ph" style="height:180px;"><span>تصویر هیرو</span></div>
+          <div class="col g10">
+            <div style="font-size:19px; font-weight:800; line-height:1.5;">زیبایی حرفه‌ای، تجربه‌ای آرام</div>
+            <div class="bars tight"><div class="bar"></div><div class="bar"></div></div>
+            <button class="btn block">رزرو نوبت آنلاین</button>
+          </div>
+
+          <div class="grid grid-3" style="gap:10px;">
+            <div class="card pad col g8 center" style="align-items:center; padding:14px 8px;">
+              <div class="ph round" style="width:38px; height:38px;"></div>
+              <span class="xs" style="font-weight:600;">خدمات</span>
+            </div>
+            <div class="card pad col g8 center" style="align-items:center; padding:14px 8px;">
+              <div class="ph round" style="width:38px; height:38px;"></div>
+              <span class="xs" style="font-weight:600;">فروشگاه</span>
+            </div>
+            <div class="card pad col g8 center" style="align-items:center; padding:14px 8px;">
+              <div class="ph round" style="width:38px; height:38px;"></div>
+              <span class="xs" style="font-weight:600;">آموزشگاه</span>
+            </div>
+          </div>
+
+          <div class="row between mid">
+            <span class="h4">خدمات محبوب</span>
+            <span class="lbl">همه ←</span>
+          </div>
+          <div class="grid grid-2" style="gap:10px;">
+            <div class="card clip col">
+              <div class="ph flat" style="height:80px;"></div>
+              <div class="col g4" style="padding:10px;">
+                <span class="xs" style="font-weight:600;">میکاپ عروس</span>
+                <span class="price xs">۱٬۲۰۰٬۰۰۰ ت</span>
+              </div>
+            </div>
+            <div class="card clip col">
+              <div class="ph flat" style="height:80px;"></div>
+              <div class="col g4" style="padding:10px;">
+                <span class="xs" style="font-weight:600;">رنگ و مش مو</span>
+                <span class="price xs">۸۵۰٬۰۰۰ ت</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="phone-tabbar">
+          <div class="on">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>
+            خانه
+          </div>
+          <div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            نوبت
+          </div>
+          <div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18l-1.5 12.5a2 2 0 0 1-2 1.5H6.5a2 2 0 0 1-2-1.5L3 7Z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
+            فروشگاه
+          </div>
+          <div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+            حساب
+          </div>
+        </div>
+      </div>
+      <div class="phone-label">صفحه اصلی</div>
+    </div>
+
+    <!-- ۲. نوبت‌دهی -->
+    <div>
+      <div class="phone">
+        <div class="row between mid" style="padding:14px; border-bottom:1px solid var(--line);">
+          <span style="font-size:20px;">→</span>
+          <span style="font-size:15px; font-weight:700;">رزرو نوبت</span>
+          <span style="width:20px;"></span>
+        </div>
+
+        <div class="phone-scroll col g16 phone-pad">
+          <div class="row g8" style="overflow:hidden;">
+            <div class="pill on">همه</div>
+            <div class="pill">مو</div>
+            <div class="pill">پوست</div>
+            <div class="pill">ناخن</div>
+          </div>
+
+          <div class="col g10">
+            <div class="card pad row between mid" style="padding:12px;">
+              <div class="col g4">
+                <span class="xs" style="font-weight:700;">میکاپ عروس</span>
+                <span class="lbl">۹۰ دقیقه · ۱٬۲۰۰٬۰۰۰ ت</span>
+              </div>
+              <span class="chk on"></span>
+            </div>
+            <div class="card pad row between mid" style="padding:12px;">
+              <div class="col g4">
+                <span class="xs" style="font-weight:700;">لیفت مژه</span>
+                <span class="lbl">۶۰ دقیقه · ۵۲۰٬۰۰۰ ت</span>
+              </div>
+              <span class="chk on"></span>
+            </div>
+            <div class="card pad row between mid" style="padding:12px;">
+              <div class="col g4">
+                <span class="xs" style="font-weight:700;">پاکسازی پوست</span>
+                <span class="lbl">۴۵ دقیقه · ۵۵۰٬۰۰۰ ت</span>
+              </div>
+              <span class="chk"></span>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="col g10">
+            <span class="label" style="margin:0;">انتخاب تاریخ</span>
+            <div class="grid grid-7">
+              <div class="lbl center">ش</div><div class="lbl center">ی</div><div class="lbl center">د</div>
+              <div class="lbl center">س</div><div class="lbl center">چ</div><div class="lbl center">پ</div><div class="lbl center">ج</div>
+              <div class="cal-day has">۵</div><div class="cal-day has">۶</div><div class="cal-day on">۷</div>
+              <div class="cal-day has">۸</div><div class="cal-day has">۹</div><div class="cal-day has">۱۰</div><div class="cal-day off">۱۱</div>
+            </div>
+          </div>
+
+          <div class="col g10">
+            <span class="label" style="margin:0;">ساعت‌های آزاد</span>
+            <div class="row wrapf g8">
+              <div class="pill">۱۰:۰۰</div>
+              <div class="pill on">۱۱:۳۰</div>
+              <div class="pill">۱۳:۰۰</div>
+              <div class="pill off">۱۸:۰۰</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- نوار ثابت پایین -->
+        <div class="row between mid" style="padding:12px 14px; border-top:1px solid var(--line); background:#fff; gap:12px;">
+          <div class="col g4">
+            <span class="lbl">۲ خدمت · ۱۵۰ دقیقه</span>
+            <span class="price">۱٬۷۲۰٬۰۰۰ ت</span>
+          </div>
+          <button class="btn sm f1">ادامه</button>
+        </div>
+      </div>
+      <div class="phone-label">رزرو نوبت — نوار خلاصه ثابت</div>
+    </div>
+
+    <!-- ۳. فروشگاه -->
+    <div>
+      <div class="phone">
+        <div class="row between mid" style="padding:14px; border-bottom:1px solid var(--line);">
+          <span style="font-size:20px;">→</span>
+          <span style="font-size:15px; font-weight:700;">فروشگاه</span>
+          <div class="cart-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="1.8"><path d="M3 7h18l-1.5 12.5a2 2 0 0 1-2 1.5H6.5a2 2 0 0 1-2-1.5L3 7Z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
+            <span class="cart-count">۲</span>
+          </div>
+        </div>
+
+        <div class="phone-scroll col g14 phone-pad">
+          <div class="field" style="padding:10px 12px;">🔍 جستجوی محصول...</div>
+
+          <div class="row g8">
+            <div class="pill on" style="flex:1; text-align:center;">فیلتر ▾</div>
+            <div class="pill" style="flex:1; text-align:center;">مرتب‌سازی ▾</div>
+          </div>
+
+          <div class="grid grid-2" style="gap:10px;">
+            <div class="card clip col">
+              <div class="ph flat" style="height:110px;"></div>
+              <div class="col g4" style="padding:10px;">
+                <span class="xs" style="font-weight:600;">سرم روشن‌کننده</span>
+                <span class="stars" style="font-size:10px;">★★★★☆</span>
+                <span class="price xs">۴۸۰٬۰۰۰ ت</span>
+                <button class="btn-soft sm block" style="font-size:11px; padding:6px;">افزودن</button>
+              </div>
+            </div>
+            <div class="card clip col">
+              <div class="ph flat" style="height:110px;"></div>
+              <div class="col g4" style="padding:10px;">
+                <span class="xs" style="font-weight:600;">ماسک مو</span>
+                <span class="stars" style="font-size:10px;">★★★★★</span>
+                <span class="price xs">۳۲۰٬۰۰۰ ت</span>
+                <button class="btn-soft sm block" style="font-size:11px; padding:6px;">افزودن</button>
+              </div>
+            </div>
+            <div class="card clip col">
+              <div class="ph flat" style="height:110px;"></div>
+              <div class="col g4" style="padding:10px;">
+                <span class="xs" style="font-weight:600;">پالت سایه</span>
+                <span class="stars" style="font-size:10px;">★★★★☆</span>
+                <span class="price xs">۶۹۰٬۰۰۰ ت</span>
+                <button class="btn-soft sm block" style="font-size:11px; padding:6px;">افزودن</button>
+              </div>
+            </div>
+            <div class="card clip col">
+              <div class="ph flat" style="height:110px;"></div>
+              <div class="col g4" style="padding:10px;">
+                <span class="xs" style="font-weight:600;">ضدآفتاب SPF50</span>
+                <span class="stars" style="font-size:10px;">★★★★★</span>
+                <span class="price xs">۳۹۰٬۰۰۰ ت</span>
+                <button class="btn-soft sm block" style="font-size:11px; padding:6px;">افزودن</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="phone-tabbar">
+          <div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>
+            خانه
+          </div>
+          <div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            نوبت
+          </div>
+          <div class="on">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18l-1.5 12.5a2 2 0 0 1-2 1.5H6.5a2 2 0 0 1-2-1.5L3 7Z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
+            فروشگاه
+          </div>
+          <div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+            حساب
+          </div>
+        </div>
+      </div>
+      <div class="phone-label">فروشگاه — گرید دو ستونه</div>
+    </div>
+
+    <!-- ۴. جزئیات دوره -->
+    <div>
+      <div class="phone">
+        <div class="row between mid" style="padding:14px; border-bottom:1px solid var(--line);">
+          <span style="font-size:20px;">→</span>
+          <span style="font-size:15px; font-weight:700;">جزئیات دوره</span>
+          <span style="font-size:18px;">♡</span>
+        </div>
+
+        <div class="phone-scroll col g14 phone-pad">
+          <div class="ph" style="height:150px;"><span>ویدیوی معرفی ▶</span></div>
+
+          <div class="col g8">
+            <span class="badge">آرایش صورت</span>
+            <div style="font-size:17px; font-weight:800; line-height:1.6;">دوره جامع میکاپ حرفه‌ای</div>
+            <div class="row mid g8">
+              <span class="stars" style="font-size:11px;">★★★★★</span>
+              <span class="lbl">۴.۹ · ۶۴ هنرجو</span>
+            </div>
+          </div>
+
+          <div class="card pad col g10" style="padding:12px;">
+            <div class="row between xs"><span class="muted">شروع</span><span style="font-weight:600;">۱۵ مهر ۱۴۰۴</span></div>
+            <div class="row between xs"><span class="muted">مدت</span><span style="font-weight:600;">۴۰ ساعت · ۱۲ جلسه</span></div>
+            <div class="row between xs"><span class="muted">مدرس</span><span style="font-weight:600;">المیرا آزمون</span></div>
+            <div class="row between xs"><span class="muted">ظرفیت</span><span class="badge green">۳ نفر</span></div>
+          </div>
+
+          <div class="row g8">
+            <div class="pill on">سرفصل</div>
+            <div class="pill">مدرس</div>
+            <div class="pill">نظرات</div>
+          </div>
+
+          <div class="col g8">
+            <div class="card pad row between mid" style="padding:12px;">
+              <span class="xs" style="font-weight:600;">جلسه ۱ تا ۳ — مبانی</span>
+              <span class="muted">+</span>
+            </div>
+            <div class="card pad row between mid" style="padding:12px;">
+              <span class="xs" style="font-weight:600;">جلسه ۴ تا ۶ — تکنیک پایه</span>
+              <span class="muted">+</span>
+            </div>
+            <div class="card pad row between mid" style="padding:12px;">
+              <span class="xs" style="font-weight:600;">جلسه ۷ تا ۹ — مجلسی</span>
+              <span class="muted">+</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row between mid" style="padding:12px 14px; border-top:1px solid var(--line); background:#fff; gap:12px;">
+          <div class="col g4">
+            <span class="strike" style="font-size:10px;">۵٬۲۰۰٬۰۰۰</span>
+            <span class="price">۴٬۵۰۰٬۰۰۰ ت</span>
+          </div>
+          <button class="btn sm f1">ثبت‌نام</button>
+        </div>
+      </div>
+      <div class="phone-label">جزئیات دوره — دکمه ثبت‌نام ثابت</div>
+    </div>
+
+    <!-- ۵. پنل کاربری -->
+    <div>
+      <div class="phone">
+        <div class="row between mid" style="padding:14px; border-bottom:1px solid var(--line);">
+          <span style="font-size:15px; font-weight:700;">حساب من</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+        </div>
+
+        <div class="phone-scroll col g14 phone-pad">
+          <div class="card pad row mid g12" style="padding:14px;">
+            <div class="ph round" style="width:48px; height:48px;"></div>
+            <div class="col g4 f1">
+              <span class="xs" style="font-weight:700;">[ نام کاربر ]</span>
+              <span class="lbl">[ ۰۹۱۲xxxxxxx ]</span>
+            </div>
+          </div>
+
+          <div class="grid grid-2" style="gap:10px;">
+            <div class="card pad col g6" style="padding:12px;">
+              <span class="lbl">امتیاز باشگاه</span>
+              <span style="font-size:18px; font-weight:800; color:var(--accent);">۱٬۲۴۰</span>
+            </div>
+            <div class="card pad col g6" style="padding:12px;">
+              <span class="lbl">کیف پول</span>
+              <span style="font-size:18px; font-weight:800;">۱۵۰٬۰۰۰</span>
+            </div>
+          </div>
+
+          <div class="card pad col g10" style="padding:14px; border-color:var(--accent-2); background:#fffbfc;">
+            <div class="row between mid">
+              <span class="xs" style="font-weight:700;">نوبت پیش‌رو</span>
+              <span class="badge green">تاییدشده</span>
+            </div>
+            <span class="lbl">میکاپ عروس + لیفت مژه</span>
+            <span class="xs" style="font-weight:600;">شنبه ۷ مهر — ساعت ۱۱:۳۰</span>
+            <div class="row g8">
+              <button class="btn-ghost sm f1" style="font-size:11px; padding:6px;">تغییر</button>
+              <button class="btn-ghost sm f1" style="font-size:11px; padding:6px;">لغو</button>
+            </div>
+          </div>
+
+          <div class="col g8">
+            <div class="card pad row between mid" style="padding:12px;">
+              <span class="xs" style="font-weight:600;">نوبت‌های من</span><span class="muted">←</span>
+            </div>
+            <div class="card pad row between mid" style="padding:12px;">
+              <span class="xs" style="font-weight:600;">سفارش‌های من</span><span class="badge">۱ در جریان</span>
+            </div>
+            <div class="card pad row between mid" style="padding:12px;">
+              <span class="xs" style="font-weight:600;">دوره‌های من</span><span class="badge">۱ فعال</span>
+            </div>
+            <div class="card pad row between mid" style="padding:12px;">
+              <span class="xs" style="font-weight:600;">علاقه‌مندی‌ها</span><span class="muted">←</span>
+            </div>
+            <div class="card pad row between mid" style="padding:12px;">
+              <span class="xs" style="font-weight:600;">آدرس‌های من</span><span class="muted">←</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="phone-tabbar">
+          <div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>
+            خانه
+          </div>
+          <div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            نوبت
+          </div>
+          <div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18l-1.5 12.5a2 2 0 0 1-2 1.5H6.5a2 2 0 0 1-2-1.5L3 7Z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
+            فروشگاه
+          </div>
+          <div class="on">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+            حساب
+          </div>
+        </div>
+      </div>
+      <div class="phone-label">پنل کاربری</div>
+    </div>
+
+  </div>
+
+  <!-- نکات موبایل -->
+  <section class="sec white">
+    <div class="h2" style="margin-bottom:24px;">تصمیم‌های طراحی موبایل</div>
+    <div class="grid grid-4">
+      <div class="card pad col g10">
+        <span class="badge">۱</span>
+        <div class="h4">نوار پایین ثابت</div>
+        <div class="sm muted" style="line-height:1.9;">چهار مقصد اصلی همیشه یک لمس فاصله دارند.</div>
+      </div>
+      <div class="card pad col g10">
+        <span class="badge">۲</span>
+        <div class="h4">نوار اقدام چسبان</div>
+        <div class="sm muted" style="line-height:1.9;">قیمت و دکمه اصلی در صفحات جزئیات همیشه دیده می‌شوند.</div>
+      </div>
+      <div class="card pad col g10">
+        <span class="badge">۳</span>
+        <div class="h4">فیلتر در کشوی بازشو</div>
+        <div class="sm muted" style="line-height:1.9;">سایدبار دسکتاپ در موبایل به شیت پایین‌آمدنی تبدیل می‌شود.</div>
+      </div>
+      <div class="card pad col g10">
+        <span class="badge">۴</span>
+        <div class="h4">اندازه لمسی امن</div>
+        <div class="sm muted" style="line-height:1.9;">همه دکمه‌ها حداقل ۴۴ پیکسل ارتفاع دارند.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tight center" style="padding-bottom:40px;">
+    <a href="sitemap.html"><button class="btn-outline">بازگشت به نقشه سایت</button></a>
+  </section>
+
+</div>
+
+<script src="assets/wireframe.js"></script>
+</body>
+</html>
