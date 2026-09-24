@@ -20,7 +20,7 @@
     <div class="page-title">نمای موبایل</div>
     <div class="sm muted" style="margin-top:10px; max-width:720px; line-height:2;">
       بیش از ۸۰٪ مراجعه‌کنندگان این نوع سایت با موبایل وارد می‌شوند. طراحی موبایل نسخه کوچک‌شده دسکتاپ نیست:
-      منو به نوار پایین منتقل می‌شود، رزرو نوبت همیشه یک لمس فاصله دارد و فیلترها داخل کشوی بازشو می‌روند.
+      منو به نوار پایین منتقل می‌شود، لینک سامانهٔ نوبت‌دهی سالن همیشه یک لمس فاصله دارد و فیلترها داخل کشوی بازشو می‌روند.
     </div>
   </section>
 
@@ -111,12 +111,12 @@
       <div class="phone-label">صفحه اصلی</div>
     </div>
 
-    <!-- ۲. نوبت‌دهی -->
+    <!-- ۲. خدمات + لینک نوبت‌دهی -->
     <div>
       <div class="phone">
         <div class="row between mid" style="padding:14px; border-bottom:1px solid var(--line);">
           <span style="font-size:20px;">→</span>
-          <span style="font-size:15px; font-weight:700;">رزرو نوبت</span>
+          <span style="font-size:15px; font-weight:700;">خدمات سالن</span>
           <span style="width:20px;"></span>
         </div>
 
@@ -134,57 +134,33 @@
                 <span class="xs" style="font-weight:700;">میکاپ عروس</span>
                 <span class="lbl">۹۰ دقیقه · ۱٬۲۰۰٬۰۰۰ ت</span>
               </div>
-              <span class="chk on"></span>
+              <span class="muted">←</span>
             </div>
             <div class="card pad row between mid" style="padding:12px;">
               <div class="col g4">
                 <span class="xs" style="font-weight:700;">لیفت مژه</span>
                 <span class="lbl">۶۰ دقیقه · ۵۲۰٬۰۰۰ ت</span>
               </div>
-              <span class="chk on"></span>
+              <span class="muted">←</span>
             </div>
             <div class="card pad row between mid" style="padding:12px;">
               <div class="col g4">
                 <span class="xs" style="font-weight:700;">پاکسازی پوست</span>
                 <span class="lbl">۴۵ دقیقه · ۵۵۰٬۰۰۰ ت</span>
               </div>
-              <span class="chk"></span>
+              <span class="muted">←</span>
             </div>
           </div>
 
-          <div class="divider"></div>
-
-          <div class="col g10">
-            <span class="label" style="margin:0;">انتخاب تاریخ</span>
-            <div class="grid grid-7">
-              <div class="lbl center">ش</div><div class="lbl center">ی</div><div class="lbl center">د</div>
-              <div class="lbl center">س</div><div class="lbl center">چ</div><div class="lbl center">پ</div><div class="lbl center">ج</div>
-              <div class="cal-day has">۵</div><div class="cal-day has">۶</div><div class="cal-day on">۷</div>
-              <div class="cal-day has">۸</div><div class="cal-day has">۹</div><div class="cal-day has">۱۰</div><div class="cal-day off">۱۱</div>
-            </div>
-          </div>
-
-          <div class="col g10">
-            <span class="label" style="margin:0;">ساعت‌های آزاد</span>
-            <div class="row wrapf g8">
-              <div class="pill">۱۰:۰۰</div>
-              <div class="pill on">۱۱:۳۰</div>
-              <div class="pill">۱۳:۰۰</div>
-              <div class="pill off">۱۸:۰۰</div>
-            </div>
-          </div>
+          <div class="lbl" style="line-height:1.9;">انتخاب تاریخ و ساعت در سامانهٔ نوبت‌دهی سالن انجام می‌شود.</div>
         </div>
 
         <!-- نوار ثابت پایین -->
-        <div class="row between mid" style="padding:12px 14px; border-top:1px solid var(--line); background:#fff; gap:12px;">
-          <div class="col g4">
-            <span class="lbl">۲ خدمت · ۱۵۰ دقیقه</span>
-            <span class="price">۱٬۷۲۰٬۰۰۰ ت</span>
-          </div>
-          <button class="btn sm f1">ادامه</button>
+        <div style="padding:12px 14px; border-top:1px solid var(--line); background:#fff;">
+          <button class="btn sm block">رزرو در سامانهٔ نوبت‌دهی ↗</button>
         </div>
       </div>
-      <div class="phone-label">رزرو نوبت — نوار خلاصه ثابت</div>
+      <div class="phone-label">خدمات — دکمهٔ ثابت لینک نوبت‌دهی</div>
     </div>
 
     <!-- ۳. فروشگاه -->
@@ -358,22 +334,9 @@
             </div>
           </div>
 
-          <div class="card pad col g10" style="padding:14px; border-color:var(--accent-2); background:#fffbfc;">
-            <div class="row between mid">
-              <span class="xs" style="font-weight:700;">نوبت پیش‌رو</span>
-              <span class="badge green">تاییدشده</span>
-            </div>
-            <span class="lbl">میکاپ عروس + لیفت مژه</span>
-            <span class="xs" style="font-weight:600;">شنبه ۷ مهر — ساعت ۱۱:۳۰</span>
-            <div class="row g8">
-              <button class="btn-ghost sm f1" style="font-size:11px; padding:6px;">تغییر</button>
-              <button class="btn-ghost sm f1" style="font-size:11px; padding:6px;">لغو</button>
-            </div>
-          </div>
-
           <div class="col g8">
             <div class="card pad row between mid" style="padding:12px;">
-              <span class="xs" style="font-weight:600;">نوبت‌های من</span><span class="muted">←</span>
+              <span class="xs" style="font-weight:600;">نوبت‌های من (سامانهٔ سالن)</span><span class="muted">↗</span>
             </div>
             <div class="card pad row between mid" style="padding:12px;">
               <span class="xs" style="font-weight:600;">سفارش‌های من</span><span class="badge">۱ در جریان</span>

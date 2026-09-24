@@ -5,13 +5,16 @@
 (function () {
   'use strict';
 
+  /* نوبت‌دهی در سیستم داخلی سالن انجام می‌شود؛ سایت فقط به آن لینک می‌دهد.
+     هر عنصری با data-booking به همین آدرس (در تب جدید) وصل می‌شود. */
+  var BOOKING_URL = '#booking-system-url';
+
   /* فهرست کامل صفحات — ترتیب همین‌جا ترتیب دکمه‌های بعدی/قبلی است */
   var PAGES = [
     { f: 'sitemap.html',         t: 'نقشه سایت',              g: 'عمومی' },
     { f: 'index.html',           t: 'صفحه اصلی',              g: 'بخش ۱ — سالن' },
-    { f: 'booking.html',         t: 'خدمات و نوبت‌دهی',        g: 'بخش ۱ — سالن' },
+    { f: 'booking.html',         t: 'خدمات سالن',             g: 'بخش ۱ — سالن' },
     { f: 'service-single.html',  t: 'جزئیات خدمت',            g: 'بخش ۱ — سالن' },
-    { f: 'booking-confirm.html', t: 'تایید نوبت',             g: 'بخش ۱ — سالن' },
     { f: 'gallery.html',         t: 'گالری نمونه‌کار',         g: 'بخش ۱ — سالن' },
     { f: 'shop.html',            t: 'فروشگاه',                g: 'بخش ۲ — فروشگاه' },
     { f: 'product-single.html',  t: 'جزئیات محصول',           g: 'بخش ۲ — فروشگاه' },
@@ -32,7 +35,7 @@
   /* منوی اصلی سایت */
   var NAV = [
     { f: 'index.html',   t: 'خانه' },
-    { f: 'booking.html', t: 'خدمات و نوبت‌دهی' },
+    { f: 'booking.html', t: 'خدمات' },
     { f: 'shop.html',    t: 'فروشگاه' },
     { f: 'academy.html', t: 'آموزشگاه' },
     { f: 'gallery.html', t: 'گالری' },
@@ -66,7 +69,7 @@
           '<a href="cart.html" class="cart-btn" title="سبد خرید">' + ICON_CART +
             '<span class="cart-count">۲</span>' +
           '</a>' +
-          '<a href="booking.html"><button class="btn">رزرو نوبت</button></a>' +
+          '<a href="#" data-booking><button class="btn">رزرو نوبت</button></a>' +
         '</div>' +
       '</header>';
   }
@@ -84,7 +87,7 @@
         '<div class="col g10">' +
           '<div class="ft-title">سالن</div>' +
           '<a href="booking.html">خدمات</a>' +
-          '<a href="booking.html">رزرو نوبت</a>' +
+          '<a href="#" data-booking>رزرو نوبت</a>' +
           '<a href="gallery.html">گالری نمونه‌کار</a>' +
         '</div>' +
         '<div class="col g10">' +
@@ -151,6 +154,12 @@
     }
 
     body.insertAdjacentHTML('beforeend', toolbarHTML());
+
+    Array.prototype.forEach.call(document.querySelectorAll('[data-booking]'), function (a) {
+      a.setAttribute('href', BOOKING_URL);
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener');
+    });
 
     var idx = -1;
     PAGES.forEach(function (p, i) { if (p.f === here) idx = i; });

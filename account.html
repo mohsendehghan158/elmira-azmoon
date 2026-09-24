@@ -16,7 +16,7 @@
     <div class="page-title">پنل کاربری</div>
   </section>
 
-  <div class="note">این صفحه ارزش اصلی «یکپارچگی» سایت را نشان می‌دهد: نوبت‌های سالن، سفارش‌های فروشگاه و دوره‌های آموزشگاه در یک داشبورد واحد.</div>
+  <div class="note">این صفحه ارزش اصلی «یکپارچگی» سایت را نشان می‌دهد: سفارش‌های فروشگاه و دوره‌های آموزشگاه در یک داشبورد واحد. نوبت‌های سالن در سامانهٔ نوبت‌دهی داخلی سالن مدیریت می‌شوند و اینجا فقط به آن لینک داده می‌شود.</div>
 
   <section class="sec row top g24" style="padding-top:12px;">
 
@@ -40,9 +40,9 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
           داشبورد
         </a>
-        <a href="#">
+        <a href="#" data-booking>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-          نوبت‌های من
+          نوبت‌های من ↗
         </a>
         <a href="#">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18l-1.5 12.5a2 2 0 0 1-2 1.5H6.5a2 2 0 0 1-2-1.5L3 7Z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
@@ -76,12 +76,7 @@
     <div class="f1 col g24">
 
       <!-- کارت‌های آمار -->
-      <div class="grid grid-4" style="gap:16px;">
-        <div class="card pad col g8">
-          <span class="lbl">نوبت پیش‌رو</span>
-          <span style="font-size:24px; font-weight:800; color:var(--accent);">۱</span>
-          <span class="lbl">شنبه ۷ مهر — ۱۱:۳۰</span>
-        </div>
+      <div class="grid grid-3" style="gap:16px;">
         <div class="card pad col g8">
           <span class="lbl">سفارش در جریان</span>
           <span style="font-size:24px; font-weight:800;">۱</span>
@@ -99,67 +94,13 @@
         </div>
       </div>
 
-      <!-- نوبت پیش‌رو -->
-      <div class="col g14">
-        <div class="row between mid">
-          <div class="h3">نوبت پیش‌رو</div>
-          <a href="booking.html" class="lbl">رزرو نوبت جدید</a>
+      <!-- نوبت‌ها: فقط لینک به سامانهٔ نوبت‌دهی سالن -->
+      <div class="card pad-lg row between mid wrapf g20" style="border-color:var(--accent-2); background:#fffbfc;">
+        <div class="col g6">
+          <div class="h3">نوبت‌های سالن</div>
+          <span class="lbl">رزرو، تغییر زمان و لغو نوبت در سامانهٔ نوبت‌دهی سالن انجام می‌شود.</span>
         </div>
-        <div class="card pad-lg row between mid wrapf g20" style="border-color:var(--accent-2); background:#fffbfc;">
-          <div class="row mid g16">
-            <div class="col g4 center" style="background:#fff; border:1px solid var(--accent-2); border-radius:10px; padding:12px 18px;">
-              <span style="font-size:22px; font-weight:800; color:var(--accent);">۷</span>
-              <span class="lbl">مهر</span>
-            </div>
-            <div class="col g6">
-              <span class="sm" style="font-weight:700;">میکاپ عروس + لیفت مژه</span>
-              <span class="lbl">ساعت ۱۱:۳۰ · مدت ۱۵۰ دقیقه · کارشناس: المیرا آزمون</span>
-              <span class="badge green">تاییدشده</span>
-            </div>
-          </div>
-          <div class="row g10">
-            <button class="btn-ghost sm">تغییر زمان</button>
-            <button class="btn-ghost sm" style="color:#b06060; border-color:#eddcdc;">لغو نوبت</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- تاریخچه نوبت -->
-      <div class="col g14">
-        <div class="h3">تاریخچه نوبت‌ها</div>
-        <div class="card clip">
-          <table class="tbl">
-            <thead>
-              <tr><th>خدمت</th><th>تاریخ</th><th>کارشناس</th><th>مبلغ</th><th>وضعیت</th><th></th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="sm" style="font-weight:600;">رنگ و مش مو</td>
-                <td class="sm">۱۲ شهریور ۱۴۰۴</td>
-                <td class="sm">سارا محمدی</td>
-                <td class="sm">۸۵۰٬۰۰۰ ت</td>
-                <td><span class="badge green">انجام شد</span></td>
-                <td><button class="btn-ghost sm">ثبت نظر</button></td>
-              </tr>
-              <tr>
-                <td class="sm" style="font-weight:600;">پاکسازی پوست</td>
-                <td class="sm">۲۸ مرداد ۱۴۰۴</td>
-                <td class="sm">المیرا آزمون</td>
-                <td class="sm">۵۵۰٬۰۰۰ ت</td>
-                <td><span class="badge green">انجام شد</span></td>
-                <td><button class="btn-ghost sm">رزرو مجدد</button></td>
-              </tr>
-              <tr>
-                <td class="sm" style="font-weight:600;">مانیکور</td>
-                <td class="sm">۵ مرداد ۱۴۰۴</td>
-                <td class="sm">نگین رضایی</td>
-                <td class="sm">۴۵۰٬۰۰۰ ت</td>
-                <td><span class="badge grey">لغو شده</span></td>
-                <td><button class="btn-ghost sm">رزرو مجدد</button></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <a href="#" data-booking><button class="btn">ورود به سامانهٔ نوبت‌دهی ↗</button></a>
       </div>
 
       <!-- سفارش‌ها -->
