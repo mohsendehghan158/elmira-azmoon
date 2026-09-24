@@ -6,6 +6,8 @@ vendor/
 # Build output
 dist/
 build/
+# ابزار ساخت قالب وردپرس (کد منبع است، نه خروجی)
+!wordpress/build/
 .cache/
 .parcel-cache/
 .tmp/
@@ -50,3 +52,4 @@ desktop.ini
 # Misc
 *.bak
 *.tmp
+__pycache__/

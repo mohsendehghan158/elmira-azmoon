@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "elmira/toc",
+	"title": "فهرست مطالب",
+	"category": "elmira",
+	"icon": "list-view",
+	"description": "فهرست خودکار تیترهای h2 نوشته.",
+	"textdomain": "elmira",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "فهرست مطالب"
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"editorScript": "elmira-blocks-editor",
+	"render": "file:./render.php",
+	"usesContext": [
+		"postId"
+	]
+}

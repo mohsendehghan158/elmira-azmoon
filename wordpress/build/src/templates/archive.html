@@ -1,0 +1,21 @@
+<wp-block name="template-part" attrs='{"slug":"header","tagName":"div","area":"header"}'></wp-block>
+<main id="main">
+<wp-block name="elmira/page-hero" attrs='{"outline":"مجله"}'></wp-block>
+
+<!-- فهرست + سایدبار -->
+<section class="py-14 md:py-20">
+  <div class="wrap grid lg:grid-cols-[1fr_320px] gap-12 items-start">
+    <div>
+      <wp-block name="elmira/category-chips"></wp-block>
+      <wp-block name="elmira/posts" attrs='{"inherit":true,"showExcerpt":true,"gridClass":"grid md:grid-cols-2 gap-x-8 gap-y-12"}'></wp-block>
+    </div>
+    <aside class="flex flex-col gap-6 lg:sticky lg:top-24">
+      <wp-block name="elmira/search-form"></wp-block>
+      <wp-block name="elmira/popular-posts"></wp-block>
+      <wp-block name="elmira/categories"></wp-block>
+      {{{include:newsletter}}}
+    </aside>
+  </div>
+</section>
+</main>
+<wp-block name="template-part" attrs='{"slug":"footer","tagName":"div","area":"footer"}'></wp-block>

@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "elmira/posts",
+	"title": "مقاله‌های مجله",
+	"category": "elmira",
+	"icon": "grid-view",
+	"description": "کارت‌های مقاله با طراحی قالب؛ جدیدترین‌ها، یک دسته یا فهرست صفحهٔ جاری (بایگانی).",
+	"textdomain": "elmira",
+	"attributes": {
+		"layout": {
+			"type": "string",
+			"default": "grid"
+		},
+		"count": {
+			"type": "number",
+			"default": 3
+		},
+		"inherit": {
+			"type": "boolean",
+			"default": false
+		},
+		"category": {
+			"type": "string",
+			"default": ""
+		},
+		"showExcerpt": {
+			"type": "boolean",
+			"default": false
+		},
+		"gridClass": {
+			"type": "string",
+			"default": "grid md:grid-cols-3 gap-8"
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"editorScript": "elmira-blocks-editor",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "elmira/search-form",
+	"title": "جستجوی مجله",
+	"category": "elmira",
+	"icon": "search",
+	"description": "کارت جستجو در مجله.",
+	"textdomain": "elmira",
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "جستجو در مجله"
+		},
+		"placeholder": {
+			"type": "string",
+			"default": "موضوع مورد نظر شما…"
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"editorScript": "elmira-blocks-editor",
+	"render": "file:./render.php"
+}

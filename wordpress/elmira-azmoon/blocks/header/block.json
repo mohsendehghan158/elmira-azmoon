@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "elmira/header",
+	"title": "سربرگ سایت",
+	"category": "elmira",
+	"icon": "menu",
+	"description": "سربرگ ثابت با لوگو، منوی اصلی، تغییر تم، سبد و دکمهٔ رزرو. پیوندها از «نمایش ← فهرست‌ها».",
+	"textdomain": "elmira",
+	"attributes": {
+		"bookingLabel": {
+			"type": "string",
+			"default": "رزرو نوبت"
+		},
+		"showCart": {
+			"type": "boolean",
+			"default": true
+		},
+		"showAccount": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"supports": {
+		"html": false,
+		"multiple": false,
+		"customClassName": false
+	},
+	"editorScript": "elmira-blocks-editor",
+	"render": "file:./render.php"
+}

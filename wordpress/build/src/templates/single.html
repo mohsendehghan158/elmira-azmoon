@@ -1,0 +1,25 @@
+<wp-block name="template-part" attrs='{"slug":"header","tagName":"div","area":"header"}'></wp-block>
+<main id="main">
+<wp-block name="elmira/page-hero" attrs='{"variant":"post"}'></wp-block>
+<section class="py-12 md:py-16">
+  <div class="wrap">
+    <wp-block name="elmira/post-cover"></wp-block>
+    <div class="grid lg:grid-cols-[220px_minmax(0,1fr)_300px] gap-10 items-start">
+      <!-- فهرست مطالب -->
+      <wp-block name="elmira/toc"></wp-block>
+      <!-- بدنه -->
+      <article class="min-w-0 text-[16px] leading-9 [&_h2]:font-display [&_h2]:text-4xl [&_h2]:leading-tight [&_h2]:mt-12 [&_h2]:mb-4 [&_h2]:scroll-mt-28 [&_p]:text-ink-2 [&_p]:mb-5">
+        <wp-block name="post-content" attrs='{"className":"entry entry-post","layout":{"type":"default"}}'></wp-block>
+        <wp-block name="elmira/post-footer"></wp-block>
+        <wp-block name="elmira/comments"></wp-block>
+      </article>
+      <!-- سایدبار -->
+      <aside class="flex flex-col gap-6 lg:sticky lg:top-24">
+        <wp-block name="elmira/related-posts"></wp-block>
+        {{{include:single-sidebar}}}
+      </aside>
+    </div>
+  </div>
+</section>
+</main>
+<wp-block name="template-part" attrs='{"slug":"footer","tagName":"div","area":"footer"}'></wp-block>

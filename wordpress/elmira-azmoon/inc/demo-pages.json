@@ -1,0 +1,122 @@
+[
+ {
+  "name": "index",
+  "path": "",
+  "title": "خانه",
+  "template": "page-canvas",
+  "pattern": "elmira/page-index",
+  "excerpt": "سالن زیبایی المیرا آزمون: خدمات مو، پوست، ناخن و میکاپ، فروشگاه محصولات مراقبتی و دوره‌های آموزشگاه."
+ },
+ {
+  "name": "booking",
+  "path": "services",
+  "title": "خدمات سالن",
+  "template": "page-canvas",
+  "pattern": "elmira/page-booking",
+  "excerpt": "فهرست خدمات سالن المیرا آزمون با مدت و قیمت؛ رزرو نوبت در سامانهٔ نوبت‌دهی سالن."
+ },
+ {
+  "name": "service-single",
+  "path": "services/bridal-makeup",
+  "title": "میکاپ عروس",
+  "template": "page-canvas",
+  "pattern": "elmira/page-service-single",
+  "excerpt": "میکاپ عروس در سالن المیرا آزمون: مدت، قیمت، مراحل انجام کار و نمونه‌کار قبل و بعد."
+ },
+ {
+  "name": "gallery",
+  "path": "gallery",
+  "title": "گالری نمونه‌کار",
+  "template": "page-canvas",
+  "pattern": "elmira/page-gallery",
+  "excerpt": "نمونه‌کارهای سالن المیرا آزمون: میکاپ، رنگ و مش مو، شینیون، ناخن و مژه."
+ },
+ {
+  "name": "shop",
+  "path": "shop",
+  "title": "فروشگاه",
+  "template": "page-canvas",
+  "pattern": "elmira/page-shop",
+  "excerpt": "فروشگاه محصولات آرایشی و بهداشتی المیرا آزمون؛ همان محصولاتی که در سالن استفاده می‌شوند."
+ },
+ {
+  "name": "product-single",
+  "path": "shop/vitamin-c-serum",
+  "title": "سرم روشن‌کنندهٔ پوست",
+  "template": "page-canvas",
+  "pattern": "elmira/page-product-single",
+  "excerpt": "سرم روشن‌کنندهٔ پوست ویتامین C؛ مشخصات، نحوهٔ مصرف و توصیهٔ کارشناس سالن."
+ },
+ {
+  "name": "cart",
+  "path": "cart",
+  "title": "سبد خرید",
+  "template": "page-canvas",
+  "pattern": "elmira/page-cart",
+  "excerpt": "سبد خرید فروشگاه المیرا آزمون."
+ },
+ {
+  "name": "checkout",
+  "path": "checkout",
+  "title": "تسویه حساب",
+  "template": "page-canvas",
+  "pattern": "elmira/page-checkout",
+  "excerpt": "تسویه حساب فروشگاه المیرا آزمون: آدرس، روش ارسال و پرداخت."
+ },
+ {
+  "name": "academy",
+  "path": "academy",
+  "title": "آموزشگاه",
+  "template": "page-canvas",
+  "pattern": "elmira/page-academy",
+  "excerpt": "دوره‌های حضوری آرایشگری آموزشگاه المیرا آزمون: میکاپ، مو و رنگ، ناخن، پوست و مدیریت سالن."
+ },
+ {
+  "name": "course-single",
+  "path": "academy/pro-makeup",
+  "title": "دورهٔ جامع میکاپ حرفه‌ای",
+  "template": "page-canvas",
+  "pattern": "elmira/page-course-single",
+  "excerpt": "دورهٔ جامع میکاپ حرفه‌ای: سرفصل‌ها، مدرس، تاریخ شروع، ظرفیت و شهریه."
+ },
+ {
+  "name": "enroll",
+  "path": "academy/enroll",
+  "title": "ثبت‌نام دوره",
+  "template": "page-canvas",
+  "pattern": "elmira/page-enroll",
+  "excerpt": "فرم ثبت‌نام دورهٔ میکاپ حرفه‌ای آموزشگاه المیرا آزمون."
+ },
+ {
+  "name": "about",
+  "path": "about",
+  "title": "درباره ما",
+  "template": "page-canvas",
+  "pattern": "elmira/page-about",
+  "excerpt": "داستان سالن زیبایی المیرا آزمون، تیم، فضای سالن و مسیر رشد."
+ },
+ {
+  "name": "contact",
+  "path": "contact",
+  "title": "تماس با ما",
+  "template": "page-canvas",
+  "pattern": "elmira/page-contact",
+  "excerpt": "راه‌های ارتباط با سالن، فروشگاه و آموزشگاه المیرا آزمون."
+ },
+ {
+  "name": "auth",
+  "path": "auth",
+  "title": "ورود / ثبت‌نام",
+  "template": "page-blank",
+  "pattern": "elmira/page-auth",
+  "excerpt": "ورود به حساب کاربری المیرا آزمون با شمارهٔ موبایل و کد پیامکی."
+ },
+ {
+  "name": "account",
+  "path": "account",
+  "title": "پنل کاربری",
+  "template": "page-canvas",
+  "pattern": "elmira/page-account",
+  "excerpt": "پنل کاربری المیرا آزمون: سفارش‌های فروشگاه، دوره‌های آموزشگاه و امتیاز باشگاه."
+ }
+]

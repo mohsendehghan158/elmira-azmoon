@@ -1,0 +1,249 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": false,
+		"layout": {
+			"contentSize": "760px",
+			"wideSize": "1240px"
+		},
+		"spacing": {
+			"blockGap": null,
+			"units": [
+				"px",
+				"em",
+				"rem",
+				"%",
+				"vh",
+				"vw"
+			]
+		},
+		"color": {
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"palette": [
+				{
+					"slug": "bg",
+					"name": "پس‌زمینه",
+					"color": "var(--bg)"
+				},
+				{
+					"slug": "bg-2",
+					"name": "پس‌زمینهٔ دوم",
+					"color": "var(--bg-2)"
+				},
+				{
+					"slug": "tint",
+					"name": "صورتی کم‌رنگ",
+					"color": "var(--tint)"
+				},
+				{
+					"slug": "ink",
+					"name": "متن",
+					"color": "var(--ink)"
+				},
+				{
+					"slug": "ink-2",
+					"name": "متن کم‌رنگ",
+					"color": "var(--ink-2)"
+				},
+				{
+					"slug": "line",
+					"name": "خط",
+					"color": "var(--line)"
+				},
+				{
+					"slug": "night",
+					"name": "سرمه‌ای شب",
+					"color": "#2a3040"
+				},
+				{
+					"slug": "copper",
+					"name": "مسی",
+					"color": "#b8683f"
+				},
+				{
+					"slug": "copper-ink",
+					"name": "مسی تیره",
+					"color": "var(--copper-ink)"
+				},
+				{
+					"slug": "salmon",
+					"name": "سالمونی",
+					"color": "#f4a58c"
+				},
+				{
+					"slug": "white",
+					"name": "سفید",
+					"color": "#ffffff"
+				}
+			],
+			"gradients": [
+				{
+					"slug": "brand",
+					"name": "گرادیان برند",
+					"gradient": "linear-gradient(105deg, #262d3c 0%, #3a3a47 38%, #8a5139 78%, #b8683f 100%)"
+				}
+			]
+		},
+		"typography": {
+			"defaultFontSizes": false,
+			"fluid": true,
+			"fontSizes": [
+				{
+					"slug": "small",
+					"name": "کوچک",
+					"size": "13px"
+				},
+				{
+					"slug": "medium",
+					"name": "متوسط",
+					"size": "15px"
+				},
+				{
+					"slug": "large",
+					"name": "بزرگ",
+					"size": "18px"
+				},
+				{
+					"slug": "x-large",
+					"name": "خیلی بزرگ",
+					"size": "2rem",
+					"fluid": {
+						"min": "1.6rem",
+						"max": "2.25rem"
+					}
+				},
+				{
+					"slug": "display",
+					"name": "نمایشی",
+					"size": "4rem",
+					"fluid": {
+						"min": "2.8rem",
+						"max": "4.5rem"
+					}
+				}
+			],
+			"fontFamilies": [
+				{
+					"slug": "vazirmatn",
+					"name": "وزیرمتن",
+					"fontFamily": "\"Vazirmatn\", system-ui, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Vazirmatn",
+							"fontWeight": "100 900",
+							"fontStyle": "normal",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/vazirmatn-arabic-wght-normal.woff2"
+							],
+							"unicodeRange": "U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC4, U+10EFC-10EFF, U+1EE00-1EEFF"
+						},
+						{
+							"fontFamily": "Vazirmatn",
+							"fontWeight": "100 900",
+							"fontStyle": "normal",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/vazirmatn-latin-wght-normal.woff2"
+							],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						}
+					]
+				},
+				{
+					"slug": "markazi",
+					"name": "مرکزی (نمایشی)",
+					"fontFamily": "\"Markazi Text\", \"Vazirmatn\", serif",
+					"fontFace": [
+						{
+							"fontFamily": "Markazi Text",
+							"fontWeight": "400 700",
+							"fontStyle": "normal",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/markazi-text-arabic-wght-normal.woff2"
+							],
+							"unicodeRange": "U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC4, U+10EFC-10EFF, U+1EE00-1EEFF"
+						},
+						{
+							"fontFamily": "Markazi Text",
+							"fontWeight": "400 700",
+							"fontStyle": "normal",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/markazi-text-latin-wght-normal.woff2"
+							],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						}
+					]
+				}
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--bg)",
+			"text": "var(--ink)"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--vazirmatn)",
+			"fontSize": "15px",
+			"lineHeight": "1.9"
+		},
+		"spacing": {
+			"padding": {
+				"top": "0",
+				"right": "0",
+				"bottom": "0",
+				"left": "0"
+			}
+		},
+		"elements": {
+			"button": {
+				"color": {
+					"background": "var(--ink)",
+					"text": "var(--bg)"
+				},
+				"border": {
+					"radius": "999px"
+				},
+				"typography": {
+					"fontWeight": "600",
+					"fontSize": "14px"
+				}
+			}
+		}
+	},
+	"customTemplates": [
+		{
+			"name": "page-canvas",
+			"title": "بوم کامل (صفحهٔ طراحی‌شده)",
+			"postTypes": [
+				"page",
+				"post"
+			]
+		},
+		{
+			"name": "page-blank",
+			"title": "بدون سربرگ و پانویس",
+			"postTypes": [
+				"page"
+			]
+		}
+	],
+	"templateParts": [
+		{
+			"name": "header",
+			"title": "سربرگ",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"title": "پانویس",
+			"area": "footer"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "elmira-azmoon-wp-build",
+  "private": true,
+  "description": "ابزار ساخت قالب وردپرس المیرا آزمون: تبدیل صفحه‌ها به بلاک، کامپایل Tailwind و کپی فونت‌ها و آیکن‌ها",
+  "scripts": {
+    "build": "python3 convert.py && python3 demo_posts.py && node vendor.mjs && npm run css && npm run zip",
+    "css": "tailwindcss -i ./tailwind.css -o ../elmira-azmoon/assets/css/tailwind.css --minify",
+    "zip": "cd .. && rm -f elmira-azmoon.zip && zip -qr elmira-azmoon.zip elmira-azmoon -x '*.DS_Store'"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3",
+    "@fontsource-variable/vazirmatn": "^5",
+    "@fontsource-variable/markazi-text": "^5",
+    "@phosphor-icons/web": "2.1.1"
+  }
+}

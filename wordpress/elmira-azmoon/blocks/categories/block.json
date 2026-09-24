@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "elmira/categories",
+	"title": "دسته‌بندی‌ها",
+	"category": "elmira",
+	"icon": "category",
+	"description": "فهرست دسته‌بندی‌ها با تعداد مقاله.",
+	"textdomain": "elmira",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "دسته‌بندی‌ها"
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"editorScript": "elmira-blocks-editor",
+	"render": "file:./render.php"
+}

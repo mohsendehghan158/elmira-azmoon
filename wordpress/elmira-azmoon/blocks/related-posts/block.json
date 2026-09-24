@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "elmira/related-posts",
+	"title": "مقالات مرتبط",
+	"category": "elmira",
+	"icon": "admin-links",
+	"description": "مقاله‌های هم‌دسته با نوشتهٔ جاری.",
+	"textdomain": "elmira",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "مقالات مرتبط"
+		},
+		"count": {
+			"type": "number",
+			"default": 3
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"editorScript": "elmira-blocks-editor",
+	"render": "file:./render.php",
+	"usesContext": [
+		"postId"
+	]
+}

@@ -1,0 +1,33 @@
+/* ورودی Tailwind برای قالب وردپرس؛ همان تنظیمات <style type="text/tailwindcss"> قالب HTML.
+   کلاس‌ها از PHP بلاک‌ها و فهرست classes.txt خوانده می‌شوند. classes.txt را convert.py از همهٔ
+   صفحه‌ها و قالب‌ها می‌سازد (JSON درون الگوها نویسه‌گردانی شده و مستقیم قابل اسکن نیست). */
+@import "tailwindcss" source(none);
+
+@source "../elmira-azmoon/inc";
+@source "../elmira-azmoon/blocks";
+@source "../elmira-azmoon/assets/js/theme.js";
+@source "./classes.txt";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-tint: var(--tint);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-line: var(--line);
+  --color-night: var(--night);
+  --color-copper: var(--copper);
+  --color-copper-ink: var(--copper-ink);
+  --color-salmon: var(--salmon);
+  --font-sans: "Vazirmatn", system-ui, sans-serif;
+  --font-display: "Markazi Text", "Vazirmatn", serif;
+}
+@utility wrap {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1240px;
+  padding-inline: 1rem;
+  @media (width >= 768px) { padding-inline: 2rem; }
+}

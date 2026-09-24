@@ -1,0 +1,16 @@
+/*
+Theme Name: المیرا آزمون
+Theme URI: https://github.com/mohsendehghan158/elmira-azmoon
+Author: المیرا آزمون
+Description: قالب بلاکی (گوتنبرگ) سالن زیبایی، فروشگاه و آموزشگاه المیرا آزمون؛ فارسی و راست‌به‌چپ، حالت روشن و تیره، با الگوهای آمادهٔ همهٔ صفحه‌ها.
+Version: 1.0.0
+Requires at least: 6.6
+Tested up to: 7.1
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: elmira
+Tags: rtl-language-support, block-patterns, full-site-editing, block-styles, wide-blocks, editor-style
+*/
+
+/* استایل‌ها در assets/css هستند و از functions.php بارگذاری می‌شوند. */

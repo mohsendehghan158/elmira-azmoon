@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "elmira/popular-posts",
+	"title": "پرخواننده‌ترین‌ها",
+	"category": "elmira",
+	"icon": "chart-bar",
+	"description": "مقاله‌های پربحث‌تر (بیشترین دیدگاه).",
+	"textdomain": "elmira",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "پرخواننده‌ترین‌ها"
+		},
+		"count": {
+			"type": "number",
+			"default": 3
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"editorScript": "elmira-blocks-editor",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,49 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "elmira/el",
+	"title": "عنصر طراحی",
+	"category": "elmira",
+	"icon": "editor-code",
+	"description": "یک عنصر از طراحی قالب (بخش، کارت، تیتر، دکمه، تصویر ...). متن، تصویر و پیوند آن قابل ویرایش است.",
+	"textdomain": "elmira",
+	"attributes": {
+		"tag": {
+			"type": "string",
+			"default": "div"
+		},
+		"mode": {
+			"type": "string",
+			"default": "blocks"
+		},
+		"attrs": {
+			"type": "object",
+			"default": {}
+		},
+		"content": {
+			"type": "string",
+			"default": ""
+		},
+		"before": {
+			"type": "string",
+			"default": ""
+		},
+		"after": {
+			"type": "string",
+			"default": ""
+		},
+		"html": {
+			"type": "string",
+			"default": ""
+		},
+		"mediaId": {
+			"type": "number"
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": true,
+		"className": false
+	},
+	"editorScript": "elmira-blocks-editor"
+}

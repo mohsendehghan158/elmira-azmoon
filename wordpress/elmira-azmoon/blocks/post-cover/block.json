@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "elmira/post-cover",
+	"title": "تصویر شاخص عریض",
+	"category": "elmira",
+	"icon": "format-image",
+	"description": "تصویر شاخص نوشته با قاب عریض و پارالاکس.",
+	"textdomain": "elmira",
+	"attributes": {},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"editorScript": "elmira-blocks-editor",
+	"render": "file:./render.php",
+	"usesContext": [
+		"postId"
+	]
+}

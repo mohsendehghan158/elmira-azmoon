@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "elmira/post-footer",
+	"title": "برچسب‌ها و نویسنده",
+	"category": "elmira",
+	"icon": "id",
+	"description": "برچسب‌های نوشته و کارت نویسنده.",
+	"textdomain": "elmira",
+	"attributes": {},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"editorScript": "elmira-blocks-editor",
+	"render": "file:./render.php",
+	"usesContext": [
+		"postId"
+	]
+}

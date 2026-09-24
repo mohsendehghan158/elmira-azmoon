@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "elmira/page-hero",
+	"title": "هیروی صفحه",
+	"category": "elmira",
+	"icon": "cover-image",
+	"description": "سربرگ تیره با مسیر صفحه و عنوان؛ عنوان از برگه، نوشته یا بایگانی جاری خوانده می‌شود.",
+	"textdomain": "elmira",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"sub": {
+			"type": "string",
+			"default": ""
+		},
+		"outline": {
+			"type": "string",
+			"default": ""
+		},
+		"variant": {
+			"type": "string",
+			"default": "auto"
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"editorScript": "elmira-blocks-editor",
+	"render": "file:./render.php",
+	"usesContext": [
+		"postId",
+		"postType"
+	]
+}

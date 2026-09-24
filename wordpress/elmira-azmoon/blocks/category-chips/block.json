@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "elmira/category-chips",
+	"title": "دسته‌های مجله (چیپ)",
+	"category": "elmira",
+	"icon": "tag",
+	"description": "پیوند دسته‌بندی‌های مجله به شکل چیپ.",
+	"textdomain": "elmira",
+	"attributes": {
+		"allLabel": {
+			"type": "string",
+			"default": "همه"
+		}
+	},
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"editorScript": "elmira-blocks-editor",
+	"render": "file:./render.php"
+}
