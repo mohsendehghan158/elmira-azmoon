@@ -1,0 +1,85 @@
+<!--META {"title": "تماس با ما | المیرا آزمون", "desc": "راه‌های ارتباط با سالن، فروشگاه و آموزشگاه المیرا آزمون.", "nav": "contact", "hero": {"title": "تماس با ما", "outline": "تماس", "sub": "پیام شما مستقیم به بخش مربوط می‌رسد: سالن، فروشگاه یا آموزشگاه.", "crumbs": [["خانه", "index.html"], ["تماس با ما", ""]]}}-->
+
+<section class="py-14 md:py-20">
+  <div class="wrap grid lg:grid-cols-[380px_1fr] gap-10 items-start">
+    <!-- اطلاعات -->
+    <div class="flex flex-col gap-5">
+      <div class="card p-6 flex flex-col gap-5" data-reveal="up">
+        <h2 class="font-display text-3xl">راه‌های ارتباطی</h2>
+        <a href="tel:" class="group flex items-center gap-4"><span class="grid place-items-center size-12 rounded-full bg-tint text-xl text-copper-ink transition group-hover:bg-copper group-hover:text-white"><i class="ph-light ph-phone" aria-hidden="true"></i></span><span class="text-sm"><small class="block text-ink-2">تلفن سالن</small><span dir="ltr">[۰۲۱-xxxxxxxx]</span></span></a>
+        <a href="#" class="group flex items-center gap-4"><span class="grid place-items-center size-12 rounded-full bg-tint text-xl text-copper-ink transition group-hover:bg-copper group-hover:text-white"><i class="ph-light ph-whatsapp-logo" aria-hidden="true"></i></span><span class="text-sm"><small class="block text-ink-2">واتس‌اپ / تلگرام</small><span dir="ltr">[۰۹۱۲xxxxxxx]</span></span></a>
+        <div class="flex items-center gap-4"><span class="grid place-items-center size-12 rounded-full bg-tint text-xl text-copper-ink"><i class="ph-light ph-map-pin" aria-hidden="true"></i></span><span class="text-sm"><small class="block text-ink-2">آدرس</small>[آدرس کامل سالن]</span></div>
+      </div>
+      <div class="card p-6" data-reveal="up" style="--d:1">
+        <h2 class="font-semibold mb-3 flex items-center gap-2"><i class="ph-light ph-clock text-xl text-copper-ink" aria-hidden="true"></i>ساعات کاری</h2>
+        <dl class="text-sm divide-y divide-line">
+          <div class="flex justify-between py-2.5"><dt>شنبه تا چهارشنبه</dt><dd class="num">۹:۰۰ — ۲۰:۰۰</dd></div>
+          <div class="flex justify-between py-2.5"><dt>پنجشنبه</dt><dd class="num">۹:۰۰ — ۱۷:۰۰</dd></div>
+          <div class="flex justify-between py-2.5"><dt>جمعه</dt><dd class="text-[var(--err)]">تعطیل</dd></div>
+        </dl>
+        <div class="flex gap-2 mt-4">
+          <a href="#" class="round-btn !size-11" aria-label="اینستاگرام"><i class="ph-light ph-instagram-logo" aria-hidden="true"></i></a>
+          <a href="#" class="round-btn !size-11" aria-label="تلگرام"><i class="ph-light ph-telegram-logo" aria-hidden="true"></i></a>
+          <a href="#" class="round-btn !size-11" aria-label="واتس‌اپ"><i class="ph-light ph-whatsapp-logo" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="grad spotlight rounded-2xl p-6 flex flex-col gap-3" data-reveal="up" style="--d:2">
+        <div class="aurora" aria-hidden="true"><span></span><span></span></div>
+        <h2 class="font-display text-2xl">می‌خواهید نوبت بگیرید؟</h2>
+        <p class="text-sm text-white/75">رزرو از سامانهٔ نوبت‌دهی سالن سریع‌تر از تماس تلفنی است.</p>
+        <a href="#" data-booking class="btn btn-salmon btn-sm w-fit">رزرو نوبت آنلاین <i class="ph-light ph-arrow-up-left" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+    <!-- فرم -->
+    <form class="card p-6 md:p-10 flex flex-col gap-6" data-validate data-ok="پیام شما ارسال شد؛ به‌زودی پاسخ می‌دهیم" data-reveal="up" style="--d:1">
+      <div><h2 class="font-display text-4xl">ارسال پیام</h2><p class="text-sm text-ink-2 mt-1">موضوع را انتخاب کنید تا پیام به واحد درست برسد.</p></div>
+      <fieldset>
+        <legend class="label">موضوع پیام <span class="req">*</span></legend>
+        <div class="flex flex-wrap gap-2">
+          <label class="opt !py-2.5 !px-4 text-sm"><input type="radio" name="topic" required checked><i class="ph-light ph-scissors text-copper-ink" aria-hidden="true"></i>خدمات سالن</label>
+          <label class="opt !py-2.5 !px-4 text-sm"><input type="radio" name="topic"><i class="ph-light ph-shopping-bag text-copper-ink" aria-hidden="true"></i>سفارش فروشگاه</label>
+          <label class="opt !py-2.5 !px-4 text-sm"><input type="radio" name="topic"><i class="ph-light ph-graduation-cap text-copper-ink" aria-hidden="true"></i>ثبت‌نام دوره</label>
+          <label class="opt !py-2.5 !px-4 text-sm"><input type="radio" name="topic"><i class="ph-light ph-handshake text-copper-ink" aria-hidden="true"></i>همکاری</label>
+          <label class="opt !py-2.5 !px-4 text-sm"><input type="radio" name="topic"><i class="ph-light ph-megaphone text-copper-ink" aria-hidden="true"></i>انتقاد و پیشنهاد</label>
+        </div>
+      </fieldset>
+      <div class="grid md:grid-cols-2 gap-5">
+        <label><span class="label">نام و نام خانوادگی <span class="req">*</span></span><input class="input" required autocomplete="name"><span class="err-msg">نام خود را وارد کنید.</span></label>
+        <label><span class="label">شمارهٔ تماس <span class="req">*</span></span><input class="input num" required inputmode="tel" pattern="(09|۰۹)[0-9۰-۹]{9}" placeholder="۰۹۱۲xxxxxxx" dir="ltr" autocomplete="tel"><span class="err-msg">شمارهٔ موبایل معتبر وارد کنید.</span></label>
+        <label class="md:col-span-2"><span class="label">ایمیل (اختیاری)</span><input class="input" type="email" placeholder="example@mail.com" dir="ltr" autocomplete="email"></label>
+        <label class="md:col-span-2"><span class="label">متن پیام <span class="req">*</span></span><textarea class="textarea" required placeholder="پیام خود را بنویسید"></textarea><span class="err-msg">متن پیام خالی است.</span></label>
+      </div>
+      <label class="check"><input type="checkbox" checked>پاسخ از طریق پیامک هم ارسال شود</label>
+      <button type="submit" class="btn btn-salmon btn-lg w-full md:w-fit" data-magnetic=".12">ارسال پیام <i class="ph-light ph-paper-plane-tilt" aria-hidden="true"></i></button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= نقشه ================= -->
+<section class="relative min-h-[460px] flex items-center overflow-hidden">
+  <div class="map-canvas absolute inset-0 max-md:h-[240px]" aria-hidden="true">
+    <span class="map-pin absolute left-1/2 md:left-[36%] top-[120px] md:top-1/2 -translate-x-1/2 -translate-y-1/2"><i class="ph-light ph-map-pin"></i></span>
+  </div>
+  <div class="wrap relative pt-[270px] pb-10 md:py-16">
+    <div class="w-full md:w-[340px] bg-white text-[#1f2330] rounded-xl p-7 shadow-2xl flex flex-col gap-3 text-sm" data-reveal="up">
+      <p class="text-xs text-[#6c707b]">نقشهٔ موقعیت سالن (تزئینی — نقشهٔ واقعی را جایگزین کنید)</p>
+      <h2 class="font-display text-3xl">سالن زیبایی المیرا آزمون</h2>
+      <p class="text-[#6c707b]">[آدرس کامل]</p>
+      <a href="#" class="btn btn-dark btn-sm w-fit !bg-[#2a3040] !text-white"><i class="ph-light ph-navigation-arrow" aria-hidden="true"></i>مسیریابی</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= سوالات ================= -->
+<section class="py-20">
+  <div class="wrap max-w-3xl">
+    <div class="sec-head mb-10" data-reveal="up"><p class="kicker">پرسش‌ها</p><span class="sep" aria-hidden="true"></span><h2 class="font-display text-4xl">سوالات پرتکرار</h2></div>
+    <div data-acc id="c-q" data-reveal="up">
+      <div class="acc-item is-open"><button type="button" class="acc-btn">پارکینگ دارید؟<span class="pm" aria-hidden="true"></span></button><div class="acc-panel"><div><p>[پاسخ نمونه] پارکینگ عمومی در نزدیکی سالن وجود دارد.</p></div></div></div>
+      <div class="acc-item"><button type="button" class="acc-btn">بدون نوبت هم می‌توان مراجعه کرد؟<span class="pm" aria-hidden="true"></span></button><div class="acc-panel"><div><p>[پاسخ نمونه] برای خدمات کوتاه اگر وقت خالی باشد بله؛ ولی رزرو قبلی مطمئن‌تر است.</p></div></div></div>
+      <div class="acc-item"><button type="button" class="acc-btn">سفارش فروشگاه به شهرستان ارسال می‌شود؟<span class="pm" aria-hidden="true"></span></button><div class="acc-panel"><div><p>[پاسخ نمونه] بله، با پست پیشتاز به سراسر کشور.</p></div></div></div>
+      <div class="acc-item"><button type="button" class="acc-btn">امکان بازدید از آموزشگاه قبل از ثبت‌نام هست؟<span class="pm" aria-hidden="true"></span></button><div class="acc-panel"><div><p>[پاسخ نمونه] بله؛ با هماهنگی قبلی می‌توانید از کلاس‌ها بازدید کنید.</p></div></div></div>
+    </div>
+  </div>
+</section>

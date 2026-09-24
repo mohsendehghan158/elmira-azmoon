@@ -1,0 +1,69 @@
+<!--META {"title": "ورود / ثبت‌نام | المیرا آزمون", "desc": "ورود به حساب کاربری المیرا آزمون با شمارهٔ موبایل و کد پیامکی.", "layout": "bare"}-->
+
+<div class="min-h-svh grid lg:grid-cols-2">
+  <!-- فرم -->
+  <div class="relative flex flex-col px-5 py-6 md:px-12">
+    <div class="flex items-center justify-between">
+      <a href="index.html" class="brand text-ink"><i class="ph-light ph-flower-lotus" aria-hidden="true"></i><span>المیرا آزمون</span></a>
+      <button type="button" class="hdr-icon theme-toggle inline-grid" data-theme-toggle aria-label="تغییر حالت روشن و تیره"><i class="ph-light ph-sun sun" aria-hidden="true"></i><i class="ph-light ph-moon-stars moon" aria-hidden="true"></i></button>
+    </div>
+
+    <div class="flex-1 grid place-items-center py-10">
+      <div class="w-full max-w-sm">
+        <!-- قدم ۱ -->
+        <form id="step1" class="flex flex-col gap-5" data-step data-validate data-next="step2">
+          <div data-reveal="up">
+            <p class="kicker">قدم ۱ از ۲</p>
+            <h1 class="font-display text-5xl mt-3">ورود / ثبت‌نام</h1>
+            <p class="text-sm text-ink-2 mt-3">با یک حساب، سفارش‌های فروشگاه و دوره‌های آموزشگاه را یکجا مدیریت کنید.</p>
+          </div>
+          <label data-reveal="up" style="--d:1"><span class="label">شمارهٔ موبایل</span>
+            <span class="relative block"><i class="ph-light ph-device-mobile absolute right-4 top-1/2 -translate-y-1/2 text-xl text-ink-2" aria-hidden="true"></i><input class="input !ps-12 num text-lg tracking-widest" required inputmode="tel" pattern="(09|۰۹)[0-9۰-۹]{9}" placeholder="۰۹۱۲xxxxxxx" dir="ltr" autocomplete="tel" autofocus></span>
+            <span class="err-msg">شمارهٔ موبایل ۱۱ رقمی با ۰۹ شروع می‌شود.</span>
+          </label>
+          <button type="submit" class="btn btn-salmon btn-lg w-full" data-reveal="up" style="--d:2">دریافت کد تأیید <i class="ph-light ph-arrow-left" aria-hidden="true"></i></button>
+          <p class="text-xs text-ink-2 text-center">با ورود، <a href="#" class="link-u text-ink">قوانین</a> و <a href="#" class="link-u text-ink">حریم خصوصی</a> سایت را می‌پذیرید.</p>
+        </form>
+
+        <!-- قدم ۲ -->
+        <form id="step2" class="flex flex-col gap-5" data-step data-validate data-next="auth-ok" hidden>
+          <div>
+            <p class="kicker">قدم ۲ از ۲</p>
+            <h1 class="font-display text-5xl mt-3">کد تأیید</h1>
+            <p class="text-sm text-ink-2 mt-3">کد ۵ رقمی پیامک‌شده را وارد کنید. <button type="button" class="link-u text-copper-ink font-semibold" data-back="step1">ویرایش شماره</button></p>
+          </div>
+          <div class="otp" data-submit="otp-btn" role="group" aria-label="کد ۵ رقمی">
+            <input required inputmode="numeric" maxlength="1" aria-label="رقم ۱" autocomplete="one-time-code">
+            <input required inputmode="numeric" maxlength="1" aria-label="رقم ۲">
+            <input required inputmode="numeric" maxlength="1" aria-label="رقم ۳">
+            <input required inputmode="numeric" maxlength="1" aria-label="رقم ۴">
+            <input required inputmode="numeric" maxlength="1" aria-label="رقم ۵">
+          </div>
+          <p class="text-xs text-ink-2 text-center">ارسال مجدد کد تا <b class="num text-ink" data-countdown="119" data-resend="resend">۰۱:۵۹</b> دیگر</p>
+          <button type="button" id="resend" class="text-sm text-copper-ink font-semibold" hidden onclick="eaToast('کد دوباره ارسال شد','ph-chat-text')">ارسال مجدد کد</button>
+          <button type="submit" id="otp-btn" class="btn btn-salmon btn-lg w-full is-disabled">ورود به حساب</button>
+          <div class="flex items-center gap-3 text-xs text-ink-2"><span class="flex-1 h-px bg-line"></span>یا<span class="flex-1 h-px bg-line"></span></div>
+          <a href="index.html" class="btn btn-outline w-full">ادامه به‌عنوان مهمان</a>
+        </form>
+
+        <!-- موفق -->
+        <div id="auth-ok" class="flex flex-col items-center gap-4 text-center" hidden data-scroll="no">
+          <svg class="check-anim" viewBox="0 0 88 88" aria-hidden="true"><circle cx="44" cy="44" r="41"/><path d="M27 45l11 11 23-24"/></svg>
+          <h1 class="font-display text-5xl">خوش آمدید!</h1>
+          <p class="text-sm text-ink-2">وارد حساب کاربری شدید. (نمایشی)</p>
+          <a href="account.html" class="btn btn-salmon w-full">رفتن به پنل کاربری <i class="ph-light ph-arrow-left" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="index.html" class="link-arrow text-sm self-center"><i class="ph-light ph-arrow-right" aria-hidden="true"></i> بازگشت به صفحهٔ اصلی</a>
+  </div>
+
+  <!-- تصویر -->
+  <div class="grad spotlight relative hidden lg:flex flex-col justify-end p-12 overflow-hidden">
+    <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+    <img src="@@redhair,1000,1300@@" alt="" class="absolute inset-0 size-full object-cover opacity-60 mix-blend-luminosity" width="1000" height="1300" data-parallax=".04">
+    <div class="absolute inset-0 bg-gradient-to-t from-[#262d3c] via-[#262d3c]/30 to-transparent"></div>
+    <svg class="badge-spin absolute size-36 top-12 left-12 text-white/80" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="bc3" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs><text><textPath href="#bc3" textLength="440">المیرا آزمون • سالن • فروشگاه • آموزشگاه •</textPath></text><circle cx="100" cy="100" r="4"/></svg>
+    <blockquote class="relative font-display text-4xl leading-snug max-w-md" data-split>یک حساب برای سفارش‌ها، دوره‌ها و هر چیزی که به زیبایی شما مربوط است.</blockquote>
+  </div>
+</div>

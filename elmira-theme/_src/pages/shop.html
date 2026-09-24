@@ -1,0 +1,122 @@
+<!--META {"title": "فروشگاه | المیرا آزمون", "desc": "فروشگاه محصولات آرایشی و بهداشتی المیرا آزمون؛ همان محصولاتی که در سالن استفاده می‌شوند.", "nav": "shop", "hero": {"title": "فروشگاه محصولات", "outline": "فروشگاه", "sub": "همان محصولاتی که خود سالن استفاده می‌کند؛ انتخاب‌شده و پیشنهادشده توسط کارشناس‌های ما.", "crumbs": [["خانه", "index.html"], ["فروشگاه", ""]]}}-->
+
+<!-- ================= دسته‌ها ================= -->
+<section class="pt-12 pb-6">
+  <div class="wrap">
+    <div class="flex gap-4 overflow-x-auto [scrollbar-width:none] pb-2 md:grid md:grid-cols-5" data-reveal="up">
+      <a href="#products" class="group shrink-0 w-36 md:w-auto flex flex-col items-center gap-3 text-center"><span class="size-28 rounded-full overflow-hidden zoom ring-1 ring-line ring-offset-4 ring-offset-bg group-hover:ring-copper transition"><img src="@@serum,240,240@@" alt="" class="size-full object-cover" loading="lazy" width="240" height="240"></span><span><strong class="block font-display text-xl font-medium">مراقبت پوست</strong><small class="text-xs text-ink-2">۲۴ محصول</small></span></a>
+      <a href="#products" class="group shrink-0 w-36 md:w-auto flex flex-col items-center gap-3 text-center"><span class="size-28 rounded-full overflow-hidden zoom ring-1 ring-line ring-offset-4 ring-offset-bg group-hover:ring-copper transition"><img src="@@green_jars,240,240@@" alt="" class="size-full object-cover" loading="lazy" width="240" height="240"></span><span><strong class="block font-display text-xl font-medium">مراقبت مو</strong><small class="text-xs text-ink-2">۱۸ محصول</small></span></a>
+      <a href="#products" class="group shrink-0 w-36 md:w-auto flex flex-col items-center gap-3 text-center"><span class="size-28 rounded-full overflow-hidden zoom ring-1 ring-line ring-offset-4 ring-offset-bg group-hover:ring-copper transition"><img src="@@palette,240,240@@" alt="" class="size-full object-cover" loading="lazy" width="240" height="240"></span><span><strong class="block font-display text-xl font-medium">آرایشی</strong><small class="text-xs text-ink-2">۳۲ محصول</small></span></a>
+      <a href="#products" class="group shrink-0 w-36 md:w-auto flex flex-col items-center gap-3 text-center"><span class="size-28 rounded-full overflow-hidden zoom ring-1 ring-line ring-offset-4 ring-offset-bg group-hover:ring-copper transition"><img src="@@nailart,240,240@@" alt="" class="size-full object-cover" loading="lazy" width="240" height="240"></span><span><strong class="block font-display text-xl font-medium">ناخن</strong><small class="text-xs text-ink-2">۹ محصول</small></span></a>
+      <a href="#products" class="group shrink-0 w-36 md:w-auto flex flex-col items-center gap-3 text-center"><span class="size-28 rounded-full overflow-hidden zoom ring-1 ring-line ring-offset-4 ring-offset-bg group-hover:ring-copper transition"><img src="@@oil,240,240@@" alt="" class="size-full object-cover" loading="lazy" width="240" height="240"></span><span><strong class="block font-display text-xl font-medium">عطر و ادکلن</strong><small class="text-xs text-ink-2">۳ محصول</small></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= فیلتر + محصولات ================= -->
+<section id="products" class="py-12 md:py-16">
+  <div class="wrap grid lg:grid-cols-[270px_1fr] gap-10 items-start">
+    <aside id="filters" class="drawer from-start lg:!static lg:!visible lg:!transform-none lg:!w-auto lg:!bg-transparent lg:sticky lg:top-24" aria-label="فیلترها">
+      <div class="flex items-center justify-between px-5 lg:px-0 h-[70px] lg:h-auto lg:pb-4 border-b border-line">
+        <h2 class="font-display text-2xl">فیلترها</h2>
+        <div class="flex items-center gap-2">
+          <button type="button" class="text-xs text-copper-ink font-semibold" onclick="this.closest('aside').querySelectorAll('input[type=checkbox]').forEach(i=>i.checked=false);eaToast('فیلترها پاک شد','ph-funnel-x')">حذف همه</button>
+          <button type="button" class="hdr-icon inline-grid lg:hidden" data-close aria-label="بستن فیلترها"><i class="ph-light ph-x" aria-hidden="true"></i></button>
+        </div>
+      </div>
+      <div class="flex-1 overflow-y-auto lg:overflow-visible px-5 lg:px-0" data-acc="multi" id="f-acc">
+        <div class="acc-item is-open"><button type="button" class="acc-btn text-sm">دسته‌بندی<span class="pm" aria-hidden="true"></span></button><div class="acc-panel"><div><div class="flex flex-col gap-3 pb-5">
+          <label class="check"><input type="checkbox" checked>مراقبت پوست</label>
+          <label class="check"><input type="checkbox">مراقبت مو</label>
+          <label class="check"><input type="checkbox">آرایشی</label>
+          <label class="check"><input type="checkbox">مراقبت ناخن</label>
+          <label class="check"><input type="checkbox">عطر و ادکلن</label>
+        </div></div></div></div>
+        <div class="acc-item is-open"><button type="button" class="acc-btn text-sm">برند<span class="pm" aria-hidden="true"></span></button><div class="acc-panel"><div><div class="flex flex-col gap-3 pb-5">
+          <label class="check"><input type="checkbox">[برند ۱]</label>
+          <label class="check"><input type="checkbox">[برند ۲]</label>
+          <label class="check"><input type="checkbox">[برند ۳]</label>
+          <label class="check"><input type="checkbox">[برند ۴]</label>
+        </div></div></div></div>
+        <div class="acc-item is-open"><button type="button" class="acc-btn text-sm">نوع پوست<span class="pm" aria-hidden="true"></span></button><div class="acc-panel"><div><div class="flex flex-wrap gap-2 pb-5">
+          <button type="button" class="chip" aria-pressed="false" onclick="this.setAttribute('aria-pressed',this.getAttribute('aria-pressed')!=='true')">چرب</button>
+          <button type="button" class="chip" aria-pressed="true" onclick="this.setAttribute('aria-pressed',this.getAttribute('aria-pressed')!=='true')">خشک</button>
+          <button type="button" class="chip" aria-pressed="false" onclick="this.setAttribute('aria-pressed',this.getAttribute('aria-pressed')!=='true')">مختلط</button>
+          <button type="button" class="chip" aria-pressed="false" onclick="this.setAttribute('aria-pressed',this.getAttribute('aria-pressed')!=='true')">حساس</button>
+        </div></div></div></div>
+        <div class="acc-item is-open"><button type="button" class="acc-btn text-sm">محدودهٔ قیمت<span class="pm" aria-hidden="true"></span></button><div class="acc-panel"><div><div class="pb-5">
+          <input type="range" class="range" min="50000" max="1500000" step="10000" value="900000" data-out="price-out" aria-label="حداکثر قیمت">
+          <p class="flex justify-between text-xs text-ink-2 mt-3"><span>تا <b id="price-out" class="text-ink num">۹۰۰٬۰۰۰</b> ت</span><span>از ۵۰٬۰۰۰ ت</span></p>
+        </div></div></div></div>
+        <div class="flex flex-col gap-3 py-5">
+          <label class="check"><input type="checkbox" checked>فقط کالاهای موجود</label>
+          <label class="check"><input type="checkbox">فقط تخفیف‌دارها</label>
+        </div>
+      </div>
+      <div class="p-5 lg:px-0 border-t border-line lg:border-0">
+        <button type="button" class="btn btn-dark w-full" onclick="eaToast('فیلترها اعمال شد (نمایشی)','ph-funnel');document.querySelector('.overlay').click()">اعمال فیلتر</button>
+      </div>
+    </aside>
+
+    <div>
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-8" data-reveal="up">
+        <p class="text-sm text-ink-2">نمایش ۸ محصول از ۸۶ محصول</p>
+        <div class="flex items-center gap-2">
+          <button type="button" class="btn btn-outline btn-sm lg:hidden" data-open="filters" aria-controls="filters"><i class="ph-light ph-faders" aria-hidden="true"></i>فیلترها</button>
+          <label class="flex items-center gap-2 text-sm"><span class="text-ink-2 hidden sm:inline">مرتب‌سازی:</span>
+            <select class="select !min-h-10 !py-2 w-40" data-sort="p-grid" aria-label="مرتب‌سازی محصولات"><option value="pop">پرفروش‌ترین</option><option value="asc">ارزان‌ترین</option><option value="desc">گران‌ترین</option></select>
+          </label>
+        </div>
+      </div>
+      <div id="p-grid" class="grid grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-10 md:gap-x-6">
+        {{product serum|سرم روشن‌کنندهٔ پوست|مراقبت پوست|480000|565000|٪۱۵ تخفیف|4|0}}
+        {{product green_jars|ماسک تقویت‌کنندهٔ مو|مراقبت مو|320000|||5|1}}
+        {{product palette|پالت سایهٔ چشم|آرایشی|690000|||4|2}}
+        {{product nailart|لاک ژل رنگ ثابت|مراقبت ناخن|180000|||3|3}}
+        {{product cream|کرم ضدآفتاب SPF50|مراقبت پوست|390000|||5|4}}
+        {{product oil|ادکلن زنانه گلاسه|عطر و ادکلن|850000||ناموجود|4|5||0}}
+        {{product wash|شامپو تقویت مو|مراقبت مو|220000|||4|6}}
+        {{product cosmetics|رژ لب مات|آرایشی|250000||جدید|5|7}}
+        {{product dropper|سرم هیالورونیک|مراقبت پوست|520000|||4|8}}
+      </div>
+      <nav class="flex justify-center gap-2 mt-12" aria-label="صفحه‌بندی">
+        <a href="#" class="round-btn !size-11 !bg-ink !text-bg !border-ink" aria-current="page">۱</a>
+        <a href="#" class="round-btn !size-11">۲</a>
+        <a href="#" class="round-btn !size-11">۳</a>
+        <span class="grid place-items-center size-11 text-ink-2">…</span>
+        <a href="#" class="round-btn !size-11">۷</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<!-- ================= پکیج‌ها ================= -->
+<section class="py-20 bg-tint">
+  <div class="wrap">
+    <div class="text-center mb-12" data-reveal="up"><p class="kicker">ترکیب کارشناس‌های ما</p><h2 class="font-display text-4xl md:text-5xl mt-3">پکیج‌های پیشنهادی سالن</h2></div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <article class="group card overflow-hidden flex flex-col" data-product data-tilt="4" data-reveal="up">
+        <div class="relative aspect-[16/10] zoom"><img src="@@cream_swipe,700,440@@" alt="پکیج مراقبت روزانهٔ پوست" class="size-full object-cover" loading="lazy" width="700" height="440"><span class="tag tag-salmon absolute top-4 right-4">صرفه‌جویی ٪۲۰</span></div>
+        <div class="p-6 flex flex-col gap-3 flex-1"><h3 class="font-display text-2xl">پکیج مراقبت روزانهٔ پوست</h3><p class="text-sm text-ink-2">ژل شست‌وشو، سرم ویتامین C و ضدآفتاب.</p><p class="mt-auto num"><strong class="text-lg">۹۸۰٬۰۰۰ ت</strong> <del class="text-sm text-ink-2">۱٬۲۲۰٬۰۰۰</del></p><button type="button" class="btn btn-dark w-full" data-add="پکیج مراقبت پوست"><i class="ph-light ph-handbag" aria-hidden="true"></i><span class="add-label">افزودن پکیج به سبد</span></button></div>
+      </article>
+      <article class="group card overflow-hidden flex flex-col" data-product data-tilt="4" data-reveal="up" style="--d:1">
+        <div class="relative aspect-[16/10] zoom"><img src="@@wash,700,440@@" alt="پکیج ترمیم و احیای مو" class="size-full object-cover" loading="lazy" width="700" height="440"><span class="tag tag-salmon absolute top-4 right-4">صرفه‌جویی ٪۱۵</span></div>
+        <div class="p-6 flex flex-col gap-3 flex-1"><h3 class="font-display text-2xl">پکیج ترمیم و احیای مو</h3><p class="text-sm text-ink-2">شامپو، ماسک و روغن تقویت مو.</p><p class="mt-auto num"><strong class="text-lg">۷۴۰٬۰۰۰ ت</strong> <del class="text-sm text-ink-2">۸۷۰٬۰۰۰</del></p><button type="button" class="btn btn-dark w-full" data-add="پکیج ترمیم مو"><i class="ph-light ph-handbag" aria-hidden="true"></i><span class="add-label">افزودن پکیج به سبد</span></button></div>
+      </article>
+      <article class="group card overflow-hidden flex flex-col" data-product data-tilt="4" data-reveal="up" style="--d:2">
+        <div class="relative aspect-[16/10] zoom"><img src="@@flatlay2,700,440@@" alt="پکیج آرایش کامل" class="size-full object-cover" loading="lazy" width="700" height="440"><span class="tag tag-salmon absolute top-4 right-4">صرفه‌جویی ٪۲۵</span></div>
+        <div class="p-6 flex flex-col gap-3 flex-1"><h3 class="font-display text-2xl">پکیج آرایش کامل</h3><p class="text-sm text-ink-2">پرایمر، کرم‌پودر، پالت سایه و رژ لب.</p><p class="mt-auto num"><strong class="text-lg">۱٬۴۵۰٬۰۰۰ ت</strong> <del class="text-sm text-ink-2">۱٬۹۳۰٬۰۰۰</del></p><button type="button" class="btn btn-dark w-full" data-add="پکیج آرایش کامل"><i class="ph-light ph-handbag" aria-hidden="true"></i><span class="add-label">افزودن پکیج به سبد</span></button></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= مزایا ================= -->
+<section class="py-16">
+  <div class="wrap grid grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="group flex flex-col items-center text-center gap-3" data-reveal="up"><span class="grid place-items-center size-16 rounded-full bg-tint text-3xl text-copper-ink transition duration-500 group-hover:-translate-y-1 group-hover:bg-copper group-hover:text-white"><i class="ph-light ph-seal-check" aria-hidden="true"></i></span><strong class="text-sm">تضمین اصالت کالا</strong><small class="text-xs text-ink-2">همان محصولات مصرفی سالن</small></div>
+    <div class="group flex flex-col items-center text-center gap-3" data-reveal="up" style="--d:1"><span class="grid place-items-center size-16 rounded-full bg-tint text-3xl text-copper-ink transition duration-500 group-hover:-translate-y-1 group-hover:bg-copper group-hover:text-white"><i class="ph-light ph-truck" aria-hidden="true"></i></span><strong class="text-sm">ارسال سریع</strong><small class="text-xs text-ink-2">تحویل ۲۴ تا ۷۲ ساعته</small></div>
+    <div class="group flex flex-col items-center text-center gap-3" data-reveal="up" style="--d:2"><span class="grid place-items-center size-16 rounded-full bg-tint text-3xl text-copper-ink transition duration-500 group-hover:-translate-y-1 group-hover:bg-copper group-hover:text-white"><i class="ph-light ph-arrow-counter-clockwise" aria-hidden="true"></i></span><strong class="text-sm">۷ روز ضمانت بازگشت</strong><small class="text-xs text-ink-2">در صورت عدم رضایت</small></div>
+    <div class="group flex flex-col items-center text-center gap-3" data-reveal="up" style="--d:3"><span class="grid place-items-center size-16 rounded-full bg-tint text-3xl text-copper-ink transition duration-500 group-hover:-translate-y-1 group-hover:bg-copper group-hover:text-white"><i class="ph-light ph-chats-circle" aria-hidden="true"></i></span><strong class="text-sm">مشاورهٔ رایگان</strong><small class="text-xs text-ink-2">انتخاب محصول مناسب پوست شما</small></div>
+  </div>
+</section>

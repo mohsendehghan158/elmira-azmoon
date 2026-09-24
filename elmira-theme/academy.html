@@ -1,0 +1,425 @@
+<!doctype html>
+<!-- ساخته‌شده با _src/build.py از _src/pages/academy.html؛ این فایل را مستقیم ویرایش نکنید -->
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>آموزشگاه | المیرا آزمون</title>
+<meta name="description" content="دوره‌های حضوری آرایشگری آموزشگاه المیرا آزمون: میکاپ، مو و رنگ، ناخن، پوست و مدیریت سالن.">
+<meta name="theme-color" content="#2a3040">
+<script>(function(){var t;try{t=localStorage.getItem('ea-theme');}catch(e){}var d=t?t==='dark':matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.classList.add(d?'dark':'light');})();</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600&family=Vazirmatn:wght@300;400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="assets/css/theme.css">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+  @custom-variant dark (&:where(.dark, .dark *));
+  @theme inline {
+    --color-bg: var(--bg);
+    --color-bg-2: var(--bg-2);
+    --color-tint: var(--tint);
+    --color-card: var(--card);
+    --color-ink: var(--ink);
+    --color-ink-2: var(--ink-2);
+    --color-line: var(--line);
+    --color-night: var(--night);
+    --color-copper: var(--copper);
+    --color-copper-ink: var(--copper-ink);
+    --color-salmon: var(--salmon);
+    --font-sans: "Vazirmatn", system-ui, sans-serif;
+    --font-display: "Markazi Text", "Vazirmatn", serif;
+  }
+  @utility wrap {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1240px;
+    padding-inline: 1rem;
+    @media (width >= 768px) { padding-inline: 2rem; }
+  }
+</style>
+</head>
+<body class="">
+
+<div class="curtain" aria-hidden="true">
+  <div class="curtain-mark"><i class="ph-light ph-flower-lotus"></i><span>المیرا آزمون</span><div class="curtain-bar"></div></div>
+</div>
+<noscript><style>.curtain{display:none}</style></noscript>
+<div class="scroll-progress" aria-hidden="true"><span></span></div>
+<a href="#main" class="skip">پرش به محتوای اصلی</a>
+<header class="site-header">
+  <div class="bar">
+    <div class="wrap h-[76px] flex items-center justify-between gap-4">
+      <a href="index.html" class="brand shrink-0" aria-label="المیرا آزمون، صفحه اصلی">
+        <i class="ph-light ph-flower-lotus" aria-hidden="true"></i><span>المیرا آزمون</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1" aria-label="منوی اصلی">
+        <a class="nav-link" href="index.html" data-nav="home">خانه</a>
+        <a class="nav-link" href="booking.html" data-nav="services">خدمات</a>
+        <a class="nav-link" href="shop.html" data-nav="shop">فروشگاه</a>
+        <a class="nav-link" href="academy.html" data-nav="academy" aria-current="page">آموزشگاه</a>
+        <a class="nav-link" href="gallery.html" data-nav="gallery">گالری</a>
+        <a class="nav-link" href="blog.html" data-nav="blog">مجله</a>
+        <a class="nav-link" href="about.html" data-nav="about">درباره ما</a>
+        <a class="nav-link" href="contact.html" data-nav="contact">تماس</a>
+      </nav>
+
+      <div class="flex items-center gap-0.5">
+        <button type="button" class="hdr-icon theme-toggle inline-grid" data-theme-toggle aria-label="تغییر حالت روشن و تیره">
+          <i class="ph-light ph-sun sun" aria-hidden="true"></i><i class="ph-light ph-moon-stars moon" aria-hidden="true"></i>
+        </button>
+        <a href="account.html" class="hdr-icon hidden sm:inline-grid" aria-label="حساب کاربری"><i class="ph-light ph-user" aria-hidden="true"></i></a>
+        <button type="button" class="hdr-icon cart-target inline-grid" data-open="cart-drawer" aria-controls="cart-drawer" aria-expanded="false" aria-label="سبد خرید">
+          <i class="ph-light ph-handbag" aria-hidden="true"></i><span class="cart-count" data-n="3">۳</span>
+        </button>
+        <a href="#" data-booking class="btn btn-salmon btn-sm hidden md:inline-flex ms-2" data-magnetic=".25">رزرو نوبت <i class="ph-light ph-arrow-up-left" aria-hidden="true"></i></a>
+        <button type="button" class="hdr-icon inline-grid lg:hidden" data-open="nav-drawer" aria-controls="nav-drawer" aria-expanded="false" aria-label="باز کردن منو"><i class="ph-light ph-list" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="grad spotlight page-hero" data-hero>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <span class="outline-text font-display absolute -bottom-6 md:-bottom-12 left-2 md:left-8 text-[26vw] md:text-[15rem] leading-none pointer-events-none select-none" aria-hidden="true" data-parallax="-.12">آموزش</span>
+  <div class="wrap relative">
+    <nav class="crumbs" aria-label="مسیر صفحه" data-reveal="up"><a href="index.html" class="link-u">خانه</a><span aria-hidden="true">/</span><span aria-current="page" class="text-white">آموزشگاه</span></nav>
+    <h1 class="font-display text-5xl md:text-7xl leading-[1.05] mt-4" data-split>آموزش تخصصی آرایشگری</h1>
+    <p class="mt-5 max-w-xl text-white/75" data-reveal="up" style="--d:3">دوره‌های حضوری از پایه تا پیشرفته، کنار کار روزانهٔ سالن؛ تمرین روی مدل واقعی در هر جلسه.</p>
+    <div class='flex flex-wrap gap-3 mt-7' data-reveal='up' style='--d:4'><a href='#courses' class='btn btn-salmon' data-magnetic>مشاهدهٔ دوره‌ها <i class='ph-light ph-arrow-down'></i></a><a href='contact.html' class='btn btn-ghost'>درخواست مشاورهٔ رایگان</a></div><div class='grid grid-cols-3 max-w-lg mt-10 border-t border-white/15 pt-6' data-reveal='up' style='--d:5'><div><p class='font-display text-4xl count' data-count='20' data-prefix='+'>+۲۰</p><p class='text-xs text-white/60'>دورهٔ فعال</p></div><div><p class='font-display text-4xl count' data-count='800' data-prefix='+'>+۸۰۰</p><p class='text-xs text-white/60'>هنرجوی فارغ‌التحصیل</p></div><div><p class='font-display text-4xl count' data-count='100' data-suffix='٪'>۱۰۰٪</p><p class='text-xs text-white/60'>آموزش عملی</p></div></div><p class='text-[11px] text-white/45 mt-2'>اعداد نمونه‌اند.</p>
+  </div>
+</section>
+
+
+<!-- ================= دوره‌ها ================= -->
+<section id="courses" class="py-14 md:py-20">
+  <div class="wrap">
+    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-10" data-reveal="up">
+      <div class="chips" data-filter="c-grid" role="group" aria-label="دسته‌بندی دوره‌ها">
+        <button type="button" class="chip" data-cat="all" aria-pressed="true">همهٔ دوره‌ها</button>
+        <button type="button" class="chip" data-cat="face" aria-pressed="false">آرایش صورت</button>
+        <button type="button" class="chip" data-cat="hair" aria-pressed="false">مو و رنگ</button>
+        <button type="button" class="chip" data-cat="nail" aria-pressed="false">ناخن</button>
+        <button type="button" class="chip" data-cat="skin" aria-pressed="false">پوست و زیبایی</button>
+        <button type="button" class="chip" data-cat="biz" aria-pressed="false">مدیریت سالن</button>
+      </div>
+      <label class="flex items-center gap-2 text-sm shrink-0"><span class="text-ink-2">مرتب‌سازی:</span>
+        <select class="select !min-h-10 !py-2 w-48" data-sort="c-grid"><option value="pop">نزدیک‌ترین شروع</option><option value="asc">کمترین شهریه</option><option value="desc">بیشترین شهریه</option></select>
+      </label>
+    </div>
+    <div id="c-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="group card card-hover overflow-hidden flex flex-col fx-item" data-cat="face" data-price="4500000" data-order="0" data-reveal="up" style="--d:0">
+  <a href="course-single.html" class="relative zoom aspect-[16/10] img-ph block" data-cursor="دوره">
+    <img src="https://images.unsplash.com/photo-1594465919760-441fe5908ab0?auto=format&amp;fit=crop&amp;w=700&amp;h=440&amp;q=70" alt="" class="size-full object-cover" loading="lazy" width="700" height="440">
+    <span class="tag tag-white absolute top-3 right-3 z-10"><i class="ph-light ph-calendar-blank" aria-hidden="true"></i>شروع ۱۵ مهر</span>
+  </a>
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <p class="flex flex-wrap gap-2 text-xs"><span class="tag tag-soft">آرایش صورت</span><span class="tag tag-mute">مقدماتی تا پیشرفته</span></p>
+    <h3 class="font-display text-2xl leading-snug"><a href="course-single.html" class="link-u">دورهٔ جامع میکاپ حرفه‌ای</a></h3>
+    <p class="text-xs text-ink-2">مدرس: المیرا آزمون</p>
+    <p class="flex items-center justify-between text-xs text-ink-2"><span class="stars" role="img" aria-label="۵ از ۵ ستاره">★★★★★<span class="off"></span></span><span class="inline-flex items-center gap-1"><i class="ph-light ph-clock" aria-hidden="true"></i><span>۴۰ ساعت · ۱۲ جلسه</span></span></p>
+    <div class="mt-auto pt-4 border-t border-line flex items-center justify-between"><strong class="num">۴٬۵۰۰٬۰۰۰ تومان</strong><span class="tag tag-warn">۳ ظرفیت</span></div>
+    <a href="course-single.html" class="btn btn-dark btn-sm w-full">مشاهده و ثبت‌نام <i class="ph-light ph-arrow-left" aria-hidden="true"></i></a>
+  </div>
+</article>
+      <article class="group card card-hover overflow-hidden flex flex-col fx-item" data-cat="hair" data-price="6200000" data-order="1" data-reveal="up" style="--d:1">
+  <a href="course-single.html" class="relative zoom aspect-[16/10] img-ph block" data-cursor="دوره">
+    <img src="https://images.unsplash.com/photo-1554519934-e32b1629d9ee?auto=format&amp;fit=crop&amp;w=700&amp;h=440&amp;q=70" alt="" class="size-full object-cover" loading="lazy" width="700" height="440">
+    <span class="tag tag-white absolute top-3 right-3 z-10"><i class="ph-light ph-calendar-blank" aria-hidden="true"></i>شروع ۲۰ مهر</span>
+  </a>
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <p class="flex flex-wrap gap-2 text-xs"><span class="tag tag-soft">مو و رنگ</span><span class="tag tag-mute">متوسط</span></p>
+    <h3 class="font-display text-2xl leading-snug"><a href="course-single.html" class="link-u">تکنیک‌های رنگ و مش مو</a></h3>
+    <p class="text-xs text-ink-2">مدرس: سارا محمدی</p>
+    <p class="flex items-center justify-between text-xs text-ink-2"><span class="stars" role="img" aria-label="۴ از ۵ ستاره">★★★★<span class="off">★</span></span><span class="inline-flex items-center gap-1"><i class="ph-light ph-clock" aria-hidden="true"></i><span>۶۰ ساعت · ۱۸ جلسه</span></span></p>
+    <div class="mt-auto pt-4 border-t border-line flex items-center justify-between"><strong class="num">۶٬۲۰۰٬۰۰۰ تومان</strong><span class="tag tag-warn">۵ ظرفیت</span></div>
+    <a href="course-single.html" class="btn btn-dark btn-sm w-full">مشاهده و ثبت‌نام <i class="ph-light ph-arrow-left" aria-hidden="true"></i></a>
+  </div>
+</article>
+      <article class="group card card-hover overflow-hidden flex flex-col fx-item" data-cat="nail" data-price="3100000" data-order="2" data-reveal="up" style="--d:2">
+  <a href="course-single.html" class="relative zoom aspect-[16/10] img-ph block" data-cursor="دوره">
+    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&amp;fit=crop&amp;w=700&amp;h=440&amp;q=70" alt="" class="size-full object-cover" loading="lazy" width="700" height="440">
+    <span class="tag tag-white absolute top-3 right-3 z-10"><i class="ph-light ph-calendar-blank" aria-hidden="true"></i>شروع ۱ آبان</span>
+  </a>
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <p class="flex flex-wrap gap-2 text-xs"><span class="tag tag-soft">ناخن</span><span class="tag tag-mute">مقدماتی</span></p>
+    <h3 class="font-display text-2xl leading-snug"><a href="course-single.html" class="link-u">کاشت و طراحی ناخن</a></h3>
+    <p class="text-xs text-ink-2">مدرس: نگین رضایی</p>
+    <p class="flex items-center justify-between text-xs text-ink-2"><span class="stars" role="img" aria-label="۵ از ۵ ستاره">★★★★★<span class="off"></span></span><span class="inline-flex items-center gap-1"><i class="ph-light ph-clock" aria-hidden="true"></i><span>۳۰ ساعت · ۱۰ جلسه</span></span></p>
+    <div class="mt-auto pt-4 border-t border-line flex items-center justify-between"><strong class="num">۳٬۱۰۰٬۰۰۰ تومان</strong><span class="tag tag-mute">ظرفیت تکمیل</span></div>
+    <a href="contact.html" class="btn btn-soft btn-sm w-full">اطلاع از ترم بعد</a>
+  </div>
+</article>
+      <article class="group card card-hover overflow-hidden flex flex-col fx-item" data-cat="skin" data-price="3800000" data-order="3" data-reveal="up" style="--d:0">
+  <a href="course-single.html" class="relative zoom aspect-[16/10] img-ph block" data-cursor="دوره">
+    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&amp;fit=crop&amp;w=700&amp;h=440&amp;q=70" alt="" class="size-full object-cover" loading="lazy" width="700" height="440">
+    <span class="tag tag-white absolute top-3 right-3 z-10"><i class="ph-light ph-calendar-blank" aria-hidden="true"></i>شروع ۵ آبان</span>
+  </a>
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <p class="flex flex-wrap gap-2 text-xs"><span class="tag tag-soft">پوست و زیبایی</span><span class="tag tag-mute">مقدماتی</span></p>
+    <h3 class="font-display text-2xl leading-snug"><a href="course-single.html" class="link-u">پاکسازی و مراقبت پوست</a></h3>
+    <p class="text-xs text-ink-2">مدرس: المیرا آزمون</p>
+    <p class="flex items-center justify-between text-xs text-ink-2"><span class="stars" role="img" aria-label="۴ از ۵ ستاره">★★★★<span class="off">★</span></span><span class="inline-flex items-center gap-1"><i class="ph-light ph-clock" aria-hidden="true"></i><span>۳۵ ساعت · ۱۲ جلسه</span></span></p>
+    <div class="mt-auto pt-4 border-t border-line flex items-center justify-between"><strong class="num">۳٬۸۰۰٬۰۰۰ تومان</strong><span class="tag tag-warn">۸ ظرفیت</span></div>
+    <a href="course-single.html" class="btn btn-dark btn-sm w-full">مشاهده و ثبت‌نام <i class="ph-light ph-arrow-left" aria-hidden="true"></i></a>
+  </div>
+</article>
+      <article class="group card card-hover overflow-hidden flex flex-col fx-item" data-cat="face" data-price="5500000" data-order="4" data-reveal="up" style="--d:1">
+  <a href="course-single.html" class="relative zoom aspect-[16/10] img-ph block" data-cursor="دوره">
+    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&amp;fit=crop&amp;w=700&amp;h=440&amp;q=70" alt="" class="size-full object-cover" loading="lazy" width="700" height="440">
+    <span class="tag tag-white absolute top-3 right-3 z-10"><i class="ph-light ph-calendar-blank" aria-hidden="true"></i>شروع ۱۰ آبان</span>
+  </a>
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <p class="flex flex-wrap gap-2 text-xs"><span class="tag tag-soft">آرایش صورت</span><span class="tag tag-mute">پیشرفته</span></p>
+    <h3 class="font-display text-2xl leading-snug"><a href="course-single.html" class="link-u">آرایش عروس تخصصی</a></h3>
+    <p class="text-xs text-ink-2">مدرس: المیرا آزمون</p>
+    <p class="flex items-center justify-between text-xs text-ink-2"><span class="stars" role="img" aria-label="۵ از ۵ ستاره">★★★★★<span class="off"></span></span><span class="inline-flex items-center gap-1"><i class="ph-light ph-clock" aria-hidden="true"></i><span>۵۰ ساعت · ۱۵ جلسه</span></span></p>
+    <div class="mt-auto pt-4 border-t border-line flex items-center justify-between"><strong class="num">۵٬۵۰۰٬۰۰۰ تومان</strong><span class="tag tag-warn">۲ ظرفیت</span></div>
+    <a href="course-single.html" class="btn btn-dark btn-sm w-full">مشاهده و ثبت‌نام <i class="ph-light ph-arrow-left" aria-hidden="true"></i></a>
+  </div>
+</article>
+      <article class="group card card-hover overflow-hidden flex flex-col fx-item" data-cat="biz" data-price="2900000" data-order="5" data-reveal="up" style="--d:2">
+  <a href="course-single.html" class="relative zoom aspect-[16/10] img-ph block" data-cursor="دوره">
+    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&amp;fit=crop&amp;w=700&amp;h=440&amp;q=70" alt="" class="size-full object-cover" loading="lazy" width="700" height="440">
+    <span class="tag tag-white absolute top-3 right-3 z-10"><i class="ph-light ph-calendar-blank" aria-hidden="true"></i>شروع ۱۵ آبان</span>
+  </a>
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <p class="flex flex-wrap gap-2 text-xs"><span class="tag tag-soft">مدیریت سالن</span><span class="tag tag-mute">همهٔ سطوح</span></p>
+    <h3 class="font-display text-2xl leading-snug"><a href="course-single.html" class="link-u">اصول مدیریت سالن زیبایی</a></h3>
+    <p class="text-xs text-ink-2">مدرس: المیرا آزمون</p>
+    <p class="flex items-center justify-between text-xs text-ink-2"><span class="stars" role="img" aria-label="۴ از ۵ ستاره">★★★★<span class="off">★</span></span><span class="inline-flex items-center gap-1"><i class="ph-light ph-clock" aria-hidden="true"></i><span>۲۰ ساعت · ۸ جلسه</span></span></p>
+    <div class="mt-auto pt-4 border-t border-line flex items-center justify-between"><strong class="num">۲٬۹۰۰٬۰۰۰ تومان</strong><span class="tag tag-warn">۱۰ ظرفیت</span></div>
+    <a href="course-single.html" class="btn btn-dark btn-sm w-full">مشاهده و ثبت‌نام <i class="ph-light ph-arrow-left" aria-hidden="true"></i></a>
+  </div>
+</article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= تقویم ================= -->
+<section class="py-20 bg-tint">
+  <div class="wrap">
+    <div class="flex flex-wrap items-end justify-between gap-3 mb-8" data-reveal="up"><h2 class="font-display text-4xl">تقویم شروع دوره‌ها</h2><span class="tag tag-soft">نیم‌سال دوم ۱۴۰۴</span></div>
+    <div class="card overflow-hidden" data-reveal="up">
+      <div class="hidden md:grid grid-cols-[1.4fr_1fr_1fr_1.5fr_90px_120px] gap-4 px-6 py-4 text-xs text-ink-2 border-b border-line"><span>دوره</span><span>مدرس</span><span>شروع</span><span>روزهای برگزاری</span><span>ظرفیت</span><span></span></div>
+      <div class="grid md:grid-cols-[1.4fr_1fr_1fr_1.5fr_90px_120px] gap-x-4 gap-y-1 items-center px-6 py-5 border-b border-line transition hover:bg-bg-2">
+        <strong class="font-display text-xl font-medium">میکاپ حرفه‌ای</strong><span class="text-sm text-ink-2">المیرا آزمون</span><span class="text-sm">۱۵ مهر ۱۴۰۴</span><span class="text-sm text-ink-2">شنبه و دوشنبه · ۱۰ تا ۱۴</span><span class="tag tag-warn w-fit">۳ نفر</span><a href="enroll.html" class="btn btn-dark btn-sm mt-2 md:mt-0">ثبت‌نام</a>
+      </div>
+      <div class="grid md:grid-cols-[1.4fr_1fr_1fr_1.5fr_90px_120px] gap-x-4 gap-y-1 items-center px-6 py-5 border-b border-line transition hover:bg-bg-2">
+        <strong class="font-display text-xl font-medium">رنگ و مش مو</strong><span class="text-sm text-ink-2">سارا محمدی</span><span class="text-sm">۲۰ مهر ۱۴۰۴</span><span class="text-sm text-ink-2">یکشنبه و سه‌شنبه · ۱۴ تا ۱۸</span><span class="tag tag-warn w-fit">۵ نفر</span><a href="enroll.html" class="btn btn-dark btn-sm mt-2 md:mt-0">ثبت‌نام</a>
+      </div>
+      <div class="grid md:grid-cols-[1.4fr_1fr_1fr_1.5fr_90px_120px] gap-x-4 gap-y-1 items-center px-6 py-5 border-b border-line transition hover:bg-bg-2">
+        <strong class="font-display text-xl font-medium">کاشت ناخن</strong><span class="text-sm text-ink-2">نگین رضایی</span><span class="text-sm">۱ آبان ۱۴۰۴</span><span class="text-sm text-ink-2">چهارشنبه · ۹ تا ۱۵</span><span class="tag tag-mute w-fit">تکمیل</span><button type="button" class="btn btn-soft btn-sm mt-2 md:mt-0" onclick="eaToast('به لیست انتظار اضافه شدید (نمایشی)','ph-hourglass')">لیست انتظار</button>
+      </div>
+      <div class="grid md:grid-cols-[1.4fr_1fr_1fr_1.5fr_90px_120px] gap-x-4 gap-y-1 items-center px-6 py-5 transition hover:bg-bg-2">
+        <strong class="font-display text-xl font-medium">آرایش عروس تخصصی</strong><span class="text-sm text-ink-2">المیرا آزمون</span><span class="text-sm">۱۰ آبان ۱۴۰۴</span><span class="text-sm text-ink-2">پنجشنبه · ۹ تا ۱۶</span><span class="tag tag-warn w-fit">۲ نفر</span><a href="enroll.html" class="btn btn-dark btn-sm mt-2 md:mt-0">ثبت‌نام</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= چرا ما ================= -->
+<section class="py-20">
+  <div class="wrap">
+    <div class="sec-head mb-12" data-reveal="up"><p class="kicker">چرا ما</p><span class="sep" aria-hidden="true"></span><h2 class="font-display text-4xl">چرا آموزشگاه المیرا آزمون؟</h2></div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="group card card-hover p-7 flex flex-col gap-3" data-reveal="up"><i class="ph-light ph-certificate text-4xl text-copper-ink transition duration-500 group-hover:scale-110 group-hover:-rotate-6" aria-hidden="true"></i><h3 class="font-display text-2xl">مدرک پایان دوره</h3><p class="text-sm text-ink-2">[نوع و اعتبار مدرک را با اطلاعات واقعی جایگزین کنید]</p></div>
+      <div class="group card card-hover p-7 flex flex-col gap-3" data-reveal="up" style="--d:1"><i class="ph-light ph-chalkboard-teacher text-4xl text-copper-ink transition duration-500 group-hover:scale-110 group-hover:-rotate-6" aria-hidden="true"></i><h3 class="font-display text-2xl">مدرسان شاغل</h3><p class="text-sm text-ink-2">مدرس‌ها همان کارشناس‌هایی‌اند که هر روز در سالن کار می‌کنند.</p></div>
+      <div class="group card card-hover p-7 flex flex-col gap-3" data-reveal="up" style="--d:2"><i class="ph-light ph-hand-heart text-4xl text-copper-ink transition duration-500 group-hover:scale-110 group-hover:-rotate-6" aria-hidden="true"></i><h3 class="font-display text-2xl">کارگاه کاملاً عملی</h3><p class="text-sm text-ink-2">تمرین روی مدل واقعی در هر جلسه.</p></div>
+      <div class="group card card-hover p-7 flex flex-col gap-3" data-reveal="up" style="--d:3"><i class="ph-light ph-briefcase text-4xl text-copper-ink transition duration-500 group-hover:scale-110 group-hover:-rotate-6" aria-hidden="true"></i><h3 class="font-display text-2xl">مسیر کاری</h3><p class="text-sm text-ink-2">راهنمایی برای شروع کار بعد از پایان دوره.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= نمونه‌کار هنرجویان ================= -->
+<section class="py-20 bg-tint overflow-hidden" data-carousel>
+  <div class="wrap flex flex-wrap items-end justify-between gap-4 mb-10" data-reveal="up">
+    <div><p class="kicker">کارهای پایان دوره</p><h2 class="font-display text-4xl mt-2">نمونه‌کار هنرجویان</h2></div>
+    <div class="flex gap-2"><button type="button" class="round-btn !border-ink-2" data-prev aria-label="قبلی"><i class="ph-light ph-arrow-right" aria-hidden="true"></i></button><button type="button" class="round-btn !border-ink-2" data-next aria-label="بعدی"><i class="ph-light ph-arrow-left" aria-hidden="true"></i></button></div>
+  </div>
+  <div class="flex gap-5 overflow-x-auto snap-x snap-mandatory [scrollbar-width:none] ps-[max(1rem,calc((100vw-1240px)/2+2rem))] pe-4 cursor-grab" data-track>
+    <figure class="snap-start shrink-0 w-64 md:w-72"><div class="zoom rounded-xl aspect-[3/4]"><img src="https://images.unsplash.com/photo-1574015974293-817f0ebebb74?auto=format&amp;fit=crop&amp;w=500&amp;h=660&amp;q=70" alt="کار هنرجو: حالت‌دهی مو" class="size-full object-cover" loading="lazy" width="500" height="660" draggable="false"></div><figcaption class="text-sm mt-3">حالت‌دهی مو — ترم بهار</figcaption></figure>
+    <figure class="snap-start shrink-0 w-64 md:w-72"><div class="zoom rounded-xl aspect-[3/4]"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&amp;fit=crop&amp;w=500&amp;h=660&amp;q=70" alt="کار هنرجو: طراحی ناخن" class="size-full object-cover" loading="lazy" width="500" height="660" draggable="false"></div><figcaption class="text-sm mt-3">طراحی ناخن — ترم زمستان</figcaption></figure>
+    <figure class="snap-start shrink-0 w-64 md:w-72"><div class="zoom rounded-xl aspect-[3/4]"><img src="https://images.unsplash.com/photo-1594465919760-441fe5908ab0?auto=format&amp;fit=crop&amp;w=500&amp;h=660&amp;q=70" alt="کار هنرجو: میکاپ" class="size-full object-cover" loading="lazy" width="500" height="660" draggable="false"></div><figcaption class="text-sm mt-3">میکاپ حرفه‌ای — ترم بهار</figcaption></figure>
+    <figure class="snap-start shrink-0 w-64 md:w-72"><div class="zoom rounded-xl aspect-[3/4]"><img src="https://images.unsplash.com/photo-1554519934-e32b1629d9ee?auto=format&amp;fit=crop&amp;w=500&amp;h=660&amp;q=70" alt="کار هنرجو: بالیاژ" class="size-full object-cover" loading="lazy" width="500" height="660" draggable="false"></div><figcaption class="text-sm mt-3">بالیاژ — ترم پاییز</figcaption></figure>
+    <figure class="snap-start shrink-0 w-64 md:w-72"><div class="zoom rounded-xl aspect-[3/4]"><img src="https://images.unsplash.com/photo-1544717304-a2db4a7b16ee?auto=format&amp;fit=crop&amp;w=500&amp;h=660&amp;q=70" alt="کار هنرجو: پاکسازی پوست" class="size-full object-cover" loading="lazy" width="500" height="660" draggable="false"></div><figcaption class="text-sm mt-3">مراقبت پوست — ترم زمستان</figcaption></figure>
+  </div>
+</section>
+
+<!-- ================= تجربهٔ هنرجویان ================= -->
+<section class="py-20">
+  <div class="wrap">
+    <div class="sec-head mb-12" data-reveal="up"><p class="kicker">نظرات</p><span class="sep" aria-hidden="true"></span><h2 class="font-display text-4xl">تجربهٔ هنرجویان</h2></div>
+    <div class="grid md:grid-cols-3 gap-5">
+      <figure class="card p-6 flex flex-col gap-4" data-reveal="up"><span class="stars" role="img" aria-label="۵ از ۵ ستاره">★★★★★<span class="off"></span></span><blockquote class="text-sm text-ink-2 leading-8">«بیشتر از هر چیز، تمرین روی مدل واقعی کمکم کرد. از جلسهٔ سوم دستم راه افتاد.»</blockquote><figcaption class="text-xs mt-auto"><strong>هنرجوی نمونه</strong> · دورهٔ میکاپ حرفه‌ای</figcaption></figure>
+      <figure class="card p-6 flex flex-col gap-4" data-reveal="up" style="--d:1"><span class="stars" role="img" aria-label="۵ از ۵ ستاره">★★★★★<span class="off"></span></span><blockquote class="text-sm text-ink-2 leading-8">«ترکیب رنگ را این‌جا واقعاً فهمیدم؛ قبلاً فقط از روی فرمول کار می‌کردم.»</blockquote><figcaption class="text-xs mt-auto"><strong>هنرجوی نمونه</strong> · دورهٔ رنگ و مش</figcaption></figure>
+      <figure class="card p-6 flex flex-col gap-4" data-reveal="up" style="--d:2"><span class="stars" role="img" aria-label="۴ از ۵ ستاره">★★★★<span class="off">★</span></span><blockquote class="text-sm text-ink-2 leading-8">«کلاس‌ها منظم بود و ابزار کافی در اختیارمان بود.»</blockquote><figcaption class="text-xs mt-auto"><strong>هنرجوی نمونه</strong> · دورهٔ کاشت ناخن</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= سوالات + مشاوره ================= -->
+<section class="pb-20">
+  <div class="wrap grid lg:grid-cols-2 gap-10 items-start">
+    <div data-reveal="up">
+      <h2 class="font-display text-4xl mb-6">سوالات متداول آموزشگاه</h2>
+      <div data-acc id="a-faq">
+        <div class="acc-item is-open"><button type="button" class="acc-btn">برای شرکت در دوره‌ها پیش‌نیاز لازم است؟<span class="pm" aria-hidden="true"></span></button><div class="acc-panel"><div><p>[پاسخ نمونه] دوره‌های مقدماتی پیش‌نیاز ندارند. برای دوره‌های پیشرفته، گذراندن سطح قبل یا مصاحبهٔ کوتاه لازم است.</p></div></div></div>
+        <div class="acc-item"><button type="button" class="acc-btn">شهریه را می‌توان اقساطی پرداخت کرد؟<span class="pm" aria-hidden="true"></span></button><div class="acc-panel"><div><p>[پاسخ نمونه] بله؛ پیش‌پرداخت به‌همراه دو قسط ماهانه.</p></div></div></div>
+        <div class="acc-item"><button type="button" class="acc-btn">مدرک پایان دوره چه اعتباری دارد؟<span class="pm" aria-hidden="true"></span></button><div class="acc-panel"><div><p>[پاسخ واقعی دربارهٔ مدرک را این‌جا بنویسید.]</p></div></div></div>
+        <div class="acc-item"><button type="button" class="acc-btn">وسایل و مواد مصرفی به عهدهٔ کیست؟<span class="pm" aria-hidden="true"></span></button><div class="acc-panel"><div><p>[پاسخ نمونه] مواد مصرفی کلاس با آموزشگاه است؛ فهرست کیت شخصی در جلسهٔ اول داده می‌شود.</p></div></div></div>
+      </div>
+    </div>
+    <div class="grad spotlight rounded-3xl p-8 md:p-10 flex flex-col gap-4" data-reveal="left">
+      <div class="aurora" aria-hidden="true"><span></span><span></span></div>
+      <i class="ph-light ph-headset text-5xl text-salmon" aria-hidden="true"></i>
+      <h2 class="font-display text-4xl">مشاورهٔ ثبت‌نام رایگان</h2>
+      <p class="text-white/75">[شماره تماس آموزشگاه] — پاسخ‌گویی همه‌روزه ۹ تا ۲۰</p>
+      <a href="contact.html" class="btn btn-salmon w-fit" data-magnetic>درخواست مشاوره <i class="ph-light ph-arrow-left" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
+</main>
+<!-- نوار متحرک خدمات -->
+<div class="border-y border-line py-7 md:py-9 overflow-hidden" aria-hidden="true">
+  <div class="marquee" data-marquee>
+    <div class="marquee-track font-display text-4xl md:text-6xl leading-none">
+      <span class="marquee-item">میکاپ عروس <i class="ph-fill ph-sparkle"></i></span>
+      <span class="marquee-item outline-text-dark">رنگ و مش مو <i class="ph-fill ph-sparkle"></i></span>
+      <span class="marquee-item">پاکسازی پوست <i class="ph-fill ph-sparkle"></i></span>
+      <span class="marquee-item outline-text-dark">کاشت ناخن <i class="ph-fill ph-sparkle"></i></span>
+      <span class="marquee-item">کراتینه <i class="ph-fill ph-sparkle"></i></span>
+      <span class="marquee-item outline-text-dark">لیفت مژه <i class="ph-fill ph-sparkle"></i></span>
+    </div>
+  </div>
+</div>
+
+<footer class="grad">
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="wrap">
+    <p class="text-center py-8 font-display text-2xl md:text-3xl border-b border-white/15">
+      زیبایی خودتان را از نو کشف کنید.
+      <a href="#" data-booking class="link-u inline-flex items-center gap-1 text-salmon">همین حالا نوبت بگیرید <i class="ph-light ph-arrow-up-left" aria-hidden="true"></i></a>
+    </p>
+  </div>
+  <div class="wrap grid gap-10 py-14 md:grid-cols-[1.4fr_1fr_1fr_1.2fr] text-sm text-white/75">
+    <div class="flex flex-col gap-4">
+      <a href="index.html" class="brand text-white"><i class="ph-light ph-flower-lotus" aria-hidden="true"></i><span>المیرا آزمون</span></a>
+      <p class="max-w-[34ch]">سالن زیبایی، فروشگاه محصولات مراقبتی و آموزشگاه آرایشگری؛ زیر یک سقف.</p>
+      <div class="flex gap-2">
+        <a href="#" class="round-btn !border-white/30 text-white hover:!bg-white hover:!text-night" aria-label="اینستاگرام"><i class="ph-light ph-instagram-logo" aria-hidden="true"></i></a>
+        <a href="#" class="round-btn !border-white/30 text-white hover:!bg-white hover:!text-night" aria-label="تلگرام"><i class="ph-light ph-telegram-logo" aria-hidden="true"></i></a>
+        <a href="#" class="round-btn !border-white/30 text-white hover:!bg-white hover:!text-night" aria-label="واتس‌اپ"><i class="ph-light ph-whatsapp-logo" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <nav class="flex flex-col gap-2" aria-label="سالن">
+      <h2 class="text-xs font-bold text-salmon mb-2">سالن</h2>
+      <a class="link-u w-fit hover:text-white" href="booking.html">خدمات سالن</a>
+      <a class="link-u w-fit hover:text-white" href="#" data-booking>رزرو نوبت</a>
+      <a class="link-u w-fit hover:text-white" href="gallery.html">گالری نمونه‌کار</a>
+      <a class="link-u w-fit hover:text-white" href="about.html">درباره ما</a>
+    </nav>
+    <nav class="flex flex-col gap-2" aria-label="فروشگاه و آموزشگاه">
+      <h2 class="text-xs font-bold text-salmon mb-2">فروشگاه و آموزشگاه</h2>
+      <a class="link-u w-fit hover:text-white" href="shop.html">فروشگاه</a>
+      <a class="link-u w-fit hover:text-white" href="cart.html">سبد خرید</a>
+      <a class="link-u w-fit hover:text-white" href="academy.html">دوره‌های آموزشی</a>
+      <a class="link-u w-fit hover:text-white" href="blog.html">مجله زیبایی</a>
+    </nav>
+    <div class="flex flex-col gap-2">
+      <h2 class="text-xs font-bold text-salmon mb-2">تماس</h2>
+      <p class="flex gap-2"><i class="ph-light ph-map-pin text-lg text-salmon" aria-hidden="true"></i>[نشانی سالن]</p>
+      <p class="flex gap-2"><i class="ph-light ph-phone text-lg text-salmon" aria-hidden="true"></i><span dir="ltr">[شماره تماس]</span></p>
+      <p class="flex gap-2"><i class="ph-light ph-clock text-lg text-salmon" aria-hidden="true"></i>شنبه تا چهارشنبه ۹ تا ۲۰</p>
+    </div>
+  </div>
+  <div class="wrap flex flex-wrap justify-between gap-3 py-6 border-t border-white/15 text-xs text-white/60">
+    <span>© المیرا آزمون — همهٔ متن‌ها، قیمت‌ها و تصاویر نمونه‌اند.</span>
+    <nav class="flex gap-4" aria-label="پیوندهای پایانی">
+      <a class="hover:text-white" href="contact.html">تماس</a>
+      <a class="hover:text-white" href="auth.html">ورود</a>
+      <a class="hover:text-white" href="404.html">صفحهٔ ۴۰۴</a>
+    </nav>
+  </div>
+</footer>
+<!-- ============ اجزای شناور مشترک ============ -->
+<div class="overlay" aria-hidden="true"></div>
+
+<!-- منوی موبایل -->
+<aside class="drawer from-start nav-drawer" id="nav-drawer" aria-hidden="true" aria-label="منو">
+  <div class="aurora" aria-hidden="true"><span></span><span></span></div>
+  <div class="flex items-center justify-between px-5 h-[76px] border-b border-white/15">
+    <span class="brand"><i class="ph-light ph-flower-lotus" aria-hidden="true"></i><span>المیرا آزمون</span></span>
+    <button type="button" class="hdr-icon inline-grid" data-close aria-label="بستن منو"><i class="ph-light ph-x" aria-hidden="true"></i></button>
+  </div>
+  <nav class="flex-1 overflow-y-auto px-5 py-4" aria-label="منوی موبایل">
+    <a class="dn-link" href="index.html">خانه <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="booking.html">خدمات سالن <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="shop.html">فروشگاه <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="academy.html">آموزشگاه <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="gallery.html">گالری نمونه‌کار <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="blog.html">مجله زیبایی <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="about.html">درباره ما <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="contact.html">تماس <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="account.html">حساب کاربری <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+  </nav>
+  <div class="p-5 border-t border-white/15">
+    <a href="#" data-booking class="btn btn-salmon w-full">رزرو نوبت در سامانهٔ سالن <i class="ph-light ph-arrow-up-left" aria-hidden="true"></i></a>
+  </div>
+</aside>
+
+<!-- سبد خرید کوچک -->
+<aside class="drawer from-end" id="cart-drawer" aria-hidden="true" aria-label="سبد خرید">
+  <div class="flex items-center justify-between px-5 h-[76px] border-b border-line">
+    <h2 class="font-display text-2xl">سبد خرید</h2>
+    <button type="button" class="hdr-icon inline-grid" data-close aria-label="بستن سبد خرید"><i class="ph-light ph-x" aria-hidden="true"></i></button>
+  </div>
+  <div class="flex-1 overflow-y-auto px-5">
+    <div class="mini-item" data-line>
+      <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&amp;fit=crop&amp;w=160&amp;h=160&amp;q=70" alt="" class="size-16 rounded-lg object-cover" loading="lazy" width="160" height="160">
+      <div class="flex-1 text-sm"><p class="font-semibold">سرم روشن‌کنندهٔ پوست</p><p class="text-ink-2">۱ × ۴۸۰٬۰۰۰ ت</p></div>
+      <button type="button" class="hdr-icon inline-grid text-ink-2 hover:text-copper" data-remove aria-label="حذف سرم از سبد"><i class="ph-light ph-trash" aria-hidden="true"></i></button>
+    </div>
+    <div class="mini-item" data-line>
+      <img src="https://images.unsplash.com/photo-1552046122-03184de85e08?auto=format&amp;fit=crop&amp;w=160&amp;h=160&amp;q=70" alt="" class="size-16 rounded-lg object-cover" loading="lazy" width="160" height="160">
+      <div class="flex-1 text-sm"><p class="font-semibold">ماسک تقویت‌کنندهٔ مو</p><p class="text-ink-2">۲ × ۳۲۰٬۰۰۰ ت</p></div>
+      <button type="button" class="hdr-icon inline-grid text-ink-2 hover:text-copper" data-remove aria-label="حذف ماسک مو از سبد"><i class="ph-light ph-trash" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="p-5 border-t border-line flex flex-col gap-3">
+    <div class="flex justify-between text-sm"><span class="text-ink-2">جمع کالاها</span><strong class="num">۱٬۱۲۰٬۰۰۰ تومان</strong></div>
+    <a href="cart.html" class="btn btn-outline w-full">مشاهدهٔ سبد</a>
+    <a href="checkout.html" class="btn btn-salmon w-full">تسویه حساب <i class="ph-light ph-arrow-left" aria-hidden="true"></i></a>
+  </div>
+</aside>
+
+<!-- لایت‌باکس -->
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="نمایش تصویر">
+  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="">
+  <button type="button" class="round-btn lb-btn lb-close top-5 left-5" aria-label="بستن"><i class="ph-light ph-x" aria-hidden="true"></i></button>
+  <button type="button" class="round-btn lb-btn lb-prev right-5 top-1/2" aria-label="تصویر قبلی"><i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+  <button type="button" class="round-btn lb-btn lb-next left-5 top-1/2" aria-label="تصویر بعدی"><i class="ph-light ph-arrow-left" aria-hidden="true"></i></button>
+  <p class="lb-cap"></p>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+
+<button type="button" class="to-top" aria-label="برگشت به بالای صفحه">
+  <svg viewBox="0 0 50 50" aria-hidden="true"><circle cx="25" cy="25" r="23"/></svg>
+  <i class="ph-light ph-arrow-up" aria-hidden="true"></i>
+</button>
+
+<div class="m-book">
+  <a href="#" data-booking class="btn btn-salmon w-full">رزرو نوبت آنلاین <i class="ph-light ph-arrow-up-left" aria-hidden="true"></i></a>
+</div>
+
+<script src="assets/js/theme.js"></script>
+</body>
+</html>

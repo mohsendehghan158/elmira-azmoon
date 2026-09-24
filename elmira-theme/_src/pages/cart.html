@@ -1,0 +1,86 @@
+<!--META {"title": "سبد خرید | المیرا آزمون", "desc": "سبد خرید فروشگاه المیرا آزمون.", "nav": "shop", "hero": {"title": "سبد خرید", "outline": "سبد", "crumbs": [["خانه", "index.html"], ["فروشگاه", "shop.html"], ["سبد خرید", ""]], "extra": "{{steps shop|1}}"}}-->
+
+<section class="py-14 md:py-20" data-cart data-discount="85000" data-ship="65000">
+  <div class="wrap" data-full>
+    <div class="grid lg:grid-cols-[1fr_360px] gap-10 items-start">
+      <div class="flex flex-col gap-6">
+        <!-- ارسال رایگان -->
+        <div class="card p-5 flex flex-col gap-3 [&.is-free_.free-msg]:hidden [&:not(.is-free)_.free-ok]:hidden" data-free data-reveal="up">
+          <p class="free-msg flex items-center gap-2 text-sm"><i class="ph-light ph-truck text-xl text-copper-ink" aria-hidden="true"></i><span><b class="num" data-free-left>۰</b> تومان تا ارسال رایگان باقی مانده</span></p>
+          <p class="free-ok flex items-center gap-2 text-sm text-[var(--ok)]"><i class="ph-light ph-confetti text-xl" aria-hidden="true"></i>ارسال این سفارش رایگان است!</p>
+          <div class="progress is-in"><span style="width:0"></span></div>
+        </div>
+
+        <!-- اقلام -->
+        <div class="card overflow-hidden" data-reveal="up" style="--d:1">
+          <div class="hidden md:grid grid-cols-[1fr_120px_130px_120px_44px] gap-4 px-6 py-4 border-b border-line text-xs text-ink-2">
+            <span>محصول</span><span>قیمت واحد</span><span>تعداد</span><span>جمع</span><span></span>
+          </div>
+          <div class="mini-item !px-5 md:!px-6 !py-5 grid grid-cols-[64px_1fr_auto] md:grid-cols-[1fr_120px_130px_120px_44px] gap-4 items-center" data-line data-price="480000">
+            <div class="flex items-center gap-4 md:col-span-1 col-span-2 md:col-auto">
+              <img src="@@serum,160,160@@" alt="" class="size-16 rounded-lg object-cover shrink-0" width="160" height="160">
+              <div><a href="product-single.html" class="link-u font-semibold text-sm">سرم روشن‌کنندهٔ پوست</a><p class="text-xs text-ink-2">۳۰ میلی‌لیتر</p></div>
+            </div>
+            <span class="hidden md:block text-sm num">۴۸۰٬۰۰۰ ت</span>
+            <div class="qty justify-self-start" data-min="1" data-max="8"><button type="button" data-step="+" aria-label="افزایش"><i class="ph-light ph-plus" aria-hidden="true"></i></button><output data-v="1">۱</output><button type="button" data-step="-" aria-label="کاهش"><i class="ph-light ph-minus" aria-hidden="true"></i></button></div>
+            <strong class="text-sm num"><span data-line-total>۴۸۰٬۰۰۰</span> ت</strong>
+            <button type="button" class="hdr-icon inline-grid text-ink-2 hover:text-[var(--err)]" data-remove aria-label="حذف سرم از سبد"><i class="ph-light ph-trash" aria-hidden="true"></i></button>
+          </div>
+          <div class="mini-item !px-5 md:!px-6 !py-5 !border-b-0 grid grid-cols-[64px_1fr_auto] md:grid-cols-[1fr_120px_130px_120px_44px] gap-4 items-center" data-line data-price="320000">
+            <div class="flex items-center gap-4 col-span-2 md:col-auto">
+              <img src="@@green_jars,160,160@@" alt="" class="size-16 rounded-lg object-cover shrink-0" width="160" height="160">
+              <div><a href="product-single.html" class="link-u font-semibold text-sm">ماسک تقویت‌کنندهٔ مو</a><p class="text-xs text-ink-2">۲۰۰ گرم</p></div>
+            </div>
+            <span class="hidden md:block text-sm num">۳۲۰٬۰۰۰ ت</span>
+            <div class="qty justify-self-start" data-min="1" data-max="8"><button type="button" data-step="+" aria-label="افزایش"><i class="ph-light ph-plus" aria-hidden="true"></i></button><output data-v="2">۲</output><button type="button" data-step="-" aria-label="کاهش"><i class="ph-light ph-minus" aria-hidden="true"></i></button></div>
+            <strong class="text-sm num"><span data-line-total>۶۴۰٬۰۰۰</span> ت</strong>
+            <button type="button" class="hdr-icon inline-grid text-ink-2 hover:text-[var(--err)]" data-remove aria-label="حذف ماسک مو از سبد"><i class="ph-light ph-trash" aria-hidden="true"></i></button>
+          </div>
+        </div>
+        <a href="shop.html" class="link-arrow w-fit"><i class="ph-light ph-arrow-right" aria-hidden="true"></i> ادامهٔ خرید</a>
+
+        <!-- پیشنهاد مکمل -->
+        <div class="mt-4" data-reveal="up">
+          <h2 class="font-display text-3xl mb-5">این‌ها را هم اضافه کنید</h2>
+          <div class="grid sm:grid-cols-3 gap-4">
+            <div class="card card-hover p-4 flex items-center gap-3" data-product><img src="@@cream_swipe,120,120@@" alt="ژل شست‌وشوی صورت" class="size-14 rounded-lg object-cover" loading="lazy" width="120" height="120"><div class="flex-1 text-sm"><p class="font-semibold">ژل شست‌وشوی صورت</p><p class="text-ink-2 num">۲۱۰٬۰۰۰ ت</p></div><button type="button" class="round-btn !size-10" data-add="ژل شست‌وشوی صورت" aria-label="افزودن ژل شست‌وشو"><i class="ph-light ph-plus" aria-hidden="true"></i></button></div>
+            <div class="card card-hover p-4 flex items-center gap-3" data-product><img src="@@cream,120,120@@" alt="کرم ضدآفتاب" class="size-14 rounded-lg object-cover" loading="lazy" width="120" height="120"><div class="flex-1 text-sm"><p class="font-semibold">کرم ضدآفتاب</p><p class="text-ink-2 num">۳۹۰٬۰۰۰ ت</p></div><button type="button" class="round-btn !size-10" data-add="کرم ضدآفتاب" aria-label="افزودن کرم ضدآفتاب"><i class="ph-light ph-plus" aria-hidden="true"></i></button></div>
+            <div class="card card-hover p-4 flex items-center gap-3" data-product><img src="@@flatlay_light,120,120@@" alt="تونر پاک‌کننده" class="size-14 rounded-lg object-cover" loading="lazy" width="120" height="120"><div class="flex-1 text-sm"><p class="font-semibold">تونر پاک‌کننده</p><p class="text-ink-2 num">۱۹۰٬۰۰۰ ت</p></div><button type="button" class="round-btn !size-10" data-add="تونر پاک‌کننده" aria-label="افزودن تونر"><i class="ph-light ph-plus" aria-hidden="true"></i></button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- خلاصه -->
+      <aside class="card p-6 flex flex-col gap-4 lg:sticky lg:top-24" data-reveal="left">
+        <h2 class="font-display text-3xl">خلاصهٔ سفارش</h2>
+        <dl class="flex flex-col gap-3 text-sm">
+          <div class="flex justify-between"><dt class="text-ink-2">جمع کالاها (<span data-sum="items">۳</span> قلم)</dt><dd class="num"><span data-sum="sub">۱٬۱۲۰٬۰۰۰</span> ت</dd></div>
+          <div class="flex justify-between"><dt class="text-ink-2">تخفیف محصولات</dt><dd class="num text-[var(--ok)]">− ۸۵٬۰۰۰ ت</dd></div>
+          <div class="flex justify-between"><dt class="text-ink-2">هزینهٔ ارسال</dt><dd class="num" data-sum="ship">رایگان</dd></div>
+        </dl>
+        <form class="flex gap-2" data-coupon>
+          <label class="sr-only" for="coupon">کد تخفیف</label>
+          <input id="coupon" class="input !min-h-11" placeholder="کد تخفیف">
+          <button class="btn btn-outline btn-sm !min-h-11" type="submit">اعمال</button>
+        </form>
+        <div class="border-t border-line pt-4 flex items-end justify-between"><span class="text-sm text-ink-2">مبلغ قابل پرداخت</span><strong class="font-display text-3xl num"><span data-sum="total">۱٬۰۳۵٬۰۰۰</span> <small class="text-base text-ink-2">تومان</small></strong></div>
+        <a href="checkout.html" class="btn btn-salmon btn-lg w-full" data-magnetic=".12">ادامهٔ فرایند خرید <i class="ph-light ph-arrow-left" aria-hidden="true"></i></a>
+        <ul class="flex flex-col gap-2 text-xs text-ink-2">
+          <li class="flex items-center gap-2"><i class="ph-light ph-lock-key text-base text-copper-ink" aria-hidden="true"></i>پرداخت امن از طریق درگاه بانکی</li>
+          <li class="flex items-center gap-2"><i class="ph-light ph-storefront text-base text-copper-ink" aria-hidden="true"></i>امکان تحویل حضوری در سالن</li>
+          <li class="flex items-center gap-2"><i class="ph-light ph-package text-base text-copper-ink" aria-hidden="true"></i>بسته‌بندی ایمن و محرمانه</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+
+  <!-- حالت سبد خالی -->
+  <div class="wrap" data-empty hidden>
+    <div class="max-w-md mx-auto text-center flex flex-col items-center gap-4 py-16">
+      <span class="grid place-items-center size-28 rounded-full bg-tint text-5xl text-copper-ink animate-[bloom_2.4s_ease-in-out_infinite]"><i class="ph-light ph-handbag" aria-hidden="true"></i></span>
+      <h2 class="font-display text-4xl">سبد خرید شما خالی است</h2>
+      <p class="text-ink-2">محصولات مورد نظرتان را از فروشگاه انتخاب کنید.</p>
+      <a href="shop.html" class="btn btn-salmon">رفتن به فروشگاه <i class="ph-light ph-arrow-left" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>

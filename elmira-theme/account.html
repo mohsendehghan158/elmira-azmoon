@@ -1,0 +1,383 @@
+<!doctype html>
+<!-- ساخته‌شده با _src/build.py از _src/pages/account.html؛ این فایل را مستقیم ویرایش نکنید -->
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>پنل کاربری | المیرا آزمون</title>
+<meta name="description" content="پنل کاربری المیرا آزمون: سفارش‌های فروشگاه، دوره‌های آموزشگاه و امتیاز باشگاه.">
+<meta name="theme-color" content="#2a3040">
+<script>(function(){var t;try{t=localStorage.getItem('ea-theme');}catch(e){}var d=t?t==='dark':matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.classList.add(d?'dark':'light');})();</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600&family=Vazirmatn:wght@300;400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="assets/css/theme.css">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+  @custom-variant dark (&:where(.dark, .dark *));
+  @theme inline {
+    --color-bg: var(--bg);
+    --color-bg-2: var(--bg-2);
+    --color-tint: var(--tint);
+    --color-card: var(--card);
+    --color-ink: var(--ink);
+    --color-ink-2: var(--ink-2);
+    --color-line: var(--line);
+    --color-night: var(--night);
+    --color-copper: var(--copper);
+    --color-copper-ink: var(--copper-ink);
+    --color-salmon: var(--salmon);
+    --font-sans: "Vazirmatn", system-ui, sans-serif;
+    --font-display: "Markazi Text", "Vazirmatn", serif;
+  }
+  @utility wrap {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1240px;
+    padding-inline: 1rem;
+    @media (width >= 768px) { padding-inline: 2rem; }
+  }
+</style>
+</head>
+<body class="">
+
+<div class="curtain" aria-hidden="true">
+  <div class="curtain-mark"><i class="ph-light ph-flower-lotus"></i><span>المیرا آزمون</span><div class="curtain-bar"></div></div>
+</div>
+<noscript><style>.curtain{display:none}</style></noscript>
+<div class="scroll-progress" aria-hidden="true"><span></span></div>
+<a href="#main" class="skip">پرش به محتوای اصلی</a>
+<header class="site-header">
+  <div class="bar">
+    <div class="wrap h-[76px] flex items-center justify-between gap-4">
+      <a href="index.html" class="brand shrink-0" aria-label="المیرا آزمون، صفحه اصلی">
+        <i class="ph-light ph-flower-lotus" aria-hidden="true"></i><span>المیرا آزمون</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1" aria-label="منوی اصلی">
+        <a class="nav-link" href="index.html" data-nav="home">خانه</a>
+        <a class="nav-link" href="booking.html" data-nav="services">خدمات</a>
+        <a class="nav-link" href="shop.html" data-nav="shop">فروشگاه</a>
+        <a class="nav-link" href="academy.html" data-nav="academy">آموزشگاه</a>
+        <a class="nav-link" href="gallery.html" data-nav="gallery">گالری</a>
+        <a class="nav-link" href="blog.html" data-nav="blog">مجله</a>
+        <a class="nav-link" href="about.html" data-nav="about">درباره ما</a>
+        <a class="nav-link" href="contact.html" data-nav="contact">تماس</a>
+      </nav>
+
+      <div class="flex items-center gap-0.5">
+        <button type="button" class="hdr-icon theme-toggle inline-grid" data-theme-toggle aria-label="تغییر حالت روشن و تیره">
+          <i class="ph-light ph-sun sun" aria-hidden="true"></i><i class="ph-light ph-moon-stars moon" aria-hidden="true"></i>
+        </button>
+        <a href="account.html" class="hdr-icon hidden sm:inline-grid" aria-label="حساب کاربری"><i class="ph-light ph-user" aria-hidden="true"></i></a>
+        <button type="button" class="hdr-icon cart-target inline-grid" data-open="cart-drawer" aria-controls="cart-drawer" aria-expanded="false" aria-label="سبد خرید">
+          <i class="ph-light ph-handbag" aria-hidden="true"></i><span class="cart-count" data-n="3">۳</span>
+        </button>
+        <a href="#" data-booking class="btn btn-salmon btn-sm hidden md:inline-flex ms-2" data-magnetic=".25">رزرو نوبت <i class="ph-light ph-arrow-up-left" aria-hidden="true"></i></a>
+        <button type="button" class="hdr-icon inline-grid lg:hidden" data-open="nav-drawer" aria-controls="nav-drawer" aria-expanded="false" aria-label="باز کردن منو"><i class="ph-light ph-list" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="grad spotlight page-hero" data-hero>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <span class="outline-text font-display absolute -bottom-6 md:-bottom-12 left-2 md:left-8 text-[26vw] md:text-[15rem] leading-none pointer-events-none select-none" aria-hidden="true" data-parallax="-.12">پنل</span>
+  <div class="wrap relative">
+    <nav class="crumbs" aria-label="مسیر صفحه" data-reveal="up"><a href="index.html" class="link-u">خانه</a><span aria-hidden="true">/</span><span aria-current="page" class="text-white">پنل کاربری</span></nav>
+    <h1 class="font-display text-5xl md:text-7xl leading-[1.05] mt-4" data-split>سلام، [نام کاربر]</h1>
+    <p class="mt-5 max-w-xl text-white/75" data-reveal="up" style="--d:3">سفارش‌های فروشگاه و دوره‌های آموزشگاه در یک داشبورد. نوبت‌های سالن در سامانهٔ نوبت‌دهی سالن مدیریت می‌شوند.</p>
+    
+  </div>
+</section>
+
+
+<section class="py-14 md:py-20">
+  <div class="wrap grid lg:grid-cols-[280px_1fr] gap-8 items-start">
+    <!-- سایدبار -->
+    <aside class="card overflow-hidden lg:sticky lg:top-24" data-reveal="up">
+      <div class="p-6 flex items-center gap-4 border-b border-line">
+        <span class="grid place-items-center size-14 rounded-full bg-gradient-to-br from-salmon to-copper text-white font-display text-2xl">ن</span>
+        <div class="text-sm"><strong class="block">[نام کاربر]</strong><span class="text-ink-2 num" dir="ltr">[۰۹۱۲xxxxxxx]</span></div>
+      </div>
+      <div class="grid grid-cols-2 divide-x divide-x-reverse divide-line border-b border-line text-center">
+        <div class="p-4"><p class="text-xs text-ink-2">امتیاز باشگاه</p><p class="font-display text-2xl count" data-count="1240">۱٬۲۴۰</p></div>
+        <div class="p-4"><p class="text-xs text-ink-2">کیف پول</p><p class="font-display text-2xl"><span class="count" data-count="150000">۱۵۰٬۰۰۰</span> <small class="text-xs">ت</small></p></div>
+      </div>
+      <nav class="p-3 flex flex-col text-sm" aria-label="منوی حساب">
+        <a href="#dash" class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-tint text-copper-ink font-semibold" aria-current="page"><i class="ph-light ph-squares-four text-lg" aria-hidden="true"></i>داشبورد</a>
+        <a href="#" data-booking class="flex items-center gap-3 px-3 py-2.5 rounded-lg transition hover:bg-bg-2 hover:-translate-x-1"><i class="ph-light ph-calendar-check text-lg" aria-hidden="true"></i>نوبت‌های من <i class="ph-light ph-arrow-up-left ms-auto text-xs" aria-hidden="true"></i></a>
+        <a href="#orders" class="flex items-center gap-3 px-3 py-2.5 rounded-lg transition hover:bg-bg-2 hover:-translate-x-1"><i class="ph-light ph-package text-lg" aria-hidden="true"></i>سفارش‌های من</a>
+        <a href="#courses" class="flex items-center gap-3 px-3 py-2.5 rounded-lg transition hover:bg-bg-2 hover:-translate-x-1"><i class="ph-light ph-graduation-cap text-lg" aria-hidden="true"></i>دوره‌های من</a>
+        <a href="#wish" class="flex items-center gap-3 px-3 py-2.5 rounded-lg transition hover:bg-bg-2 hover:-translate-x-1"><i class="ph-light ph-heart text-lg" aria-hidden="true"></i>علاقه‌مندی‌ها</a>
+        <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-lg transition hover:bg-bg-2 hover:-translate-x-1"><i class="ph-light ph-map-pin text-lg" aria-hidden="true"></i>آدرس‌های من</a>
+        <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-lg transition hover:bg-bg-2 hover:-translate-x-1"><i class="ph-light ph-user-gear text-lg" aria-hidden="true"></i>اطلاعات حساب</a>
+        <a href="auth.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[var(--err)] transition hover:bg-bg-2"><i class="ph-light ph-sign-out text-lg" aria-hidden="true"></i>خروج از حساب</a>
+      </nav>
+    </aside>
+
+    <div id="dash" class="flex flex-col gap-8 min-w-0">
+      <!-- آمار -->
+      <div class="grid sm:grid-cols-3 gap-4">
+        <div class="card card-hover p-5 flex items-center gap-4" data-reveal="up"><span class="grid place-items-center size-12 rounded-full bg-tint text-2xl text-copper-ink"><i class="ph-light ph-truck" aria-hidden="true"></i></span><div><p class="text-xs text-ink-2">سفارش در جریان</p><p class="font-display text-3xl leading-none">۱</p><p class="text-xs text-ink-2">در حال ارسال</p></div></div>
+        <div class="card card-hover p-5 flex items-center gap-4" data-reveal="up" style="--d:1"><span class="grid place-items-center size-12 rounded-full bg-tint text-2xl text-copper-ink"><i class="ph-light ph-graduation-cap" aria-hidden="true"></i></span><div><p class="text-xs text-ink-2">دورهٔ فعال</p><p class="font-display text-3xl leading-none">۱</p><p class="text-xs text-ink-2">میکاپ حرفه‌ای</p></div></div>
+        <div class="card card-hover p-5 flex items-center gap-4" data-reveal="up" style="--d:2"><span class="grid place-items-center size-12 rounded-full bg-tint text-2xl text-copper-ink"><i class="ph-light ph-star" aria-hidden="true"></i></span><div><p class="text-xs text-ink-2">امتیاز باشگاه</p><p class="font-display text-3xl leading-none count" data-count="1240">۱٬۲۴۰</p><p class="text-xs text-ink-2">معادل ۱۲۴٬۰۰۰ تومان</p></div></div>
+      </div>
+
+      <!-- نوبت‌ها -->
+      <div class="grad spotlight rounded-2xl p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-5" data-reveal="up">
+        <div class="aurora" aria-hidden="true"><span></span><span></span></div>
+        <span class="grid place-items-center size-14 shrink-0 rounded-full bg-white/10 text-3xl text-salmon"><i class="ph-light ph-calendar-check" aria-hidden="true"></i></span>
+        <div class="flex-1"><h2 class="font-display text-3xl">نوبت‌های سالن</h2><p class="text-sm text-white/75">رزرو، تغییر زمان و لغو نوبت در سامانهٔ نوبت‌دهی سالن انجام می‌شود.</p></div>
+        <a href="#" data-booking class="btn btn-salmon shrink-0" data-magnetic=".15">ورود به سامانهٔ نوبت‌دهی <i class="ph-light ph-arrow-up-left" aria-hidden="true"></i></a>
+      </div>
+
+      <!-- سفارش‌ها -->
+      <div id="orders" class="scroll-mt-28" data-reveal="up">
+        <div class="flex items-center justify-between mb-4"><h2 class="font-display text-3xl">سفارش‌های فروشگاه</h2><a href="shop.html" class="link-arrow text-sm">خرید جدید <i class="ph-light ph-arrow-left" aria-hidden="true"></i></a></div>
+        <div class="flex flex-col gap-4">
+          <article class="card p-6">
+            <div class="flex flex-wrap items-start justify-between gap-3">
+              <div><h3 class="font-semibold">سفارش <span class="num">۱۴۰۴-۲۸۷۳</span></h3><p class="text-xs text-ink-2 mt-1">ثبت: ۳ مهر ۱۴۰۴ · ۳ قلم کالا · ۱٬۱۰۰٬۰۰۰ ت</p></div>
+              <span class="tag tag-warn">در حال ارسال</span>
+            </div>
+            <ol class="flex items-center gap-2 my-6 text-xs" aria-label="مراحل ارسال">
+              <li class="flex flex-col items-center gap-1.5"><span class="grid place-items-center size-8 rounded-full bg-copper text-white">✓</span>ثبت</li>
+              <li class="flex-1 h-0.5 bg-copper -mt-5" aria-hidden="true"></li>
+              <li class="flex flex-col items-center gap-1.5"><span class="grid place-items-center size-8 rounded-full bg-copper text-white">✓</span>پرداخت</li>
+              <li class="flex-1 h-0.5 bg-line -mt-5 relative overflow-hidden" aria-hidden="true"><span class="absolute inset-y-0 right-0 w-1/2 bg-copper"></span></li>
+              <li class="flex flex-col items-center gap-1.5"><span class="relative grid place-items-center size-8 rounded-full border-2 border-copper text-copper-ink"><span class="absolute inset-0 rounded-full border-2 border-copper animate-ping opacity-40"></span>۳</span>ارسال</li>
+              <li class="flex-1 h-0.5 bg-line -mt-5" aria-hidden="true"></li>
+              <li class="flex flex-col items-center gap-1.5 text-ink-2"><span class="grid place-items-center size-8 rounded-full border border-line">۴</span>تحویل</li>
+            </ol>
+            <div class="flex flex-wrap items-center gap-3">
+              <div class="flex [&>*:not(:first-child)]:-ms-3"><img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&amp;fit=crop&amp;w=96&amp;h=96&amp;q=70" alt="" class="size-11 rounded-full border-2 border-card object-cover" width="96" height="96"><img src="https://images.unsplash.com/photo-1552046122-03184de85e08?auto=format&amp;fit=crop&amp;w=96&amp;h=96&amp;q=70" alt="" class="size-11 rounded-full border-2 border-card object-cover" width="96" height="96"></div>
+              <span class="flex-1"></span>
+              <button type="button" class="btn btn-outline btn-sm" onclick="eaToast('جزئیات سفارش (نمایشی)','ph-receipt')">جزئیات سفارش</button>
+              <button type="button" class="btn btn-dark btn-sm" onclick="eaToast('کد رهگیری: [کد رهگیری]','ph-map-trifold')">پیگیری مرسوله</button>
+            </div>
+          </article>
+          <article class="card p-6 flex flex-wrap items-center justify-between gap-3">
+            <div><h3 class="font-semibold">سفارش <span class="num">۱۴۰۴-۲۶۱۹</span></h3><p class="text-xs text-ink-2 mt-1">۱۸ شهریور ۱۴۰۴ · ۲ قلم کالا · ۶۹۰٬۰۰۰ ت</p></div>
+            <div class="flex items-center gap-3"><span class="tag tag-ok">تحویل شده</span><button type="button" class="btn btn-soft btn-sm" onclick="eaToast('اقلام به سبد اضافه شد','ph-arrow-clockwise')"><i class="ph-light ph-arrow-clockwise" aria-hidden="true"></i>خرید مجدد</button></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- دوره‌ها -->
+      <div id="courses" class="scroll-mt-28" data-reveal="up">
+        <h2 class="font-display text-3xl mb-4">دوره‌های من</h2>
+        <article class="card overflow-hidden grid md:grid-cols-[220px_1fr]">
+          <div class="zoom aspect-[16/10] md:aspect-auto"><img src="https://images.unsplash.com/photo-1594465919760-441fe5908ab0?auto=format&amp;fit=crop&amp;w=500&amp;h=500&amp;q=70" alt="" class="size-full object-cover" loading="lazy" width="500" height="500"></div>
+          <div class="p-6 flex flex-col gap-4">
+            <div class="flex flex-wrap items-start justify-between gap-3">
+              <div><h3 class="font-display text-2xl">دورهٔ جامع میکاپ حرفه‌ای</h3><p class="text-xs text-ink-2">مدرس: المیرا آزمون · شنبه و دوشنبه ۱۰ تا ۱۴</p></div>
+              <span class="tag tag-ok">در حال برگزاری</span>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4 text-sm">
+              <div class="rounded-xl bg-bg-2 p-4"><p class="text-xs text-ink-2">جلسهٔ بعدی</p><p class="font-semibold mt-1">دوشنبه ۹ مهر</p></div>
+              <div class="rounded-xl bg-bg-2 p-4"><p class="text-xs text-ink-2">وضعیت پرداخت</p><p class="font-semibold mt-1">قسط ۲ از ۳ — سررسید ۲۵ مهر</p></div>
+            </div>
+            <div><p class="flex justify-between text-xs mb-2"><span class="text-ink-2">پیشرفت دوره</span><span>۵ از ۱۲ جلسه</span></p><div class="progress" style="--v:42%"><span></span></div></div>
+            <div class="flex flex-wrap gap-3">
+              <button type="button" class="btn btn-salmon btn-sm" onclick="eaToast('انتقال به درگاه پرداخت (نمایشی)','ph-credit-card')">پرداخت قسط</button>
+              <button type="button" class="btn btn-outline btn-sm" onclick="eaToast('جزوه‌ها و منابع (نمایشی)','ph-books')"><i class="ph-light ph-books" aria-hidden="true"></i>جزوه‌ها و منابع</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- علاقه‌مندی‌ها -->
+      <div id="wish" class="scroll-mt-28" data-reveal="up">
+        <h2 class="font-display text-3xl mb-4">علاقه‌مندی‌ها</h2>
+        <div class="grid grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-10">
+          <article class="group fx-item" data-product data-price="690000" data-order="0" data-cat="all" data-reveal="up" style="--d:0">
+  <div class="relative zoom rounded-xl img-ph aspect-square">
+    <a href="product-single.html" data-cursor="مشاهده" aria-label="پالت سایهٔ چشم"><img src="https://images.unsplash.com/photo-1583784561105-a674080f391e?auto=format&amp;fit=crop&amp;w=600&amp;h=600&amp;q=70" alt="پالت سایهٔ چشم" class="size-full object-cover" loading="lazy" width="600" height="600"></a>
+    
+    <button type="button" class="heart absolute top-3 left-3 z-10" aria-pressed="false" aria-label="افزودن پالت سایهٔ چشم به علاقه‌مندی‌ها"><i class="ph-light ph-heart" aria-hidden="true"></i><i class="ph-fill ph-heart" aria-hidden="true"></i></button>
+    <button type="button" class="btn btn-dark btn-sm absolute inset-x-3 bottom-3 z-10 transition-all duration-500 translate-y-[150%] group-hover:translate-y-0 [@media(hover:none)]:translate-y-0" data-add="پالت سایهٔ چشم"><i class="ph-light ph-handbag" aria-hidden="true"></i><span class="add-label">افزودن به سبد</span></button>
+  </div>
+  <div class="pt-4 text-center flex flex-col items-center gap-0.5">
+    <p class="text-[11px] font-bold text-copper-ink">آرایشی</p>
+    <h3 class="font-display text-xl leading-snug"><a href="product-single.html" class="link-u">پالت سایهٔ چشم</a></h3>
+    <span class="stars" role="img" aria-label="۴ از ۵ ستاره">★★★★<span class="off">★</span></span>
+    <p class="text-sm font-semibold num">۶۹۰٬۰۰۰ تومان</p>
+  </div>
+</article>
+          <article class="group fx-item" data-product data-price="390000" data-order="1" data-cat="all" data-reveal="up" style="--d:1">
+  <div class="relative zoom rounded-xl img-ph aspect-square">
+    <a href="product-single.html" data-cursor="مشاهده" aria-label="کرم ضدآفتاب SPF50"><img src="https://images.unsplash.com/photo-1613803745799-ba6c10aace85?auto=format&amp;fit=crop&amp;w=600&amp;h=600&amp;q=70" alt="کرم ضدآفتاب SPF50" class="size-full object-cover" loading="lazy" width="600" height="600"></a>
+    
+    <button type="button" class="heart absolute top-3 left-3 z-10" aria-pressed="false" aria-label="افزودن کرم ضدآفتاب SPF50 به علاقه‌مندی‌ها"><i class="ph-light ph-heart" aria-hidden="true"></i><i class="ph-fill ph-heart" aria-hidden="true"></i></button>
+    <button type="button" class="btn btn-dark btn-sm absolute inset-x-3 bottom-3 z-10 transition-all duration-500 translate-y-[150%] group-hover:translate-y-0 [@media(hover:none)]:translate-y-0" data-add="کرم ضدآفتاب SPF50"><i class="ph-light ph-handbag" aria-hidden="true"></i><span class="add-label">افزودن به سبد</span></button>
+  </div>
+  <div class="pt-4 text-center flex flex-col items-center gap-0.5">
+    <p class="text-[11px] font-bold text-copper-ink">مراقبت پوست</p>
+    <h3 class="font-display text-xl leading-snug"><a href="product-single.html" class="link-u">کرم ضدآفتاب SPF50</a></h3>
+    <span class="stars" role="img" aria-label="۵ از ۵ ستاره">★★★★★<span class="off"></span></span>
+    <p class="text-sm font-semibold num">۳۹۰٬۰۰۰ تومان</p>
+  </div>
+</article>
+          <article class="group fx-item" data-product data-price="250000" data-order="2" data-cat="all" data-reveal="up" style="--d:2">
+  <div class="relative zoom rounded-xl img-ph aspect-square">
+    <a href="product-single.html" data-cursor="مشاهده" aria-label="رژ لب مات"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&amp;fit=crop&amp;w=600&amp;h=600&amp;q=70" alt="رژ لب مات" class="size-full object-cover" loading="lazy" width="600" height="600"></a>
+    
+    <button type="button" class="heart absolute top-3 left-3 z-10" aria-pressed="false" aria-label="افزودن رژ لب مات به علاقه‌مندی‌ها"><i class="ph-light ph-heart" aria-hidden="true"></i><i class="ph-fill ph-heart" aria-hidden="true"></i></button>
+    <button type="button" class="btn btn-dark btn-sm absolute inset-x-3 bottom-3 z-10 transition-all duration-500 translate-y-[150%] group-hover:translate-y-0 [@media(hover:none)]:translate-y-0" data-add="رژ لب مات"><i class="ph-light ph-handbag" aria-hidden="true"></i><span class="add-label">افزودن به سبد</span></button>
+  </div>
+  <div class="pt-4 text-center flex flex-col items-center gap-0.5">
+    <p class="text-[11px] font-bold text-copper-ink">آرایشی</p>
+    <h3 class="font-display text-xl leading-snug"><a href="product-single.html" class="link-u">رژ لب مات</a></h3>
+    <span class="stars" role="img" aria-label="۵ از ۵ ستاره">★★★★★<span class="off"></span></span>
+    <p class="text-sm font-semibold num">۲۵۰٬۰۰۰ تومان</p>
+  </div>
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<!-- نوار متحرک خدمات -->
+<div class="border-y border-line py-7 md:py-9 overflow-hidden" aria-hidden="true">
+  <div class="marquee" data-marquee>
+    <div class="marquee-track font-display text-4xl md:text-6xl leading-none">
+      <span class="marquee-item">میکاپ عروس <i class="ph-fill ph-sparkle"></i></span>
+      <span class="marquee-item outline-text-dark">رنگ و مش مو <i class="ph-fill ph-sparkle"></i></span>
+      <span class="marquee-item">پاکسازی پوست <i class="ph-fill ph-sparkle"></i></span>
+      <span class="marquee-item outline-text-dark">کاشت ناخن <i class="ph-fill ph-sparkle"></i></span>
+      <span class="marquee-item">کراتینه <i class="ph-fill ph-sparkle"></i></span>
+      <span class="marquee-item outline-text-dark">لیفت مژه <i class="ph-fill ph-sparkle"></i></span>
+    </div>
+  </div>
+</div>
+
+<footer class="grad">
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="wrap">
+    <p class="text-center py-8 font-display text-2xl md:text-3xl border-b border-white/15">
+      زیبایی خودتان را از نو کشف کنید.
+      <a href="#" data-booking class="link-u inline-flex items-center gap-1 text-salmon">همین حالا نوبت بگیرید <i class="ph-light ph-arrow-up-left" aria-hidden="true"></i></a>
+    </p>
+  </div>
+  <div class="wrap grid gap-10 py-14 md:grid-cols-[1.4fr_1fr_1fr_1.2fr] text-sm text-white/75">
+    <div class="flex flex-col gap-4">
+      <a href="index.html" class="brand text-white"><i class="ph-light ph-flower-lotus" aria-hidden="true"></i><span>المیرا آزمون</span></a>
+      <p class="max-w-[34ch]">سالن زیبایی، فروشگاه محصولات مراقبتی و آموزشگاه آرایشگری؛ زیر یک سقف.</p>
+      <div class="flex gap-2">
+        <a href="#" class="round-btn !border-white/30 text-white hover:!bg-white hover:!text-night" aria-label="اینستاگرام"><i class="ph-light ph-instagram-logo" aria-hidden="true"></i></a>
+        <a href="#" class="round-btn !border-white/30 text-white hover:!bg-white hover:!text-night" aria-label="تلگرام"><i class="ph-light ph-telegram-logo" aria-hidden="true"></i></a>
+        <a href="#" class="round-btn !border-white/30 text-white hover:!bg-white hover:!text-night" aria-label="واتس‌اپ"><i class="ph-light ph-whatsapp-logo" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <nav class="flex flex-col gap-2" aria-label="سالن">
+      <h2 class="text-xs font-bold text-salmon mb-2">سالن</h2>
+      <a class="link-u w-fit hover:text-white" href="booking.html">خدمات سالن</a>
+      <a class="link-u w-fit hover:text-white" href="#" data-booking>رزرو نوبت</a>
+      <a class="link-u w-fit hover:text-white" href="gallery.html">گالری نمونه‌کار</a>
+      <a class="link-u w-fit hover:text-white" href="about.html">درباره ما</a>
+    </nav>
+    <nav class="flex flex-col gap-2" aria-label="فروشگاه و آموزشگاه">
+      <h2 class="text-xs font-bold text-salmon mb-2">فروشگاه و آموزشگاه</h2>
+      <a class="link-u w-fit hover:text-white" href="shop.html">فروشگاه</a>
+      <a class="link-u w-fit hover:text-white" href="cart.html">سبد خرید</a>
+      <a class="link-u w-fit hover:text-white" href="academy.html">دوره‌های آموزشی</a>
+      <a class="link-u w-fit hover:text-white" href="blog.html">مجله زیبایی</a>
+    </nav>
+    <div class="flex flex-col gap-2">
+      <h2 class="text-xs font-bold text-salmon mb-2">تماس</h2>
+      <p class="flex gap-2"><i class="ph-light ph-map-pin text-lg text-salmon" aria-hidden="true"></i>[نشانی سالن]</p>
+      <p class="flex gap-2"><i class="ph-light ph-phone text-lg text-salmon" aria-hidden="true"></i><span dir="ltr">[شماره تماس]</span></p>
+      <p class="flex gap-2"><i class="ph-light ph-clock text-lg text-salmon" aria-hidden="true"></i>شنبه تا چهارشنبه ۹ تا ۲۰</p>
+    </div>
+  </div>
+  <div class="wrap flex flex-wrap justify-between gap-3 py-6 border-t border-white/15 text-xs text-white/60">
+    <span>© المیرا آزمون — همهٔ متن‌ها، قیمت‌ها و تصاویر نمونه‌اند.</span>
+    <nav class="flex gap-4" aria-label="پیوندهای پایانی">
+      <a class="hover:text-white" href="contact.html">تماس</a>
+      <a class="hover:text-white" href="auth.html">ورود</a>
+      <a class="hover:text-white" href="404.html">صفحهٔ ۴۰۴</a>
+    </nav>
+  </div>
+</footer>
+<!-- ============ اجزای شناور مشترک ============ -->
+<div class="overlay" aria-hidden="true"></div>
+
+<!-- منوی موبایل -->
+<aside class="drawer from-start nav-drawer" id="nav-drawer" aria-hidden="true" aria-label="منو">
+  <div class="aurora" aria-hidden="true"><span></span><span></span></div>
+  <div class="flex items-center justify-between px-5 h-[76px] border-b border-white/15">
+    <span class="brand"><i class="ph-light ph-flower-lotus" aria-hidden="true"></i><span>المیرا آزمون</span></span>
+    <button type="button" class="hdr-icon inline-grid" data-close aria-label="بستن منو"><i class="ph-light ph-x" aria-hidden="true"></i></button>
+  </div>
+  <nav class="flex-1 overflow-y-auto px-5 py-4" aria-label="منوی موبایل">
+    <a class="dn-link" href="index.html">خانه <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="booking.html">خدمات سالن <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="shop.html">فروشگاه <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="academy.html">آموزشگاه <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="gallery.html">گالری نمونه‌کار <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="blog.html">مجله زیبایی <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="about.html">درباره ما <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="contact.html">تماس <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="account.html">حساب کاربری <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+  </nav>
+  <div class="p-5 border-t border-white/15">
+    <a href="#" data-booking class="btn btn-salmon w-full">رزرو نوبت در سامانهٔ سالن <i class="ph-light ph-arrow-up-left" aria-hidden="true"></i></a>
+  </div>
+</aside>
+
+<!-- سبد خرید کوچک -->
+<aside class="drawer from-end" id="cart-drawer" aria-hidden="true" aria-label="سبد خرید">
+  <div class="flex items-center justify-between px-5 h-[76px] border-b border-line">
+    <h2 class="font-display text-2xl">سبد خرید</h2>
+    <button type="button" class="hdr-icon inline-grid" data-close aria-label="بستن سبد خرید"><i class="ph-light ph-x" aria-hidden="true"></i></button>
+  </div>
+  <div class="flex-1 overflow-y-auto px-5">
+    <div class="mini-item" data-line>
+      <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&amp;fit=crop&amp;w=160&amp;h=160&amp;q=70" alt="" class="size-16 rounded-lg object-cover" loading="lazy" width="160" height="160">
+      <div class="flex-1 text-sm"><p class="font-semibold">سرم روشن‌کنندهٔ پوست</p><p class="text-ink-2">۱ × ۴۸۰٬۰۰۰ ت</p></div>
+      <button type="button" class="hdr-icon inline-grid text-ink-2 hover:text-copper" data-remove aria-label="حذف سرم از سبد"><i class="ph-light ph-trash" aria-hidden="true"></i></button>
+    </div>
+    <div class="mini-item" data-line>
+      <img src="https://images.unsplash.com/photo-1552046122-03184de85e08?auto=format&amp;fit=crop&amp;w=160&amp;h=160&amp;q=70" alt="" class="size-16 rounded-lg object-cover" loading="lazy" width="160" height="160">
+      <div class="flex-1 text-sm"><p class="font-semibold">ماسک تقویت‌کنندهٔ مو</p><p class="text-ink-2">۲ × ۳۲۰٬۰۰۰ ت</p></div>
+      <button type="button" class="hdr-icon inline-grid text-ink-2 hover:text-copper" data-remove aria-label="حذف ماسک مو از سبد"><i class="ph-light ph-trash" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="p-5 border-t border-line flex flex-col gap-3">
+    <div class="flex justify-between text-sm"><span class="text-ink-2">جمع کالاها</span><strong class="num">۱٬۱۲۰٬۰۰۰ تومان</strong></div>
+    <a href="cart.html" class="btn btn-outline w-full">مشاهدهٔ سبد</a>
+    <a href="checkout.html" class="btn btn-salmon w-full">تسویه حساب <i class="ph-light ph-arrow-left" aria-hidden="true"></i></a>
+  </div>
+</aside>
+
+<!-- لایت‌باکس -->
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="نمایش تصویر">
+  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="">
+  <button type="button" class="round-btn lb-btn lb-close top-5 left-5" aria-label="بستن"><i class="ph-light ph-x" aria-hidden="true"></i></button>
+  <button type="button" class="round-btn lb-btn lb-prev right-5 top-1/2" aria-label="تصویر قبلی"><i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+  <button type="button" class="round-btn lb-btn lb-next left-5 top-1/2" aria-label="تصویر بعدی"><i class="ph-light ph-arrow-left" aria-hidden="true"></i></button>
+  <p class="lb-cap"></p>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+
+<button type="button" class="to-top" aria-label="برگشت به بالای صفحه">
+  <svg viewBox="0 0 50 50" aria-hidden="true"><circle cx="25" cy="25" r="23"/></svg>
+  <i class="ph-light ph-arrow-up" aria-hidden="true"></i>
+</button>
+
+<div class="m-book">
+  <a href="#" data-booking class="btn btn-salmon w-full">رزرو نوبت آنلاین <i class="ph-light ph-arrow-up-left" aria-hidden="true"></i></a>
+</div>
+
+<script src="assets/js/theme.js"></script>
+</body>
+</html>

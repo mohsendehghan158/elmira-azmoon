@@ -1,0 +1,79 @@
+<!--META {"title": "تسویه حساب | المیرا آزمون", "desc": "تسویه حساب فروشگاه المیرا آزمون: آدرس، روش ارسال و پرداخت.", "nav": "shop", "hero": {"title": "تسویه حساب", "outline": "پرداخت", "crumbs": [["خانه", "index.html"], ["سبد خرید", "cart.html"], ["تسویه حساب", ""]], "extra": "{{steps shop|2}}"}}-->
+
+<section class="py-14 md:py-20">
+  <form class="wrap grid lg:grid-cols-[1fr_380px] gap-10 items-start" data-validate data-next="order-ok">
+    <div class="flex flex-col gap-10">
+      <!-- آدرس -->
+      <fieldset data-reveal="up">
+        <div class="flex items-center justify-between mb-5">
+          <legend class="font-display text-3xl float-right">آدرس تحویل</legend>
+          <button type="button" class="link-arrow text-sm" onclick="eaToast('فرم افزودن آدرس این‌جا باز می‌شود','ph-map-pin-plus')"><i class="ph-light ph-plus" aria-hidden="true"></i> افزودن آدرس جدید</button>
+        </div>
+        <div class="grid md:grid-cols-2 gap-4 clear-both">
+          <label class="opt !items-start"><input type="radio" name="addr" required checked><span class="dot mt-1"></span><span class="flex-1 text-sm flex flex-col gap-1"><strong class="flex items-center justify-between">خانه <span class="text-xs text-copper-ink font-semibold">ویرایش</span></strong><span class="text-ink-2">[آدرس کامل — استان، شهر، خیابان، پلاک، واحد]</span><span class="text-xs text-ink-2">کد پستی: [۱۰ رقم] · تلفن: [۰۹۱۲xxxxxxx]</span></span></label>
+          <label class="opt !items-start"><input type="radio" name="addr"><span class="dot mt-1"></span><span class="flex-1 text-sm flex flex-col gap-1"><strong class="flex items-center justify-between">محل کار <span class="text-xs text-copper-ink font-semibold">ویرایش</span></strong><span class="text-ink-2">[آدرس کامل]</span></span></label>
+        </div>
+      </fieldset>
+
+      <!-- روش ارسال -->
+      <fieldset data-reveal="up">
+        <legend class="font-display text-3xl mb-5">روش ارسال</legend>
+        <div class="grid gap-3">
+          <label class="opt"><input type="radio" name="ship" required checked><span class="dot"></span><i class="ph-light ph-moped text-2xl text-copper-ink" aria-hidden="true"></i><span class="flex-1 text-sm"><strong class="block">پیک تهران</strong><small class="text-ink-2">تحویل ۲۴ ساعته</small></span><b class="text-sm num">۶۵٬۰۰۰ ت</b></label>
+          <label class="opt"><input type="radio" name="ship"><span class="dot"></span><i class="ph-light ph-package text-2xl text-copper-ink" aria-hidden="true"></i><span class="flex-1 text-sm"><strong class="block">پست پیشتاز</strong><small class="text-ink-2">تحویل ۲ تا ۴ روز کاری</small></span><b class="text-sm num">۴۵٬۰۰۰ ت</b></label>
+          <label class="opt"><input type="radio" name="ship"><span class="dot"></span><i class="ph-light ph-storefront text-2xl text-copper-ink" aria-hidden="true"></i><span class="flex-1 text-sm"><strong class="block">تحویل حضوری در سالن</strong><small class="text-ink-2">[آدرس سالن] — همان روز</small></span><span class="tag tag-ok">رایگان</span></label>
+        </div>
+        <p class="label mt-6">زمان ترجیحی تحویل (اختیاری)</p>
+        <div class="grid grid-cols-3 gap-2">
+          <label class="opt !p-3 justify-center text-xs sm:text-sm text-center"><input type="radio" name="slot">صبح ۹ تا ۱۳</label>
+          <label class="opt !p-3 justify-center text-xs sm:text-sm text-center"><input type="radio" name="slot">بعدازظهر ۱۳ تا ۱۷</label>
+          <label class="opt !p-3 justify-center text-xs sm:text-sm text-center"><input type="radio" name="slot">عصر ۱۷ تا ۲۱</label>
+        </div>
+      </fieldset>
+
+      <!-- پرداخت -->
+      <fieldset data-reveal="up">
+        <legend class="font-display text-3xl mb-5">روش پرداخت</legend>
+        <div class="grid gap-3">
+          <label class="opt"><input type="radio" name="pay" required checked><span class="dot"></span><i class="ph-light ph-credit-card text-2xl text-copper-ink" aria-hidden="true"></i><span class="flex-1 text-sm font-semibold">پرداخت آنلاین (درگاه بانکی)</span></label>
+          <label class="opt"><input type="radio" name="pay"><span class="dot"></span><i class="ph-light ph-money text-2xl text-copper-ink" aria-hidden="true"></i><span class="flex-1 text-sm font-semibold">پرداخت در محل (فقط تهران)</span></label>
+          <label class="opt"><input type="radio" name="pay"><span class="dot"></span><i class="ph-light ph-wallet text-2xl text-copper-ink" aria-hidden="true"></i><span class="flex-1 text-sm font-semibold">کیف پول من <small class="font-normal text-ink-2">— موجودی: ۱۵۰٬۰۰۰ ت</small></span></label>
+        </div>
+        <label class="check mt-5"><input type="checkbox">نیاز به فاکتور رسمی دارم</label>
+        <label class="block mt-5"><span class="label">توضیحات سفارش (اختیاری)</span><textarea class="textarea" placeholder="توضیحی برای ارسال یا بسته‌بندی"></textarea></label>
+      </fieldset>
+    </div>
+
+    <!-- خلاصه -->
+    <aside class="card p-6 flex flex-col gap-4 lg:sticky lg:top-24" data-reveal="left">
+      <h2 class="font-display text-3xl">خلاصهٔ سفارش</h2>
+      <ul class="flex flex-col gap-3 text-sm">
+        <li class="flex items-center gap-3"><img src="@@serum,96,96@@" alt="" class="size-12 rounded-lg object-cover" width="96" height="96"><span class="flex-1">سرم روشن‌کننده <small class="text-ink-2">× ۱</small></span><span class="num">۴۸۰٬۰۰۰</span></li>
+        <li class="flex items-center gap-3"><img src="@@green_jars,96,96@@" alt="" class="size-12 rounded-lg object-cover" width="96" height="96"><span class="flex-1">ماسک تقویت مو <small class="text-ink-2">× ۲</small></span><span class="num">۶۴۰٬۰۰۰</span></li>
+      </ul>
+      <dl class="flex flex-col gap-3 text-sm border-t border-line pt-4">
+        <div class="flex justify-between"><dt class="text-ink-2">جمع کالاها</dt><dd class="num">۱٬۱۲۰٬۰۰۰ ت</dd></div>
+        <div class="flex justify-between"><dt class="text-ink-2">تخفیف</dt><dd class="num text-[var(--ok)]">− ۸۵٬۰۰۰ ت</dd></div>
+        <div class="flex justify-between"><dt class="text-ink-2">هزینهٔ ارسال</dt><dd class="num">۶۵٬۰۰۰ ت</dd></div>
+      </dl>
+      <div class="border-t border-line pt-4 flex items-end justify-between"><span class="text-sm text-ink-2">مبلغ قابل پرداخت</span><strong class="font-display text-3xl num">۱٬۱۰۰٬۰۰۰ <small class="text-base text-ink-2">تومان</small></strong></div>
+      <label class="check text-xs"><input type="checkbox" required>قوانین سایت را خوانده‌ام و می‌پذیرم.</label>
+      <button type="submit" class="btn btn-salmon btn-lg w-full">پرداخت و ثبت سفارش <i class="ph-light ph-lock-key" aria-hidden="true"></i></button>
+      <p class="flex items-center justify-center gap-2 text-xs text-ink-2"><i class="ph-light ph-shield-check text-base text-copper-ink" aria-hidden="true"></i>پرداخت امن از درگاه معتبر بانکی</p>
+    </aside>
+  </form>
+
+  <!-- حالت پس از پرداخت موفق -->
+  <div class="wrap" id="order-ok" hidden data-scroll="yes">
+    <div class="max-w-xl mx-auto card p-8 md:p-12 text-center flex flex-col items-center gap-4">
+      <svg class="check-anim" viewBox="0 0 88 88" aria-hidden="true"><circle cx="44" cy="44" r="41"/><path d="M27 45l11 11 23-24"/></svg>
+      <h2 class="font-display text-4xl">سفارش شما ثبت شد</h2>
+      <p class="text-ink-2">شمارهٔ سفارش: <strong class="text-ink num">۱۴۰۴-۲۸۷۳</strong><br>وضعیت و کد رهگیری مرسوله از طریق پیامک اطلاع‌رسانی می‌شود.</p>
+      <div class="flex flex-wrap justify-center gap-3 mt-2">
+        <a href="account.html" class="btn btn-dark">پیگیری سفارش</a>
+        <a href="shop.html" class="btn btn-outline">ادامهٔ خرید</a>
+      </div>
+      <p class="text-xs text-ink-2">(این صفحه نمایشی است؛ پرداختی انجام نشده.)</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,98 @@
+<!--META {"title": "خدمات سالن | المیرا آزمون", "desc": "فهرست خدمات سالن المیرا آزمون با مدت و قیمت؛ رزرو نوبت در سامانهٔ نوبت‌دهی سالن.", "nav": "services", "hero": {"title": "خدمات سالن", "outline": "خدمات", "sub": "مو، پوست، ناخن، مژه و آرایش عروس. مدت و قیمت هر خدمت را ببینید و نوبت را در سامانهٔ نوبت‌دهی سالن بگیرید.", "crumbs": [["خانه", "index.html"], ["خدمات سالن", ""]]}}-->
+
+<!-- ================= لیست خدمات ================= -->
+<section class="py-14 md:py-20">
+  <div class="wrap grid lg:grid-cols-[1fr_320px] gap-10 items-start">
+    <div>
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8" data-reveal="up">
+        <div class="chips" data-filter="svc-grid" role="group" aria-label="دسته‌بندی خدمات">
+          <button type="button" class="chip" data-cat="all" aria-pressed="true">همه خدمات</button>
+          <button type="button" class="chip" data-cat="hair" aria-pressed="false">مو</button>
+          <button type="button" class="chip" data-cat="skin" aria-pressed="false">پوست و صورت</button>
+          <button type="button" class="chip" data-cat="nail" aria-pressed="false">ناخن و مژه</button>
+          <button type="button" class="chip" data-cat="bride" aria-pressed="false">آرایش عروس</button>
+          <button type="button" class="chip" data-cat="wax" aria-pressed="false">اپیلاسیون</button>
+        </div>
+        <label class="flex items-center gap-2 text-sm shrink-0"><span class="text-ink-2 whitespace-nowrap">مرتب‌سازی:</span>
+          <select class="select !min-h-10 !py-2 w-44" data-sort="svc-grid"><option value="pop">محبوب‌ترین</option><option value="asc">ارزان‌ترین</option><option value="desc">گران‌ترین</option></select>
+        </label>
+      </div>
+      <p class="text-sm text-ink-2 mb-5"><span class="count" data-count="24">۲۴</span> خدمت فعال — ۸ مورد نمایش داده شده</p>
+
+      <div id="svc-grid" class="grid md:grid-cols-2 gap-5">
+        {{service face_makeup|میکاپ عروس|۹۰ دقیقه|المیرا|1200000|bride|0}}
+        {{service balayage|رنگ و مش مو|۱۲۰ دقیقه|سارا|850000|hair|1}}
+        {{service hair_iron|کوتاهی و اصلاح مو|۴۵ دقیقه|سارا|350000|hair|2}}
+        {{service nails|مانیکور و پدیکور|۶۰ دقیقه|نگین|450000|nail|3}}
+        {{service facial|پاکسازی و فیشیال|۴۵ دقیقه|المیرا|550000|skin|4}}
+        {{service cream_swipe|اپیلاسیون کامل|۵۰ دقیقه|نگین|400000|wax|5}}
+        {{service wash|کراتینه و احیای مو|۱۵۰ دقیقه|سارا|1900000|hair|6}}
+        {{service eye_makeup|لیفت و لمینت مژه|۶۰ دقیقه|نگین|520000|nail|7}}
+      </div>
+
+      <nav class="flex justify-center gap-2 mt-12" aria-label="صفحه‌بندی">
+        <a href="#" class="round-btn !size-11 !bg-ink !text-bg !border-ink" aria-current="page">۱</a>
+        <a href="#" class="round-btn !size-11">۲</a>
+        <a href="#" class="round-btn !size-11">۳</a>
+        <a href="#" class="round-btn !size-11" aria-label="صفحهٔ بعد"><i class="ph-light ph-arrow-left" aria-hidden="true"></i></a>
+      </nav>
+    </div>
+
+    <!-- ستون رزرو -->
+    <aside class="lg:sticky lg:top-24 flex flex-col gap-5" data-reveal="left">
+      <div class="grad spotlight rounded-2xl p-7 flex flex-col gap-4">
+        <div class="aurora" aria-hidden="true"><span></span><span></span></div>
+        <span class="grid place-items-center size-14 rounded-full bg-white/10 text-2xl text-salmon"><i class="ph-light ph-calendar-check" aria-hidden="true"></i></span>
+        <h2 class="font-display text-3xl">رزرو نوبت</h2>
+        <p class="text-sm text-white/75">انتخاب خدمت، کارشناس، تاریخ و ساعت در سامانهٔ نوبت‌دهی سالن انجام می‌شود.</p>
+        <a href="#" data-booking class="btn btn-salmon w-full" data-magnetic=".2">ورود به سامانهٔ نوبت‌دهی <i class="ph-light ph-arrow-up-left" aria-hidden="true"></i></a>
+        <p class="text-xs text-white/55 text-center -mt-1">در تب جدید باز می‌شود.</p>
+        <div class="border-t border-white/15 pt-4 flex flex-col gap-2 text-sm">
+          <p class="flex items-center gap-2"><i class="ph-light ph-phone text-salmon" aria-hidden="true"></i>تماس تلفنی: <span dir="ltr">[شماره تماس]</span></p>
+          <p class="flex items-center gap-2"><i class="ph-light ph-wallet text-salmon" aria-hidden="true"></i>پرداخت در محل سالن انجام می‌شود.</p>
+        </div>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-semibold mb-4">رزرو در سه قدم</h3>
+        <ol class="flex flex-col gap-4 text-sm">
+          <li class="flex gap-3"><b class="grid place-items-center size-8 shrink-0 rounded-full bg-tint text-copper-ink">۱</b><span>خدمت را از این فهرست انتخاب کنید.</span></li>
+          <li class="flex gap-3"><b class="grid place-items-center size-8 shrink-0 rounded-full bg-tint text-copper-ink">۲</b><span>در سامانهٔ سالن کارشناس و ساعت را بزنید.</span></li>
+          <li class="flex gap-3"><b class="grid place-items-center size-8 shrink-0 rounded-full bg-tint text-copper-ink">۳</b><span>پیامک تأیید نوبت را دریافت کنید.</span></li>
+        </ol>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= کارشناسان ================= -->
+<section class="py-20 bg-tint">
+  <div class="wrap">
+    <div class="sec-head mb-12" data-reveal="up">
+      <p class="kicker">تیم سالن</p><span class="sep" aria-hidden="true"></span>
+      <h2 class="font-display text-4xl">کارشناسان سالن</h2>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10 lg:gap-8">
+      {{member p_bun|المیرا آزمون|میکاپ و پوست ★★★★★|0}}
+      {{member p_laugh|سارا محمدی|مو و رنگ ★★★★★|1}}
+      {{member p_red|نگین رضایی|ناخن و مژه ★★★★☆|2}}
+      {{member p_stripe|[نام کارشناس]|[تخصص]|3}}
+    </div>
+  </div>
+</section>
+
+<!-- ================= سوالات ================= -->
+<section class="py-20">
+  <div class="wrap grid lg:grid-cols-[1fr_1.4fr] gap-10">
+    <div data-reveal="up">
+      <p class="kicker">پرسش‌های پرتکرار</p>
+      <h2 class="font-display text-5xl mt-3 leading-tight">سوالات متداول<br>نوبت‌دهی</h2>
+      <p class="text-ink-2 mt-4 max-w-sm">پاسخ سؤال‌تان را پیدا نکردید؟ <a href="contact.html" class="link-u text-ink font-semibold">با ما تماس بگیرید</a>.</p>
+    </div>
+    <div data-acc id="faq" data-reveal="up" style="--d:1">
+      <div class="acc-item is-open"><button type="button" class="acc-btn">آیا برای رزرو باید بیعانه پرداخت کنم؟<span class="pm" aria-hidden="true"></span></button><div class="acc-panel"><div><p>[پاسخ نمونه] برای بیشتر خدمات نیازی به بیعانه نیست. برای میکاپ عروس و پکیج‌های بلند، شرایط در سامانهٔ نوبت‌دهی نمایش داده می‌شود.</p></div></div></div>
+      <div class="acc-item"><button type="button" class="acc-btn">تا چه زمانی می‌توانم نوبتم را لغو کنم؟<span class="pm" aria-hidden="true"></span></button><div class="acc-panel"><div><p>[پاسخ نمونه] لغو و تغییر نوبت از داخل سامانهٔ نوبت‌دهی سالن انجام می‌شود؛ بهتر است دست‌کم ۲۴ ساعت قبل اطلاع دهید.</p></div></div></div>
+      <div class="acc-item"><button type="button" class="acc-btn">اگر دیر برسم نوبتم چه می‌شود؟<span class="pm" aria-hidden="true"></span></button><div class="acc-panel"><div><p>[پاسخ نمونه] تا ۱۵ دقیقه تأخیر، خدمت با زمان باقی‌مانده انجام می‌شود. بیشتر از آن، نوبت با هماهنگی جابه‌جا می‌شود.</p></div></div></div>
+      <div class="acc-item"><button type="button" class="acc-btn">امکان رزرو برای چند نفر همزمان وجود دارد؟<span class="pm" aria-hidden="true"></span></button><div class="acc-panel"><div><p>[پاسخ نمونه] بله؛ برای رزرو گروهی (مثلاً همراهان عروس) با شمارهٔ سالن تماس بگیرید.</p></div></div></div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,74 @@
+<!-- ============ اجزای شناور مشترک ============ -->
+<div class="overlay" aria-hidden="true"></div>
+
+<!-- منوی موبایل -->
+<aside class="drawer from-start nav-drawer" id="nav-drawer" aria-hidden="true" aria-label="منو">
+  <div class="aurora" aria-hidden="true"><span></span><span></span></div>
+  <div class="flex items-center justify-between px-5 h-[76px] border-b border-white/15">
+    <span class="brand"><i class="ph-light ph-flower-lotus" aria-hidden="true"></i><span>المیرا آزمون</span></span>
+    <button type="button" class="hdr-icon inline-grid" data-close aria-label="بستن منو"><i class="ph-light ph-x" aria-hidden="true"></i></button>
+  </div>
+  <nav class="flex-1 overflow-y-auto px-5 py-4" aria-label="منوی موبایل">
+    <a class="dn-link" href="index.html">خانه <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="booking.html">خدمات سالن <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="shop.html">فروشگاه <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="academy.html">آموزشگاه <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="gallery.html">گالری نمونه‌کار <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="blog.html">مجله زیبایی <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="about.html">درباره ما <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="contact.html">تماس <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+    <a class="dn-link" href="account.html">حساب کاربری <i class="ph-light ph-arrow-left text-base" aria-hidden="true"></i></a>
+  </nav>
+  <div class="p-5 border-t border-white/15">
+    <a href="#" data-booking class="btn btn-salmon w-full">رزرو نوبت در سامانهٔ سالن <i class="ph-light ph-arrow-up-left" aria-hidden="true"></i></a>
+  </div>
+</aside>
+
+<!-- سبد خرید کوچک -->
+<aside class="drawer from-end" id="cart-drawer" aria-hidden="true" aria-label="سبد خرید">
+  <div class="flex items-center justify-between px-5 h-[76px] border-b border-line">
+    <h2 class="font-display text-2xl">سبد خرید</h2>
+    <button type="button" class="hdr-icon inline-grid" data-close aria-label="بستن سبد خرید"><i class="ph-light ph-x" aria-hidden="true"></i></button>
+  </div>
+  <div class="flex-1 overflow-y-auto px-5">
+    <div class="mini-item" data-line>
+      <img src="@@serum,160,160@@" alt="" class="size-16 rounded-lg object-cover" loading="lazy" width="160" height="160">
+      <div class="flex-1 text-sm"><p class="font-semibold">سرم روشن‌کنندهٔ پوست</p><p class="text-ink-2">۱ × ۴۸۰٬۰۰۰ ت</p></div>
+      <button type="button" class="hdr-icon inline-grid text-ink-2 hover:text-copper" data-remove aria-label="حذف سرم از سبد"><i class="ph-light ph-trash" aria-hidden="true"></i></button>
+    </div>
+    <div class="mini-item" data-line>
+      <img src="@@green_jars,160,160@@" alt="" class="size-16 rounded-lg object-cover" loading="lazy" width="160" height="160">
+      <div class="flex-1 text-sm"><p class="font-semibold">ماسک تقویت‌کنندهٔ مو</p><p class="text-ink-2">۲ × ۳۲۰٬۰۰۰ ت</p></div>
+      <button type="button" class="hdr-icon inline-grid text-ink-2 hover:text-copper" data-remove aria-label="حذف ماسک مو از سبد"><i class="ph-light ph-trash" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="p-5 border-t border-line flex flex-col gap-3">
+    <div class="flex justify-between text-sm"><span class="text-ink-2">جمع کالاها</span><strong class="num">۱٬۱۲۰٬۰۰۰ تومان</strong></div>
+    <a href="cart.html" class="btn btn-outline w-full">مشاهدهٔ سبد</a>
+    <a href="checkout.html" class="btn btn-salmon w-full">تسویه حساب <i class="ph-light ph-arrow-left" aria-hidden="true"></i></a>
+  </div>
+</aside>
+
+<!-- لایت‌باکس -->
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="نمایش تصویر">
+  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="">
+  <button type="button" class="round-btn lb-btn lb-close top-5 left-5" aria-label="بستن"><i class="ph-light ph-x" aria-hidden="true"></i></button>
+  <button type="button" class="round-btn lb-btn lb-prev right-5 top-1/2" aria-label="تصویر قبلی"><i class="ph-light ph-arrow-right" aria-hidden="true"></i></button>
+  <button type="button" class="round-btn lb-btn lb-next left-5 top-1/2" aria-label="تصویر بعدی"><i class="ph-light ph-arrow-left" aria-hidden="true"></i></button>
+  <p class="lb-cap"></p>
+</div>
+
+<div class="toasts" aria-live="polite"></div>
+
+<button type="button" class="to-top" aria-label="برگشت به بالای صفحه">
+  <svg viewBox="0 0 50 50" aria-hidden="true"><circle cx="25" cy="25" r="23"/></svg>
+  <i class="ph-light ph-arrow-up" aria-hidden="true"></i>
+</button>
+
+<div class="m-book">
+  <a href="#" data-booking class="btn btn-salmon w-full">رزرو نوبت آنلاین <i class="ph-light ph-arrow-up-left" aria-hidden="true"></i></a>
+</div>
+
+<script src="assets/js/theme.js"></script>
+</body>
+</html>

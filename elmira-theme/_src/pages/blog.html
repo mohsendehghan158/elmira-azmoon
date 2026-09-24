@@ -1,0 +1,81 @@
+<!--META {"title": "مجلهٔ زیبایی | المیرا آزمون", "desc": "مقاله‌های مراقبت پوست، مو و رنگ، آرایش، ناخن و آموزش از مجلهٔ زیبایی المیرا آزمون.", "nav": "blog", "hero": {"title": "مجلهٔ زیبایی", "outline": "مجله", "sub": "نکته‌های کاربردی از کارشناس‌های سالن؛ برای مراقبت در خانه و انتخاب آگاهانه.", "crumbs": [["خانه", "index.html"], ["مجلهٔ زیبایی", ""]]}}-->
+
+<!-- ================= مقالهٔ ویژه ================= -->
+<section class="pt-14 md:pt-20">
+  <div class="wrap">
+    <a href="blog-single.html" class="group grid lg:grid-cols-[1.3fr_1fr] gap-8 items-center" data-cursor="بخوانید">
+      <div class="zoom rounded-2xl aspect-[16/10]" data-reveal="clip"><img src="@@cosmetics,1100,690@@" alt="" class="size-full object-cover" width="1100" height="690"></div>
+      <div class="flex flex-col gap-4" data-reveal="up">
+        <span class="tag tag-salmon w-fit">مقالهٔ ویژه</span>
+        <h2 class="font-display text-4xl md:text-5xl leading-tight transition group-hover:text-copper-ink">روتین مراقبت پوست در پاییز: از شست‌وشو تا ضدآفتاب</h2>
+        <p class="text-ink-2">[خلاصهٔ نمونه] با سرد شدن هوا، پوست زودتر آب از دست می‌دهد. در این مقاله قدم‌به‌قدم روتین صبح و شب را مرور می‌کنیم.</p>
+        <p class="flex items-center gap-3 text-xs text-ink-2"><img src="@@p_bun,80,80@@" alt="" class="size-9 rounded-full object-cover" width="80" height="80"><span><strong class="text-ink">المیرا آزمون</strong> · ۵ مهر ۱۴۰۴ · ۷ دقیقه مطالعه</span></p>
+        <span class="link-arrow">خواندن مقاله <i class="ph-light ph-arrow-left" aria-hidden="true"></i></span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ================= فهرست + سایدبار ================= -->
+<section class="py-14 md:py-20">
+  <div class="wrap grid lg:grid-cols-[1fr_320px] gap-12 items-start">
+    <div>
+      <div class="chips mb-10" data-filter="posts" role="group" aria-label="دسته‌بندی مقالات" data-reveal="up">
+        <button type="button" class="chip" data-cat="all" aria-pressed="true">همه</button>
+        <button type="button" class="chip" data-cat="skin" aria-pressed="false">مراقبت پوست</button>
+        <button type="button" class="chip" data-cat="hair" aria-pressed="false">مو و رنگ</button>
+        <button type="button" class="chip" data-cat="makeup" aria-pressed="false">آرایش</button>
+        <button type="button" class="chip" data-cat="nail" aria-pressed="false">ناخن</button>
+        <button type="button" class="chip" data-cat="career" aria-pressed="false">آموزش و شغل</button>
+      </div>
+      <div id="posts" class="grid md:grid-cols-2 gap-x-8 gap-y-12">
+        {{post facial|مراقبت پوست|روتین پوست بعد از فیشیال: ۴۸ ساعت اول|۵ دقیقه|0|skin|چه کارهایی را انجام بدهید و از چه چیزهایی دوری کنید تا نتیجهٔ پاکسازی بماند.}}
+        {{post wash|مو و رنگ|چطور رنگ مو دیرتر بشوید؟|۸ دقیقه|1|hair|دمای آب، نوع شامپو و فاصلهٔ شست‌وشو؛ سه چیزی که عمر رنگ را تعیین می‌کند.}}
+        {{post brushes|آرایش|برس‌های آرایشی را چطور بشوییم|۴ دقیقه|0|makeup|روش ساده و هفتگی برای تمیز نگه داشتن برس‌ها و اسفنج‌ها.}}
+        {{post tools|آموزش و شغل|از هنرجو تا آرایشگر حرفه‌ای: ۵ قدم اول|۶ دقیقه|1|career|تجربهٔ هنرجوهای آموزشگاه از ماه‌های اول کار.}}
+        {{post nailart|ناخن|ناخن‌های شکننده: علت‌ها و راه‌حل‌ها|۳ دقیقه|0|nail|چرا ناخن می‌شکند و چه عادت‌هایی کمک می‌کند.}}
+        {{post dropper|مراقبت پوست|سرم ویتامین C را کِی و چطور بزنیم؟|۵ دقیقه|1|skin|ترتیب درست لایه‌ها و ترکیب‌هایی که بهتر است کنار هم نباشند.}}
+      </div>
+      <nav class="flex justify-center gap-2 mt-14" aria-label="صفحه‌بندی">
+        <a href="#" class="round-btn !size-11 !bg-ink !text-bg !border-ink" aria-current="page">۱</a>
+        <a href="#" class="round-btn !size-11">۲</a>
+        <a href="#" class="round-btn !size-11">۳</a>
+        <span class="grid place-items-center size-11 text-ink-2">…</span>
+        <a href="#" class="round-btn !size-11">۹</a>
+      </nav>
+    </div>
+
+    <aside class="flex flex-col gap-6 lg:sticky lg:top-24">
+      <form class="card p-5" role="search" onsubmit="event.preventDefault();eaToast('جستجو در مجله (نمایشی)','ph-magnifying-glass')" data-reveal="left">
+        <label for="q" class="label">جستجو در مجله</label>
+        <div class="relative"><input id="q" type="search" class="input !pe-12" placeholder="موضوع مورد نظر شما…"><button class="absolute left-1.5 top-1/2 -translate-y-1/2 grid place-items-center size-10 rounded-lg bg-ink text-bg" aria-label="جستجو"><i class="ph-light ph-magnifying-glass" aria-hidden="true"></i></button></div>
+      </form>
+      <div class="card p-5" data-reveal="left" style="--d:1">
+        <h2 class="font-semibold mb-3">پرخواننده‌ترین‌ها</h2>
+        <ol class="flex flex-col divide-y divide-line">
+          <li><a href="blog-single.html" class="group flex items-center gap-3 py-3"><span class="font-display text-3xl text-line w-6 transition group-hover:text-copper">۱</span><span class="flex-1 text-sm group-hover:text-copper-ink transition">مراقبت از موی رنگ‌شده در تابستان</span><small class="text-xs text-ink-2">۵ دقیقه</small></a></li>
+          <li><a href="blog-single.html" class="group flex items-center gap-3 py-3"><span class="font-display text-3xl text-line w-6 transition group-hover:text-copper">۲</span><span class="flex-1 text-sm group-hover:text-copper-ink transition">انتخاب کرم‌پودر مناسب رنگ پوست</span><small class="text-xs text-ink-2">۷ دقیقه</small></a></li>
+          <li><a href="blog-single.html" class="group flex items-center gap-3 py-3"><span class="font-display text-3xl text-line w-6 transition group-hover:text-copper">۳</span><span class="flex-1 text-sm group-hover:text-copper-ink transition">قبل از میکاپ عروس چه کنیم؟</span><small class="text-xs text-ink-2">۴ دقیقه</small></a></li>
+        </ol>
+      </div>
+      <div class="card p-5" data-reveal="left" style="--d:2">
+        <h2 class="font-semibold mb-3">دسته‌بندی‌ها</h2>
+        <ul class="flex flex-col text-sm">
+          <li><a href="#" class="flex justify-between py-2 group"><span class="transition group-hover:text-copper-ink group-hover:-translate-x-1">مراقبت پوست</span><span class="tag tag-mute">۱۸</span></a></li>
+          <li><a href="#" class="flex justify-between py-2 group"><span class="transition group-hover:text-copper-ink group-hover:-translate-x-1">مو و رنگ</span><span class="tag tag-mute">۲۴</span></a></li>
+          <li><a href="#" class="flex justify-between py-2 group"><span class="transition group-hover:text-copper-ink group-hover:-translate-x-1">آرایش</span><span class="tag tag-mute">۱۵</span></a></li>
+          <li><a href="#" class="flex justify-between py-2 group"><span class="transition group-hover:text-copper-ink group-hover:-translate-x-1">ناخن</span><span class="tag tag-mute">۹</span></a></li>
+          <li><a href="#" class="flex justify-between py-2 group"><span class="transition group-hover:text-copper-ink group-hover:-translate-x-1">آموزش و شغل</span><span class="tag tag-mute">۱۱</span></a></li>
+        </ul>
+      </div>
+      <form class="grad rounded-2xl p-6 flex flex-col gap-3" data-validate data-ok="عضویت شما در خبرنامه ثبت شد" data-reveal="left" style="--d:3">
+        <i class="ph-light ph-envelope-simple-open text-4xl text-salmon" aria-hidden="true"></i>
+        <h2 class="font-display text-2xl">عضویت در خبرنامه</h2>
+        <p class="text-sm text-white/75">جدیدترین مقالات و تخفیف‌ها را دریافت کنید.</p>
+        <label class="sr-only" for="nl">ایمیل یا شمارهٔ موبایل</label>
+        <input id="nl" class="input !bg-white/10 !border-white/20 !text-white placeholder:!text-white/60" required placeholder="ایمیل یا شمارهٔ موبایل">
+        <button type="submit" class="btn btn-salmon">عضویت</button>
+      </form>
+    </aside>
+  </div>
+</section>

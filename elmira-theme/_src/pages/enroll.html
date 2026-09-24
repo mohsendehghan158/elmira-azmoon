@@ -1,0 +1,120 @@
+<!--META {"title": "ثبت‌نام دوره | آموزشگاه المیرا آزمون", "desc": "فرم ثبت‌نام دورهٔ میکاپ حرفه‌ای آموزشگاه المیرا آزمون.", "nav": "academy", "hero": {"title": "ثبت‌نام در دوره", "outline": "ثبت‌نام", "crumbs": [["خانه", "index.html"], ["آموزشگاه", "academy.html"], ["میکاپ حرفه‌ای", "course-single.html"], ["ثبت‌نام", ""]], "extra": "{{steps enroll|2}}"}}-->
+
+<section class="py-14 md:py-20">
+  <form class="wrap grid lg:grid-cols-[1fr_380px] gap-10 items-start" data-validate data-next="enroll-ok">
+    <div class="flex flex-col gap-8">
+      <!-- اطلاعات هنرجو -->
+      <fieldset class="card p-6 md:p-8" data-reveal="up">
+        <legend class="sr-only">اطلاعات هنرجو</legend>
+        <h2 class="font-display text-3xl mb-6 flex items-center gap-3"><span class="grid place-items-center size-10 rounded-full bg-tint text-copper-ink text-lg"><i class="ph-light ph-identification-card" aria-hidden="true"></i></span>اطلاعات هنرجو</h2>
+        <div class="grid md:grid-cols-2 gap-5">
+          <label><span class="label">نام <span class="req">*</span></span><input class="input" name="fname" required autocomplete="given-name"><span class="err-msg">نام را وارد کنید.</span></label>
+          <label><span class="label">نام خانوادگی <span class="req">*</span></span><input class="input" name="lname" required autocomplete="family-name"><span class="err-msg">نام خانوادگی را وارد کنید.</span></label>
+          <label><span class="label">کد ملی <span class="req">*</span></span><input class="input num" name="nid" required inputmode="numeric" pattern="[0-9۰-۹]{10}" placeholder="۱۰ رقم" dir="ltr"><span class="err-msg">کد ملی باید ۱۰ رقم باشد.</span></label>
+          <div><span class="label">تاریخ تولد <span class="req">*</span></span><div class="grid grid-cols-3 gap-2">
+            <select class="select" required aria-label="روز"><option value="">روز</option><option>۱</option><option>۱۵</option><option>۳۰</option></select>
+            <select class="select" required aria-label="ماه"><option value="">ماه</option><option>فروردین</option><option>اردیبهشت</option><option>خرداد</option><option>تیر</option><option>مرداد</option><option>شهریور</option><option>مهر</option><option>آبان</option><option>آذر</option><option>دی</option><option>بهمن</option><option>اسفند</option></select>
+            <select class="select" required aria-label="سال"><option value="">سال</option><option>۱۳۶۰</option><option>۱۳۷۰</option><option>۱۳۸۰</option></select>
+          </div></div>
+          <label><span class="label">شمارهٔ موبایل <span class="req">*</span></span><input class="input num" name="mobile" required inputmode="tel" pattern="(09|۰۹)[0-9۰-۹]{9}" placeholder="۰۹۱۲xxxxxxx" dir="ltr" autocomplete="tel"><span class="err-msg">شماره موبایل ۱۱ رقمی با ۰۹ شروع می‌شود.</span></label>
+          <label><span class="label">ایمیل (اختیاری)</span><input class="input" type="email" placeholder="example@mail.com" dir="ltr" autocomplete="email"></label>
+          <label class="md:col-span-2"><span class="label">آدرس محل سکونت</span><input class="input" autocomplete="street-address"></label>
+        </div>
+      </fieldset>
+
+      <!-- سابقه -->
+      <fieldset class="card p-6 md:p-8" data-reveal="up">
+        <legend class="sr-only">سابقه و سطح مهارت</legend>
+        <h2 class="font-display text-3xl mb-6 flex items-center gap-3"><span class="grid place-items-center size-10 rounded-full bg-tint text-copper-ink text-lg"><i class="ph-light ph-chart-line-up" aria-hidden="true"></i></span>سابقه و سطح مهارت</h2>
+        <p class="label">میزان آشنایی شما با آرایشگری <span class="req">*</span></p>
+        <div class="grid sm:grid-cols-3 gap-3">
+          <label class="opt"><input type="radio" name="lvl" required><span class="dot"></span><span class="text-sm">هیچ سابقه‌ای ندارم</span></label>
+          <label class="opt"><input type="radio" name="lvl"><span class="dot"></span><span class="text-sm">آماتور و علاقه‌مند</span></label>
+          <label class="opt"><input type="radio" name="lvl"><span class="dot"></span><span class="text-sm">شاغل در این حرفه</span></label>
+        </div>
+        <div class="grid md:grid-cols-2 gap-5 mt-5">
+          <label><span class="label">آخرین مدرک تحصیلی</span><select class="select"><option>انتخاب کنید</option><option>دیپلم</option><option>کاردانی</option><option>کارشناسی</option><option>کارشناسی ارشد و بالاتر</option></select></label>
+          <label><span class="label">هدف شما از شرکت در دوره (اختیاری)</span><input class="input" placeholder="مثلاً: راه‌اندازی سالن شخصی، اشتغال"></label>
+        </div>
+      </fieldset>
+
+      <!-- ترم -->
+      <fieldset class="card p-6 md:p-8" data-reveal="up">
+        <legend class="sr-only">انتخاب ترم و شیفت</legend>
+        <h2 class="font-display text-3xl mb-6 flex items-center gap-3"><span class="grid place-items-center size-10 rounded-full bg-tint text-copper-ink text-lg"><i class="ph-light ph-calendar-check" aria-hidden="true"></i></span>انتخاب ترم و شیفت</h2>
+        <div class="grid gap-3">
+          <label class="opt"><input type="radio" name="term" required checked><span class="dot"></span><span class="flex-1 text-sm"><strong class="block">ترم مهر — شنبه و دوشنبه</strong><small class="text-ink-2">شروع ۱۵ مهر ۱۴۰۴ · ساعت ۱۰ تا ۱۴</small></span><span class="tag tag-warn">۳ ظرفیت</span></label>
+          <label class="opt"><input type="radio" name="term"><span class="dot"></span><span class="flex-1 text-sm"><strong class="block">ترم آبان — یکشنبه و سه‌شنبه</strong><small class="text-ink-2">شروع ۵ آبان ۱۴۰۴ · ساعت ۱۴ تا ۱۸</small></span><span class="tag tag-ok">۸ ظرفیت</span></label>
+          <label class="opt"><input type="radio" name="term"><span class="dot"></span><span class="flex-1 text-sm"><strong class="block">ترم فشرده — پنجشنبه‌ها</strong><small class="text-ink-2">شروع ۱۰ آبان ۱۴۰۴ · ساعت ۹ تا ۱۶</small></span><span class="tag tag-ok">۵ ظرفیت</span></label>
+        </div>
+      </fieldset>
+
+      <!-- مدارک -->
+      <fieldset class="card p-6 md:p-8" data-reveal="up">
+        <legend class="sr-only">بارگذاری مدارک</legend>
+        <h2 class="font-display text-3xl mb-6 flex items-center gap-3"><span class="grid place-items-center size-10 rounded-full bg-tint text-copper-ink text-lg"><i class="ph-light ph-upload-simple" aria-hidden="true"></i></span>بارگذاری مدارک</h2>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <label class="drop"><input type="file" accept="image/png,image/jpeg"><i class="ph-light ph-user-square" aria-hidden="true"></i><strong>عکس پرسنلی</strong><span class="text-xs">بکشید یا انتخاب کنید</span></label>
+          <label class="drop"><input type="file" accept="image/png,image/jpeg"><i class="ph-light ph-identification-badge" aria-hidden="true"></i><strong>تصویر کارت ملی</strong><span class="text-xs">بکشید یا انتخاب کنید</span></label>
+          <label class="drop"><input type="file" accept="image/png,image/jpeg"><i class="ph-light ph-graduation-cap" aria-hidden="true"></i><strong>مدرک تحصیلی</strong><span class="text-xs">بکشید یا انتخاب کنید</span></label>
+        </div>
+        <p class="hint">فرمت مجاز: JPG یا PNG — حداکثر ۲ مگابایت برای هر فایل</p>
+      </fieldset>
+
+      <!-- پرداخت -->
+      <fieldset class="card p-6 md:p-8" data-reveal="up">
+        <legend class="sr-only">روش پرداخت شهریه</legend>
+        <h2 class="font-display text-3xl mb-6 flex items-center gap-3"><span class="grid place-items-center size-10 rounded-full bg-tint text-copper-ink text-lg"><i class="ph-light ph-credit-card" aria-hidden="true"></i></span>روش پرداخت شهریه</h2>
+        <div class="grid gap-3">
+          <label class="opt"><input type="radio" name="plan" required checked><span class="dot"></span><span class="flex-1 text-sm"><strong class="block">پرداخت کامل (نقدی)</strong><small class="text-ink-2">شامل ٪۵ تخفیف اضافه</small></span><b class="num text-sm">۴٬۲۷۵٬۰۰۰ ت</b></label>
+          <label class="opt"><input type="radio" name="plan"><span class="dot"></span><span class="flex-1 text-sm"><strong class="block">پیش‌پرداخت + ۲ قسط</strong><small class="text-ink-2">۱٬۵۰۰٬۰۰۰ الان + ۲ قسط ۱٬۵۰۰٬۰۰۰ تومانی</small></span><b class="num text-sm">۴٬۵۰۰٬۰۰۰ ت</b></label>
+          <label class="opt"><input type="radio" name="plan"><span class="dot"></span><span class="flex-1 text-sm"><strong class="block">فقط رزرو ظرفیت</strong><small class="text-ink-2">تسویه در جلسهٔ اول</small></span><b class="num text-sm">۵۰۰٬۰۰۰ ت</b></label>
+        </div>
+        <label class="check mt-6"><input type="checkbox" required>قوانین آموزشگاه و شرایط انصراف را می‌پذیرم.</label>
+      </fieldset>
+    </div>
+
+    <!-- خلاصه -->
+    <aside class="flex flex-col gap-5 lg:sticky lg:top-24" data-reveal="left">
+      <div class="card p-6 flex flex-col gap-4">
+        <h2 class="font-display text-3xl">خلاصهٔ ثبت‌نام</h2>
+        <div class="flex gap-4 items-center"><img src="@@face_makeup,160,160@@" alt="" class="size-16 rounded-xl object-cover" width="160" height="160"><div class="text-sm"><strong class="block">میکاپ حرفه‌ای</strong><span class="text-ink-2">۴۰ ساعت · ۱۲ جلسه</span></div></div>
+        <dl class="text-sm divide-y divide-line">
+          <div class="flex justify-between py-2.5"><dt class="text-ink-2">مدرس</dt><dd>المیرا آزمون</dd></div>
+          <div class="flex justify-between py-2.5"><dt class="text-ink-2">ترم</dt><dd>مهر — شنبه و دوشنبه</dd></div>
+          <div class="flex justify-between py-2.5"><dt class="text-ink-2">شروع</dt><dd>۱۵ مهر ۱۴۰۴</dd></div>
+          <div class="flex justify-between py-2.5"><dt class="text-ink-2">شهریهٔ دوره</dt><dd class="num">۵٬۲۰۰٬۰۰۰ ت</dd></div>
+          <div class="flex justify-between py-2.5"><dt class="text-ink-2">تخفیف زودهنگام</dt><dd class="num text-[var(--ok)]">− ۷۰۰٬۰۰۰ ت</dd></div>
+          <div class="flex justify-between py-2.5"><dt class="text-ink-2">تخفیف پرداخت نقدی</dt><dd class="num text-[var(--ok)]">− ۲۲۵٬۰۰۰ ت</dd></div>
+        </dl>
+        <div class="border-t border-line pt-4 flex items-end justify-between"><span class="text-sm text-ink-2">مبلغ قابل پرداخت</span><strong class="font-display text-3xl num">۴٬۲۷۵٬۰۰۰ <small class="text-base text-ink-2">تومان</small></strong></div>
+        <button type="submit" class="btn btn-salmon btn-lg w-full">پرداخت و ثبت‌نام نهایی <i class="ph-light ph-lock-key" aria-hidden="true"></i></button>
+        <p class="flex items-center justify-center gap-2 text-xs text-ink-2"><i class="ph-light ph-shield-check text-base text-copper-ink" aria-hidden="true"></i>پرداخت امن از طریق درگاه بانکی</p>
+      </div>
+      <div class="card p-6 flex items-center gap-4">
+        <span class="grid place-items-center size-12 shrink-0 rounded-full bg-tint text-2xl text-copper-ink"><i class="ph-light ph-phone-call" aria-hidden="true"></i></span>
+        <div class="flex-1 text-sm"><strong class="block">سؤالی دارید؟</strong><span class="text-ink-2">قبل از ثبت‌نام با کارشناس صحبت کنید.</span></div>
+        <button type="button" class="btn btn-outline btn-sm" onclick="eaToast('درخواست تماس ثبت شد (نمایشی)','ph-phone-call')">درخواست تماس</button>
+      </div>
+    </aside>
+  </form>
+
+  <!-- حالت پس از ثبت‌نام -->
+  <div class="wrap" id="enroll-ok" hidden>
+    <div class="max-w-xl mx-auto card p-8 md:p-12 text-center flex flex-col items-center gap-4">
+      <svg class="check-anim" viewBox="0 0 88 88" aria-hidden="true"><circle cx="44" cy="44" r="41"/><path d="M27 45l11 11 23-24"/></svg>
+      <h2 class="font-display text-4xl">ثبت‌نام شما قطعی شد</h2>
+      <p class="text-ink-2">شمارهٔ پرونده: <strong class="text-ink" dir="ltr">AC-۱۴۰۴-۰۳۹۲</strong><br>کارشناس آموزشگاه تا ۲۴ ساعت آینده برای هماهنگی جلسهٔ اول با شما تماس می‌گیرد.</p>
+      <div class="w-full rounded-xl bg-tint p-5 text-sm text-start flex flex-col gap-2">
+        <p><strong>دورهٔ میکاپ حرفه‌ای</strong></p>
+        <p class="text-ink-2">جلسهٔ اول: شنبه ۱۵ مهر ۱۴۰۴ — ساعت ۱۰:۰۰</p>
+        <p class="text-ink-2">آدرس: [آدرس آموزشگاه]</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-3 mt-2">
+        <a href="account.html" class="btn btn-dark">مشاهده در پنل هنرجو</a>
+        <a href="academy.html" class="btn btn-outline">دوره‌های دیگر</a>
+      </div>
+      <p class="text-xs text-ink-2">(این صفحه نمایشی است؛ پرداختی انجام نشده.)</p>
+    </div>
+  </div>
+</section>
